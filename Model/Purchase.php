@@ -4,14 +4,8 @@ App::uses('AppModel', 'Model');
  * CreditCard Model
  *
  */
-class CreditCard extends AppModel {
+class Purchase extends AppModel {
 
-/**
- * Display field
- *
- * @var string
- */
-	public $displayField = 'card_number';
     public $useTable = 'false';
 
 /**
@@ -48,6 +42,16 @@ class CreditCard extends AppModel {
                 'message' => 'A valid CVV is required'
             )
 		),
+        'size_id' => array(
+            'notEmpty' => array(
+                'rule' => array('notEmpty'),
+                //'message' => 'Your custom message here',
+                //'allowEmpty' => false,
+                //'required' => false,
+                //'last' => false, // Stop validation after this rule
+                //'on' => 'create', // Limit validation to 'create' or 'update' operations
+            ),
+        ),
 		'exp_m' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
@@ -57,8 +61,6 @@ class CreditCard extends AppModel {
 			),
             'between'=>array(
                 'rule'=>array('between', 1, 12),
-                'allowEmpty'=>false,
-                'required'=>true,
                 'message'=>'Expiry Month is invalid'
             ),
         ),
@@ -74,68 +76,23 @@ class CreditCard extends AppModel {
                 'message' => 'Credit Card has expired'
             )
 		),
-        'not_expired' => array(
+        'name' => array(
             'notEmpty' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'Expiry Year is required',
+                'message' => 'Name is required',
                 'allowEmpty' => false,
-                'required' => true,
+                'required' => false,
             ),
         ),
-	);
-
-	//The Associations below have been created with all possible keys, those that are not needed can be removed
-
-/**
- * hasOne associations
- *
- * @var array
- */
-	public $hasOne = array(
-		'Transaction' => array(
-			'className' => 'Transaction',
-			'foreignKey' => 'CreditCard_id',
-			'conditions' => '',
-			'fields' => '',
-			'CreditCard' => ''
-		),
-		'Video' => array(
-			'className' => 'Video',
-			'foreignKey' => 'CreditCard_id',
-			'conditions' => '',
-			'fields' => '',
-			'CreditCard' => ''
-		)
-	);
-
-/**
- * belongsTo associations
- *
- * @var array
- */
-	public $belongsTo = array(
-		'User' => array(
-			'className' => 'User',
-			'foreignKey' => 'user_id',
-			'conditions' => '',
-			'fields' => '',
-			'CreditCard' => ''
-		),
-		'Size' => array(
-			'className' => 'Size',
-			'foreignKey' => 'size_id',
-			'conditions' => '',
-			'fields' => '',
-			'CreditCard' => ''
-		),
-		'Status' => array(
-			'className' => 'Status',
-			'foreignKey' => 'status_id',
-			'conditions' => '',
-			'fields' => '',
-			'CreditCard' => ''
-		)
-	);
+        'email' => array(
+            'email' => array(
+                'rule' => array('email'),
+                'message' => 'Valid email is required',
+                'allowEmpty' => false,
+                'required' => false,
+            ),
+        ),
+    );
 
     public function isCurrentCard($field=array()) {
         //Check to see if a CC has a valid date

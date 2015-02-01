@@ -126,7 +126,7 @@
 					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
 					</p>
 				</div>
-				<?php echo $this->Form->create('Order', array('action' => 'purchase', 'inputDefaults' => array(
+				<?php echo $this->Form->create('Purchase', array('action' => 'purchase', 'inputDefaults' => array(
                                                                                     'label' => false,
                                                                                     'div' => false
                                                                                 ))); ?>
@@ -154,14 +154,17 @@
 							100% secure payment.
 							<img src="images/secure-payment.gif" />
 						</div>
-							<?php echo $this->Form->text('User.email', array(
+							<?php echo $this->Form->text('name', array(
+							        'placeholder' => 'Name :',
+							    )); ?>
+							<?php echo $this->Form->text('email', array(
 							        'placeholder' => 'Email :',
 							    )); ?>
-							<?php echo $this->Form->text('cc_num', array(
+							<?php echo $this->Form->text('card_number', array(
 							        'placeholder' => 'Credit Card Number :',
 							    )); ?>
 							<?php
-                                echo $this->Form->input('cc_cvv', array(
+                                echo $this->Form->input('cvv', array(
                                     'placeholder' => 'CVV :',
                                     'class' => 'cvv',
                                     'label' => 'Card Security Number',
@@ -169,7 +172,7 @@
                                 ));
 							?>
 							<?php
-                                echo $this->Form->input('cc_expiry_m', array(
+                                echo $this->Form->input('exp_m', array(
                                     'options' => $months_list,
                                     'placeholder' => 'Exp. Month',
                                     'dateFormat' => 'M',
@@ -181,7 +184,7 @@
                                 ));
 							?>
 							<?php
-                                echo $this->Form->input('cc_expiry_m', array(
+                                echo $this->Form->input('exp_v', array(
                                     'options' => $years_list,
                                     'placeholder' => 'Exp. Year',
                                     'dateFormat' => 'Y',
@@ -192,11 +195,11 @@
                                     'div' => 'form-element'
                                 ));
 							?>
-							<?php echo $this->Form->input('Order.size', array(
+							<?php echo $this->Form->input('size', array(
                                 'options' => $sizes,
                                 'hidden' => true,
                             )); ?>
-							<?php echo $this->Form->textarea('Order.message', array(
+							<?php echo $this->Form->textarea('message', array(
 							        'placeholder' => 'Message :',
 							    )); ?>
 							<?php echo $this->Form->button('Buy now', array('type' => 'submit')); ?>
