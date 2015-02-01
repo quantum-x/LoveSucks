@@ -1,6 +1,6 @@
 <?php
 
-Configure::write('debug', '2');
+Configure::write('debug', '[*CORE_DEBUG_LEVEL*]');
 Configure::write('Error', array(
                                'handler' => 'ErrorHandler::handleError',
                                'level' => E_ALL & ~E_DEPRECATED,
@@ -17,16 +17,16 @@ Configure::write('App.encoding', 'UTF-8');
 /**
  * A random string used in security hashing methods.
  */
-Configure::write('Security.salt', '&(mLC7j~vB_[VG{86C.P`kG@)JB8HmB5+6&M@K8uDG+H5n>zCt}~@bhbc<.^~eYK');
-Configure::write('Security.wifi_salt', '*Tu=9825eaw!{k~>yJ5b5vW2HYuR<NQ6vDq^dL,sjD{8e-/n;BSY^W(Z,)k;=wC:.#d+Y}Zt{@t');
-Configure::write('Security.cipherSeed', '386249583887726253973260121905');
+Configure::write('Security.salt', '[*CORE_SECURITY_SALT*]');
+Configure::write('Security.wifi_salt', '[*CORE_SECURITY_WIFI_SALT*]');
+Configure::write('Security.cipherSeed', '[*CORE_SECURITY_CIPHERSEED*]');
 
 
 Cache::config('default', array(
                               'engine' => 'Memcached', //[required]
                               'probability'=> 100, //[optional]
                               'servers' => array(
-                                  'memcachedMaster:11211' // localhost, default port 11211
+                                  '[*CORE_CACHE_STRING*]' // localhost, default port 11211
                               ), //[optional]
                          ));
 
@@ -41,7 +41,7 @@ if (Configure::read('debug') > 0) {
 }
 
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
-$prefix = 'rebadgeweb_';
+$prefix = '[*CORE_APP_PREFIX*]';
 
 Cache::config('_cake_core_', array(
                                   'prefix' => $prefix . 'cake_core_',
@@ -57,10 +57,4 @@ Cache::config('_cake_model_', array(
                               ));
 
 //Setup the default language
-Configure::write('Config.default_language', 'en_US');
-
-//Setup the possible languges
-Configure::write('Config.languages',
-                 array(
-                      'en' => 'English',
-                      'fr' => 'Français'));
+Configure::write('Config.default_language', '[*CORE_APP_DEFAULT_LANG*]');

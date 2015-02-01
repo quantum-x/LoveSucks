@@ -39,56 +39,20 @@
  */
 class EmailConfig {
 
-	public $default = array(
-		'transport' => 'Mail',
-		'from' => 'you@localhost',
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
-	);
+    public $default = array(
+        'transport' => 'Smtp',
+        'from' => array('[*EMAIL_FROM_EMAIL*]' => '[*EMAIL_FROM_USER*]'),
+        'host' => '[*EMAIL_HOST*]',
+        'port' => '[*EMAIL_PORT*]',
+        'timeout' => '[*EMAIL_TIMEOUT*',
+        'username' => '[*EMAIL_USERNAME*',
+        'password' => '[*EMAIL_PASSWORD*]',
+        'client' => '[*EMAIL_CLIENT*]',
+        'emailPattern' => '/^.+$/',
+        'log' => false,
+        'charset' => 'utf-8',
+        'headerCharset' => 'utf-8',
+    );
 
-	public $smtp = array(
-		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
-		'port' => 25,
-		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
-		'client' => null,
-		'log' => false,
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
-	);
-
-	public $fast = array(
-		'from' => 'you@localhost',
-		'sender' => null,
-		'to' => null,
-		'cc' => null,
-		'bcc' => null,
-		'replyTo' => null,
-		'readReceipt' => null,
-		'returnPath' => null,
-		'messageId' => true,
-		'subject' => null,
-		'message' => null,
-		'headers' => null,
-		'viewRender' => null,
-		'template' => false,
-		'layout' => false,
-		'viewVars' => null,
-		'attachments' => null,
-		'emailFormat' => null,
-		'transport' => 'Smtp',
-		'host' => 'localhost',
-		'port' => 25,
-		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
-		'client' => null,
-		'log' => true,
-		//'charset' => 'utf-8',
-		//'headerCharset' => 'utf-8',
-	);
 
 }
