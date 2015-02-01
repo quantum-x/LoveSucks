@@ -73,10 +73,6 @@
 								event.preventDefault();
 								$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 							});
-							
-							$(".badge-div").click(function(event){		
-								$("#badge-comment").text($(this).find("img:first").attr('alt'));
-							});
 						});
 					</script>
 					<!----move-top-path---->

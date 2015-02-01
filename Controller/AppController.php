@@ -57,6 +57,9 @@ class AppController extends Controller {
         $this->_setupLanguage();
         $this->_setupLocale();
 
+        $this->loadModel('Size');
+        $this->set('sizes', $this->Size->find('list') );
+
     }
 
     protected function _setupLanguage() {

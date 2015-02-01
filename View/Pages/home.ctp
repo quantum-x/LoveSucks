@@ -126,22 +126,22 @@
 					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
 					</p>
 				</div>
-				<?php $this->Form->create('User', array('action' => 'purchase', 'inputDefaults' => array(
+				<?php echo $this->Form->create('User', array('action' => 'purchase', 'inputDefaults' => array(
                                                                                     'label' => false,
                                                                                     'div' => false
                                                                                 ))); ?>
 					<div class="size-buttons">
-						<div class="small button grow badge-div">
+						<div class="small button grow badge-div" data-id="<?php echo array_search('small', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>5</div>
-							<div class="badge fade"><img src="images/buy-small.png" alt="so small? that hardly even qualifies as love.." /></div>
+							<div class="badge fade"><img src="images/buy-small.png"alt="so small? that hardly even qualifies as love.." /></div>
 							<div class="label">small</div>
 						</div>
-						<div class="large button grow badge-div">
+						<div class="large button grow badge-div" data-id="<?php echo array_search('large', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>15</div>
 							<div class="badge"><img src="images/buy-large.png" alt="good choice. let's fuck up true love." /></div>
 							<div class="label">huge</div>
 						</div>
-						<div class="medium button grow badge-div">
+						<div class="medium button grow badge-div"data-id="<?php echo array_search('medium', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>9</div>
 							<div class="badge fade"><img src="images/buy-small.png" alt="you deserve bigger. other people would cut yours off." /></div>
 							<div class="label">regular</div>
@@ -154,9 +154,20 @@
 							100% secure payment.
 							<img src="images/secure-payment.gif" />
 						</div>
-							<input type="text" placeholder="Email :">
-							<input type="text" placeholder="Credit Card Number :">
-							<input type="text" class="cvv" placeholder="CVV :">
+							<?php echo $this->Form->text('User.email', array(
+							        'placeholder' => 'Email :',
+							    )); ?>
+							<?php echo $this->Form->text('cc_num', array(
+							        'placeholder' => 'Credit Card Number :',
+							    )); ?>
+							<?php
+                                echo $this->Form->input('cc_cvv', array(
+                                    'placeholder' => 'CVV :',
+                                    'class' => 'cvv',
+                                    'label' => 'Card Security Number',
+                                    'div' => 'form-element'
+                                ));
+							?>
 							<?php
                                 echo $this->Form->input('cc_expiry_m', array(
                                     'options' => $months_list,
@@ -165,7 +176,7 @@
                                     'minMonth' => 1,
                                     'maxMonth' => 2,
                                     'class' => 'exp_m',
-                                    'label' => 'YO',
+                                    'label' => 'Card Expiry Month',
                                     'div' => 'form-element'
                                 ));
 							?>
@@ -176,13 +187,30 @@
                                     'dateFormat' => 'Y',
                                     'minYear' => date('Y'),
                                     'maxYear' => date('Y') + 10,
-                                    'class' => 'exp_y'
+                                    'class' => 'exp_y',
+                                    'label' => 'Card Expiry Year',
+                                    'div' => 'form-element'
                                 ));
 							?>
-							<textarea rows="2" cols="70" placeholder="Message :"></textarea>
-							<input type="submit" value="Buy Now" />
+							<?php echo $this->Form->input('Order.size', array(
+                                'options' => $sizes,
+                                'hidden' => true,
+                            )); ?>
+							<?php echo $this->Form->textarea('Order.message', array(
+							        'placeholder' => 'Message :',
+							    )); ?>
+							<?php echo $this->Form->button('Submit Form', array('type' => 'submit')); ?>
 
 					</div>
-				</form>
+				<?php $this->Form->end(); ?>
 			</div>
 			</div>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                    $(".badge-div").click(function(event){
+                        $("#badge-comment").text($(this).find("img:first").attr('alt'));
+
+                        alert (  $(this).data( "id" ) );
+                    });
+                });
+            </script>
