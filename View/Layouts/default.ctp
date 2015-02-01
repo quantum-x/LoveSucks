@@ -1,63 +1,94 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
-?>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+	<head>
+		<?php echo $this->Html->charset(); ?>
+		<title>Fuck Love: Ruin someone's happiness for your own.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/fave-icon.png" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+   		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+   		<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<script src="/js/modernizr.custom.28468.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/simptip-mini.css" media="screen,projection" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!---start-wrap----->
+			<!---start-header----->
+			<div class="header" id="home">
+				<div class="wrap">
+				<div class="top-header">
+					<div class="logo">
+						<a href="index.html">Fuck Love</a>
+					</div>
+					<div class="top-nav">
+						<ul>
+							<li class="active"><a href="#home" class="scroll">Home</a></li>
+							<li><a href="#what" class="scroll">What?</a></li>
+							<li><a href="#why" class="scroll">Why?</a></li>
+							<li><a href="#how" class="scroll">How?</a></li>							
+							<li><a href="#signup" class="scroll">Buy Now!</a></li>							
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			<!---End-header----->
+			</div>
 		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
+		<div class="header-footer"><div class="img"><img src="/images/logo-head.png" /></div></div>
+		<!---End-header----->
+		<!---start-content---->
+		<div class="content">
+            <?php echo $this->Session->flash(); ?>
+            <?php echo $this->fetch('content'); ?>
+			<!---End-contact---->
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
+		<!---End-content---->
+		<!----start-footer---->
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer-grids">
+					<div class="footer-left">
+						<ul>
+							<li><a class="ftwiter" href="https://twitter.com/fuckloveparis" target="_blank"> </a></li>
+							<a href="https://plus.google.com/118275350827749726838" rel="publisher"></a>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="footer-right">
+						<p>Send us some <a href="mailto:support@fucklove.paris">hate mail</a></p>
+									<script type="text/javascript">
+						$(document).ready(function() {
+							$().UItoTop({ easingType: 'easeOutQuart' });
+						});
+					</script>
+					<!----move-top-path---->
+					<script type="text/javascript" src="/js/move-top.js"></script>
+					<script type="text/javascript" src="/js/easing.js"></script>
+					<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$(".scroll").click(function(event){		
+								event.preventDefault();
+								$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+							});
+							
+							$(".badge-div").click(function(event){		
+								$("#badge-comment").text($(this).find("img:first").attr('alt'));
+							});
+						});
+					</script>
+					<!----move-top-path---->
+			    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
-</body>
+		<!----//End-footer---->
+		<!---End-wrap----->
+	</body>
 </html>
+

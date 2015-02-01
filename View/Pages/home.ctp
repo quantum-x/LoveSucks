@@ -1,228 +1,176 @@
-<?php
-/**
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Pages
- * @since         CakePHP(tm) v 0.10.0.1076
- */
+			<div class="wrap">
+			<!---start-top-grids---->
+				<div class="top-service-grids" id="what">
+					<div class="services-head">
+						<h3>What is this?</h3>
+						<p>Valentines day sucks. And it's even worse when there are sickeningly happy couples everywhere around you. Paris is like the blackhole of disgustingly happy couples. And like the Parisian dogs, they leave their shit everywhere: those fucking love-locks. </p>
+						<p>You are a jilted, twisted, emotionally dead person. We are your beacon of hope.</p>
+						<p>For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. We'll even send you the video of it, and may even yell out something you've chosen in the process.</p>
+						</p>
+					</div>
+					<div class="top-service-grid">
+						<div class="badge grow"><img src="images/what-badge-1.gif" alt="" /></div>
+						<div><span class="nc nc-blue">1</span><h3>Pick a lock size</h3></div>
+						<p>
+						Everyone knows that money = love.<br />
+						<b>Small</b>: It's not even highschool puppy love.<br />
+						<b>Medium</b>: I'm so in love! mid twenties love<br />
+						<b>Large</b>: Annoyingly genuine love</p>
+					</div>
+					<div class="top-service-grid">
+						<div class="badge grow"><img src="images/what-badge-2.gif" alt="" /></div>
+						<div><span class="nc nc-blue">2</span><h3>We cut it & drown it</h3></div>
+						<p>We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we'll even yell something you want.</p>
+					</div>
+					<div class="top-service-grid">
+						<div class="badge grow"><img src="images/what-badge-3.gif" alt="" /></div>
+						<div><span class="nc nc-blue">3</span><h3>Watch true love die</h3></div>
+						<p>We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying. </p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			<!---End-top-grids---->
+			</div>
+			<!---start-meet-our-team---->
+			<div class="team">
+				<div class="wrap">
+					<div class="team-head" id="why">
+						<h3>Why?</h3>
+						<p>We've all got our reasons.  Maybe one of these is yours.</p>
+						<ol class="white pink-text">
+							<li>
+								<h4>Pragmatist: Reality Dose</h4>
+								<p>Your lover has left you and wine can only carry you so far.  Sick of giving well wishes to the newly engaged and awkward smiles when your ex tells you just how happy they are?  It's okay, this time you can revel in your bitterness and know you're helping symbolise reality, not disney fairytales. Break a lock. Fuck love.</p>
+							</li>
+							<li>
+								<h4>Idealist: Love should be unburdened</h4>
+								<p>Think love should be free? We're not so different. Unshackle the burden of forever; give locks their freedom. Watch them arc gracefully into a river that has been full of sewage for centuries.  It's so romantic. Break a lock. Let love fly free.</p>
+							</li>
+							<li>
+								<h4>Good samaritan: aka coward</h4>
+								<p>You love Paris so much you let your dog shit everywhere and drown your depression in red wine. Love Locks are officially illegal. You want them gone, but you're too much a pussy to do it yourself. Lucky for you, we're not. Outsource your bravery: we'll save your bridge.</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!---//End-meet-our-team---->
+			<!---start-recent-works----->
+			<div class="recent-works" id="how">
+				<div class="wrap">
+					<div class="recent-works-head">
+						<h3>How?</h3>
+						<p>You really want to know how this works? You probably also think a toaster is magic, and immunisation is evil.
+						<br />Anyhow: only three steps to fuck love and break a lock.</p>
+						<ol class="white green-text">
+							<li>
+								<h4>You select a lock size</h4>
+								<p>You fill out the form, pay us money. Our computer goes 'ping', and we untangle ourselves from our French lover(s), or tax papers (depending on the day of the week).</p>
+							</li>
+							<li>
+								<h4>We cut the fucking lock</h4>
+								<p>We head to the love lock bridge. We unsheathe our boltcutters, and do God's work. Unless you chose a small lock. Then we'll probably just rip it off with our bare hands. We throw the fucking thing into the river.</p>
+							</li>
+							<li>
+								<h4>You watch your video</h4>
+								<p>A day or so later, when we've drunk the profits, you'll get sent a video of your outsourced-crime. You send it to your friends, and they send us drinking money, too. We all ruin Valentine's day.</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!---End-recent-works----->
 
-if (!Configure::read('debug')):
-	throw new NotFoundException();
-endif;
+			<!--- start-recent-posts----->
+			<div class="recent-posts" id="blog">
+				<div class="wrap">
+				<div class="recent-posts-head">
+					<h3>The Proof</h3>
+					<p>So, you really want to do it and brag to your friends, but you don't want to get ripped off. To be fair, we both know you're a professional skeptic. Qwell your fears. Here are some videos of us risking beatings from angry brides to deliver you service.</p>
+				</div>
+				<div class="post-grids">
+					<div class="post-grid">
+						<span onclick="location.href='#';"><a href="#"> </a></span>
+						<h4><a href="#">Death of tiny lock</a></h4>
+						<label>Get involved: click here</label>
+						<p>This is completely anti-climactic. This lock offered no resistance. If this lock was your boyfriend, two glasses of wine later and it'd fuck your best friend. Begone!</p>
+					</div>
+					<div class="post-grid">
+						<span onclick="location.href='#';"><a href="#"> </a></span>
+						<h4><a href="#">Highly-resistant love</a></h4>
+						<label>Kill a large lock now: click here</label>
+						<p>This was a really fucking annoying lock. Hardened shackle, quality brass. It's either true love, or someone was really fucking clingy and needy. Either way, it's dead.</p>
+					</div>
+					<div class="post-grid">
+						<span onclick="location.href='#';"><a href="#"> </a></span>
+						<h4><a href="#">Still-Warm Love</a></h4>
+						<label>Buy love's demise: click here</label>
+						<p>Barely had the newly-engaged hand placed this gorgeously engraved lock before we cut it the fuck off, and threw it into the river. This will probably get us stabbed.</p>
+					</div>
+					<div class="clear"> </div>
+					<div class="recent-posts-footer">
+						<p>Because we never learnt that posting videos of doing stupid things online is stupid, we'll upload, for your pleasure, a selection of videos to YouTube, until we are murdered in our sleep. In the meantime, check them out below.</p>
+					</div>
 
-App::uses('Debugger', 'Utility');
-?>
-<h2><?php echo __d('cake_dev', 'Release Notes for CakePHP %s.', Configure::version()); ?></h2>
-<p>
-	<?php echo $this->Html->link(__d('cake_dev', 'Read the changelog'), 'http://cakephp.org/changelogs/' . Configure::version()); ?>
-</p>
-<?php
-if (Configure::read('debug') > 0):
-	Debugger::checkSecurityKeys();
-endif;
-?>
-<?php if (file_exists(WWW_ROOT . 'css' . DS . 'cake.generic.css')): ?>
-	<p id="url-rewriting-warning" style="background-color:#e32; color:#fff;">
-		<?php echo __d('cake_dev', 'URL rewriting is not properly configured on your server.'); ?>
-		1) <a target="_blank" href="http://book.cakephp.org/2.0/en/installation/url-rewriting.html" style="color:#fff;">Help me configure it</a>
-		2) <a target="_blank" href="http://book.cakephp.org/2.0/en/development/configuration.html#cakephp-core-configuration" style="color:#fff;">I don't / can't use URL rewriting</a>
-	</p>
-<?php endif; ?>
-<p>
-<?php
-if (version_compare(PHP_VERSION, '5.2.8', '>=')):
-	echo '<span class="notice success">';
-		echo __d('cake_dev', 'Your version of PHP is 5.2.8 or higher.');
-	echo '</span>';
-else:
-	echo '<span class="notice">';
-		echo __d('cake_dev', 'Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP.');
-	echo '</span>';
-endif;
-?>
-</p>
-<p>
-	<?php
-	if (is_writable(TMP)):
-		echo '<span class="notice success">';
-			echo __d('cake_dev', 'Your tmp directory is writable.');
-		echo '</span>';
-	else:
-		echo '<span class="notice">';
-			echo __d('cake_dev', 'Your tmp directory is NOT writable.');
-		echo '</span>';
-	endif;
-	?>
-</p>
-<p>
-	<?php
-	$settings = Cache::settings();
-	if (!empty($settings)):
-		echo '<span class="notice success">';
-			echo __d('cake_dev', 'The %s is being used for core caching. To change the config edit %s', '<em>' . $settings['engine'] . 'Engine</em>', 'APP/Config/core.php');
-		echo '</span>';
-	else:
-		echo '<span class="notice">';
-			echo __d('cake_dev', 'Your cache is NOT working. Please check the settings in %s', 'APP/Config/core.php');
-		echo '</span>';
-	endif;
-	?>
-</p>
-<p>
-	<?php
-	$filePresent = null;
-	if (file_exists(APP . 'Config' . DS . 'database.php')):
-		echo '<span class="notice success">';
-			echo __d('cake_dev', 'Your database configuration file is present.');
-			$filePresent = true;
-		echo '</span>';
-	else:
-		echo '<span class="notice">';
-			echo __d('cake_dev', 'Your database configuration file is NOT present.');
-			echo '<br/>';
-			echo __d('cake_dev', 'Rename %s to %s', 'APP/Config/database.php.default', 'APP/Config/database.php');
-		echo '</span>';
-	endif;
-	?>
-</p>
-<?php
-if (isset($filePresent)):
-	App::uses('ConnectionManager', 'Model');
-	try {
-		$connected = ConnectionManager::getDataSource('default');
-	} catch (Exception $connectionError) {
-		$connected = false;
-		$errorMsg = $connectionError->getMessage();
-		if (method_exists($connectionError, 'getAttributes')):
-			$attributes = $connectionError->getAttributes();
-			if (isset($errorMsg['message'])):
-				$errorMsg .= '<br />' . $attributes['message'];
-			endif;
-		endif;
-	}
-	?>
-	<p>
-		<?php
-			if ($connected && $connected->isConnected()):
-				echo '<span class="notice success">';
-					echo __d('cake_dev', 'CakePHP is able to connect to the database.');
-				echo '</span>';
-			else:
-				echo '<span class="notice">';
-					echo __d('cake_dev', 'CakePHP is NOT able to connect to the database.');
-					echo '<br /><br />';
-					echo $errorMsg;
-				echo '</span>';
-			endif;
-		?>
-	</p>
-<?php
-endif;
+					<a class="morebtn popup-with-zoom-anim" href="#small-dialog1">More videos</a>
+				</div>
+				</div>
+			</div>
+			<!--- //End-recent-posts----->
+			<!---start-contact---->
+			<div class="contact signup" id="signup">
+				<div class="wrap">
+				<div class="contact-head">
+					<h3>Buy Now</h3>
+					<p>We're up to the all important part. You think it's a great idea. You want your own dedicated video. You secretly want to see us get arrested / punched for doing this.<p>
+					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
+					</p>
+				</div>
+				<form>
+					<div class="size-buttons">
+						<div class="small button grow badge-div">
+							<div class="price"><span class="sign">$</span>5</div>
+							<div class="badge fade"><img src="images/buy-small.png" alt="so small? that hardly even qualifies as love.." /></div>
+							<div class="label">small</div>
+						</div>
+						<div class="large button grow badge-div">
+							<div class="price"><span class="sign">$</span>15</div>
+							<div class="badge"><img src="images/buy-large.png" alt="good choice. let's fuck up true love." /></div>
+							<div class="label">huge</div>
+						</div>
+						<div class="medium button grow badge-div">
+							<div class="price"><span class="sign">$</span>9</div>
+							<div class="badge fade"><img src="images/buy-small.png" alt="you deserve bigger. other people would cut yours off." /></div>
+							<div class="label">regular</div>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="badge-comment" id="badge-comment">you need to select a size...</div>
+					<div class="signup-form">
+						<div class="security">
+							100% secure payment.
+							<img src="images/secure-payment.gif" />
+						</div>
+							<input type="text" placeholder="Name :">
+							<input type="text" placeholder="Email :">
+							<input type="text" placeholder="Credit Card Number :">
+							<input type="text" class="cvv" placeholder="CVV :">
+							<select class="exp_m">
+								<option>Exp. Month:</option>
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+							</select>
+							<select class="exp_y">
+								<option>Exp. Year:</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+							</select>
+							<textarea rows="2" cols="70" placeholder="Message :"></textarea>
+							<input type="submit" value="Buy Now" />
 
-App::uses('Validation', 'Utility');
-if (!Validation::alphaNumeric('cakephp')):
-	echo '<p><span class="notice">';
-		echo __d('cake_dev', 'PCRE has not been compiled with Unicode support.');
-		echo '<br/>';
-		echo __d('cake_dev', 'Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring');
-	echo '</span></p>';
-endif;
-?>
-
-<p>
-	<?php
-	if (CakePlugin::loaded('DebugKit')):
-		echo '<span class="notice success">';
-			echo __d('cake_dev', 'DebugKit plugin is present');
-		echo '</span>';
-	else:
-		echo '<span class="notice">';
-			echo __d('cake_dev', 'DebugKit is not installed. It will help you inspect and debug different aspects of your application.');
-			echo '<br/>';
-			echo __d('cake_dev', 'You can install it from %s', $this->Html->link('GitHub', 'https://github.com/cakephp/debug_kit'));
-		echo '</span>';
-	endif;
-	?>
-</p>
-
-<h3><?php echo __d('cake_dev', 'Editing this Page'); ?></h3>
-<p>
-<?php
-echo __d('cake_dev', 'To change the content of this page, edit: %s.<br />
-To change its layout, edit: %s.<br />
-You can also add some CSS styles for your pages at: %s.',
-	'APP/View/Pages/home.ctp', 'APP/View/Layouts/default.ctp', 'APP/webroot/css');
-?>
-</p>
-
-<h3><?php echo __d('cake_dev', 'Getting Started'); ?></h3>
-<p>
-	<?php
-	echo $this->Html->link(
-		sprintf('<strong>%s</strong> %s', __d('cake_dev', 'New'), __d('cake_dev', 'CakePHP 2.0 Docs')),
-		'http://book.cakephp.org/2.0/en/',
-		array('target' => '_blank', 'escape' => false)
-	);
-	?>
-</p>
-<p>
-	<?php
-	echo $this->Html->link(
-		__d('cake_dev', 'The 15 min Blog Tutorial'),
-		'http://book.cakephp.org/2.0/en/tutorials-and-examples/blog/blog.html',
-		array('target' => '_blank', 'escape' => false)
-	);
-	?>
-</p>
-
-<h3><?php echo __d('cake_dev', 'Official Plugins'); ?></h3>
-<p>
-<ul>
-	<li>
-		<?php echo $this->Html->link('DebugKit', 'https://github.com/cakephp/debug_kit') ?>:
-		<?php echo __d('cake_dev', 'provides a debugging toolbar and enhanced debugging tools for CakePHP applications.'); ?>
-	</li>
-	<li>
-		<?php echo $this->Html->link('Localized', 'https://github.com/cakephp/localized') ?>:
-		<?php echo __d('cake_dev', 'contains various localized validation classes and translations for specific countries'); ?>
-	</li>
-</ul>
-</p>
-
-<h3><?php echo __d('cake_dev', 'More about CakePHP'); ?></h3>
-<p>
-<?php echo __d('cake_dev', 'CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.'); ?>
-</p>
-<p>
-<?php echo __d('cake_dev', 'Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.'); ?>
-</p>
-
-<ul>
-	<li><a href="http://cakephp.org">CakePHP</a>
-	<ul><li><?php echo __d('cake_dev', 'The Rapid Development Framework'); ?></li></ul></li>
-	<li><a href="http://book.cakephp.org"><?php echo __d('cake_dev', 'CakePHP Documentation'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Your Rapid Development Cookbook'); ?></li></ul></li>
-	<li><a href="http://api.cakephp.org"><?php echo __d('cake_dev', 'CakePHP API'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Quick API Reference'); ?></li></ul></li>
-	<li><a href="http://bakery.cakephp.org"><?php echo __d('cake_dev', 'The Bakery'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Everything CakePHP'); ?></li></ul></li>
-	<li><a href="http://plugins.cakephp.org"><?php echo __d('cake_dev', 'CakePHP Plugins'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'A comprehensive list of all CakePHP plugins created by the community'); ?></li></ul></li>
-	<li><a href="http://community.cakephp.org"><?php echo __d('cake_dev', 'CakePHP Community Center'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Everything related to the CakePHP community in one place'); ?></li></ul></li>
-	<li><a href="https://groups.google.com/group/cake-php"><?php echo __d('cake_dev', 'CakePHP Google Group'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Community mailing list'); ?></li></ul></li>
-	<li><a href="irc://irc.freenode.net/cakephp">irc.freenode.net #cakephp</a>
-	<ul><li><?php echo __d('cake_dev', 'Live chat about CakePHP'); ?></li></ul></li>
-	<li><a href="https://github.com/cakephp/"><?php echo __d('cake_dev', 'CakePHP Code'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Find the CakePHP code on GitHub and contribute to the framework'); ?></li></ul></li>
-	<li><a href="https://github.com/cakephp/cakephp/issues"><?php echo __d('cake_dev', 'CakePHP Issues'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'CakePHP Issues'); ?></li></ul></li>
-	<li><a href="https://github.com/cakephp/cakephp/wiki#roadmaps"><?php echo __d('cake_dev', 'CakePHP Roadmaps'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'CakePHP Roadmaps'); ?></li></ul></li>
-	<li><a href="http://training.cakephp.org"><?php echo __d('cake_dev', 'Training'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Join a live session and get skilled with the framework'); ?></li></ul></li>
-	<li><a href="http://cakefest.org"><?php echo __d('cake_dev', 'CakeFest'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Don\'t miss our annual CakePHP conference'); ?></li></ul></li>
-	<li><a href="http://cakefoundation.org"><?php echo __d('cake_dev', 'Cake Software Foundation'); ?> </a>
-	<ul><li><?php echo __d('cake_dev', 'Promoting development related to CakePHP'); ?></li></ul></li>
-</ul>
+					</div>
+				</form>
+			</div>
+			</div>
