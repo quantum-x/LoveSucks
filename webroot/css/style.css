@@ -887,6 +887,35 @@ ol ol li:last-child {margin-bottom:0;}
 	font-family: 'open_sansregular';
 	margin-bottom: 1em;
 }
+.signup-form .form-element {
+	position: relative;
+	display: inline;
+}
+.signup-form select {
+	margin-bottom: 2em;
+}
+.signup-form label {
+	border: 5px solid red;
+	position: absolute;
+	top:4em;
+	left: 0;
+	
+	background: #656565;
+	font-style: italic;
+	padding: 0.5em 0.6em;
+	font-size: 0.8em;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	width: 90%;
+	border: none;
+	outline: none;
+	color: #b9b9b9;
+	font-family: 'open_sansregular';
+	margin-bottom: 1em;	
+}
+
 .signup-form input.cvv[type="text"]  {
 	width: 20% !important;
 	display: inline-block;
@@ -1497,6 +1526,14 @@ ol ol li:last-child {margin-bottom:0;}
 		-o-border-radius: 0.3em;
 		font-size:1em;
 	}	
+	.signup-form select {
+		margin-bottom: 2.9em;
+	}	
+	
+	.signup-form label {
+		top: 3.5em;
+	}	
+	
 	.footer-left {
 		float: none;
 		text-align:center;

@@ -55,6 +55,7 @@ class AppController extends Controller {
         //checking the browsers language when there's no language session
         //Set the language variables
         $this->_setupLanguage();
+        $this->_setupLocale();
 
     }
 
@@ -100,12 +101,12 @@ class AppController extends Controller {
             if(!$this->Session->check('Config.language')){
                 //checking the 1st favorite language of the user's browser
                 $browserLanguage = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-                if ($this->_checkLanguageAvailable) {
-                    $targetLang = $browserLanguage;
+                $availLang = $this->_checkLanguageAvailable($browserLanguage);
+                if ($availLang !== false) {
+                    $targetLang = $availLang;
                 } else {
                     $targetLang = Configure::read('Config.default_language');
                 }
-
                 //User's profile setting overrules most things
                 if (isset($this->User)) {
                     $targetLang = $this->User['Language']['locale'];
@@ -146,10 +147,40 @@ class AppController extends Controller {
      */
     protected function _checkLanguageAvailable($lang) {
         if (in_array($lang, $this->Session->read('Config.available_locales'))) {
-            return true;
+            return $lang;
         } else {
+            //Check for partial matches
+            foreach ($this->Session->read('Config.available_locales') as $locale) {
+                if (strtoupper($lang) == substr(strtoupper($locale), 0, 2)) {
+                    return $locale;
+                }
+            }
             return false;
         }
+    }
+
+    protected function _setupLocale() {
+        $this->set('months_list', $this->_getMonths($this->_getCurrentLang()));
+        $this->set('years_list', range(date('Y'), date('Y')+8));
+    }
+
+    protected function _getMonths($locale)
+    {
+        /**
+         *  Return the localized name of the given month
+         *
+         *  @author Lucas Malor
+         *  @param string $locale The locale identifier (for example 'en_US')
+         *  @param int $monthnum The month as number
+         *  @return string The localized string
+         */
+
+        $fmt = new IntlDateFormatter($locale, IntlDateFormatter::LONG,
+                                     IntlDateFormatter::NONE);
+
+        $fmt->setPattern('MMMM');
+        foreach (range(1,12) as $month) $returnArray[$month] =  $fmt->format(mktime(1, 1, 1, $month, 5, 1970));
+        return $returnArray;
     }
 
     public function add() {

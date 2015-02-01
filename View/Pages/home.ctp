@@ -126,7 +126,10 @@
 					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
 					</p>
 				</div>
-				<form>
+				<?php $this->Form->create('User', array('action' => 'purchase', 'inputDefaults' => array(
+                                                                                    'label' => false,
+                                                                                    'div' => false
+                                                                                ))); ?>
 					<div class="size-buttons">
 						<div class="small button grow badge-div">
 							<div class="price"><span class="sign">$</span>5</div>
@@ -151,22 +154,31 @@
 							100% secure payment.
 							<img src="images/secure-payment.gif" />
 						</div>
-							<input type="text" placeholder="Name :">
 							<input type="text" placeholder="Email :">
 							<input type="text" placeholder="Credit Card Number :">
 							<input type="text" class="cvv" placeholder="CVV :">
-							<select class="exp_m">
-								<option>Exp. Month:</option>
-								<option>January</option>
-								<option>February</option>
-								<option>March</option>
-							</select>
-							<select class="exp_y">
-								<option>Exp. Year:</option>
-								<option>2015</option>
-								<option>2016</option>
-								<option>2017</option>
-							</select>
+							<?php
+                                echo $this->Form->input('cc_expiry_m', array(
+                                    'options' => $months_list,
+                                    'placeholder' => 'Exp. Month',
+                                    'dateFormat' => 'M',
+                                    'minMonth' => 1,
+                                    'maxMonth' => 2,
+                                    'class' => 'exp_m',
+                                    'label' => 'YO',
+                                    'div' => 'form-element'
+                                ));
+							?>
+							<?php
+                                echo $this->Form->input('cc_expiry_m', array(
+                                    'options' => $years_list,
+                                    'placeholder' => 'Exp. Year',
+                                    'dateFormat' => 'Y',
+                                    'minYear' => date('Y'),
+                                    'maxYear' => date('Y') + 10,
+                                    'class' => 'exp_y'
+                                ));
+							?>
 							<textarea rows="2" cols="70" placeholder="Message :"></textarea>
 							<input type="submit" value="Buy Now" />
 
