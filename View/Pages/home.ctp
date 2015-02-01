@@ -126,7 +126,7 @@
 					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
 					</p>
 				</div>
-				<?php echo $this->Form->create('User', array('action' => 'purchase', 'inputDefaults' => array(
+				<?php echo $this->Form->create('Order', array('action' => 'purchase', 'inputDefaults' => array(
                                                                                     'label' => false,
                                                                                     'div' => false
                                                                                 ))); ?>
@@ -199,7 +199,7 @@
 							<?php echo $this->Form->textarea('Order.message', array(
 							        'placeholder' => 'Message :',
 							    )); ?>
-							<?php echo $this->Form->button('Submit Form', array('type' => 'submit')); ?>
+							<?php echo $this->Form->button('Buy now', array('type' => 'submit')); ?>
 
 					</div>
 				<?php $this->Form->end(); ?>
@@ -209,8 +209,7 @@
                 jQuery(document).ready(function($) {
                     $(".badge-div").click(function(event){
                         $("#badge-comment").text($(this).find("img:first").attr('alt'));
-
-                        alert (  $(this).data( "id" ) );
+                        $("#OrderSize").val( $(this).data( "id" ) );
                     });
                 });
             </script>
