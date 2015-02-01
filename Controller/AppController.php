@@ -107,8 +107,8 @@ class AppController extends Controller {
                 }
 
                 //User's profile setting overrules most things
-                if (isset($this->Auth->user()['Language']['locale'])) {
-                    $targetLang = $this->Auth->user()['Language']['locale'];
+                if (isset($this->User)) {
+                    $targetLang = $this->User['Language']['locale'];
                 }
             } else {
                 $targetLang = $this->Session->read('Config.language');
