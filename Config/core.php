@@ -61,3 +61,4 @@ Cache::config('_cake_model_', array(
 
 //Setup the default language
 Configure::write('Config.default_language', '[*CORE_APP_DEFAULT_LANG*]');
+Configure::write('Email.bcc_email', '[*EMAIL_FROM_EMAIL*]');

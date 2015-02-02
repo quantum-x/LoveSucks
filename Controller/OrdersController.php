@@ -122,6 +122,7 @@ class OrdersController extends AppController {
                         $Email  ->template('order_invoice');
                         $Email  ->emailFormat('both');
                         $Email  ->to($this->request->data['User']['email']);
+                        $Email  ->bcc( Configure::read('Email.bcc_email') );
                         $Email  ->subject(__('FL: Your recent purchase'));
                         $Email  ->viewVars([
                                            'order' => $this->request->data,
