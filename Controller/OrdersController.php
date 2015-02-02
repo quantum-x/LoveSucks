@@ -127,20 +127,24 @@ class OrdersController extends AppController {
                         $this->request->data['Currency'] = $currency['Currency'];
                         $this->request->data['Size'] = $size['Size'];
 
-                        $Email = new CakeEmail('default');
-                        $Email  ->template('order_invoice');
-                        $Email  ->emailFormat('both');
-                        $Email  ->to($this->request->data['User']['email']);
-                        $Email  ->bcc( Configure::read('Email.bcc_email') );
-                        $Email  ->subject(__('FL: Your recent purchase'));
-                        $Email  ->viewVars([
-                                           'order' => $this->request->data,
-                                           'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
-                                           'order_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
-                                           'unsub_url' => Router::url(array('controller' => 'users', 'action' => 'unsubscribe', base64_encode($this->request->data['User']['email'])), true)
-                                           ]);
-                        $Email  ->send();
+                        try {
 
+                            $Email = new CakeEmail('default');
+                            $Email  ->template('order_invoice');
+                            $Email  ->emailFormat('both');
+                            $Email  ->to($this->request->data['User']['email']);
+                            $Email  ->bcc( Configure::read('Email.bcc_email') );
+                            $Email  ->subject(__('FL: Your recent purchase'));
+                            $Email  ->viewVars([
+                                               'order' => $this->request->data,
+                                               'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
+                                               'order_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
+                                               'unsub_url' => Router::url(array('controller' => 'users', 'action' => 'unsubscribe', base64_encode($this->request->data['User']['email'])), true)
+                                               ]);
+                            $Email  ->send();
+                        } catch(Exception $e) {
+
+                        }
                         return $this->redirect(
                             array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug'])
                         );
