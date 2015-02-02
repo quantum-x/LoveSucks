@@ -35,16 +35,10 @@ class AppController extends Controller {
 
 
     public $components = array(
-        'Session',
-        'Security' => ['csrfExpires' => '+1 hour']
+        'Session'
     );
 
     public function beforeFilter() {
-        $this->Security->requirePost('delete');
-        $this->Security->requirePost('add');
-        $this->Security->requirePost('edit');
-        $this->Security->requirePost('purchase');
-
         //Set the language
         //checking the browsers language when there's no language session
         //Set the language variables
