@@ -18,7 +18,7 @@
 				<div class="wrap">
 				<div class="top-header">
 					<div class="logo">
-						<a href="index.html">Fuck Love</a>
+						<a href="<?php echo Router::url('/') ?>">Fuck Love</a>
 					</div>
 					<div class="top-nav">
 						<ul>

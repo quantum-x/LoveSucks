@@ -116,7 +116,7 @@ class OrdersController extends AppController {
                 //Prepare to save everything
                 unset($this->request->data['CreditCard']);
                 if ($this->Order->saveAll( $this->request->data)) {
-                    $this->request->data['Order']['id'] = $this->Order->getInsertID();
+                    //$this->request->data['Order']['id'] = $this->Order->getInsertID();
                     //Send the email..
                     $Email = new CakeEmail('default');
                     $Email  ->template('order_invoice');
@@ -126,6 +126,7 @@ class OrdersController extends AppController {
                     $Email  ->viewVars([
                                        'order' => $this->request->data,
                                        'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
+                                       'order_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
                                        'unsub_url' => Router::url(array('controller' => 'users', 'action' => 'unsubscribe', base64_encode($this->request->data['User']['email'])), true)
                                        ]);
                     $Email  ->send();
