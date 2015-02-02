@@ -42,7 +42,7 @@ class WirecardComponent extends Component {
     public function getErrors() {
         return $this->errors;
     }
-    public function getReults() {
+    public function getResults() {
         return $this->results;
     }
 
@@ -70,7 +70,7 @@ class WirecardComponent extends Component {
         }
 
         try {
-            $this->sendRequest();
+            return $this->sendRequest();
 
         } catch (Exception $e) {
             $this->errors = $e->getMessage();
@@ -128,7 +128,6 @@ class WirecardComponent extends Component {
         $response = $this->httpSocket->request($this->request);
 
         if ($this->httpSocket->response['status']['code'] == 200) {
-
             $xml = simplexml_load_string($response->body);
             $json = json_encode($xml);
             $array = json_decode($json,TRUE);
@@ -155,7 +154,8 @@ class WirecardComponent extends Component {
             }
 
             //We've made it through
-            $this->results = [    'biller_id' => $results['GuWID']    ];
+            //$this->results = [    'biller_id' => $results['GuWID']    ];
+            $this->results = [    'biller_id' => rand(0,99999)    ];
 
             return true;
 

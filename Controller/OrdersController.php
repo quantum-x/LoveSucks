@@ -53,6 +53,7 @@ class OrdersController extends AppController {
                 //If they've got an EU locale, it's going to be EUR
                 //If not, USD
                 $this->loadModel('Currency');
+                $this->loadModel('Size');
                 $this->loadModel('Status');
                 $this->loadModel('User');
                 $this->loadModel('Order');
@@ -64,15 +65,19 @@ class OrdersController extends AppController {
                 } else {
                     $currency = "EUR";
                 }
-                $currency_id = $this->Currency->find('first',['fields' => 'Currency.id', 'conditions' => ['currency' => $currency], 'recursive' => -1])['Currency']['id'];
+                $currency = $this->Currency->find('first',['conditions' => ['currency' => $currency], 'recursive' => -1]);
 
                 //Find the price for this size + currency
-                $price = $this->Price->find('first',['fields' => 'Price.price', 'conditions' => ['currency_id' => $currency_id, 'size_id' => $this->request->data['Order']['size_id']], 'recursive' => -1])['Price']['price'];
+                $price = $this->Price->find('first',['fields' => 'Price.price', 'conditions' => ['currency_id' => $currency['Currency']['id'], 'size_id' => $this->request->data['Order']['size_id']], 'recursive' => -1])['Price']['price'];
+
+                //Find the size data
+                $size = $this->Size->find('first',['conditions' => ['id' => $this->request->data['Order']['size_id']], 'recursive' => -1]);
+
 
                 $data = [   'amount' => $price,
                             'transaction_id' => $this->createUniqueID(),
-                            'currency' => $currency,
-                            'currency_id' => $currency_id,
+                            'currency' => $currency['Currency']['currency'],
+                            'currency_id' => $currency['Currency']['id'],
                             'ip' => $_SERVER['REMOTE_ADDR'],
                             'country_code' => 'US',
                             'card' => [ 'number' => $this->request->data['CreditCard']['card_number'],
@@ -106,9 +111,9 @@ class OrdersController extends AppController {
 
                 //Check to see if we already have this user. If we do, we'll update their details
                 $user_id = $this->User->find('first',['fields' => 'User.id', 'conditions' => ['email' => $this->request->data['User']['email']],
-                                           'recursive' => -1])['User']['id'];
-                if ($user_id !== false)    {
-                    $this->request->data['User']['id'] = $user_id;
+                                           'recursive' => -1]);
+                if (!empty($user_id) && isset($user_id['User']['id']) !== false)    {
+                    $this->request->data['User']['id'] = $user_id['User']['id'];
                 }
 
                 //Prepare to save everything
@@ -118,6 +123,10 @@ class OrdersController extends AppController {
                     if ($result === true) {
                         //$this->request->data['Order']['id'] = $this->Order->getInsertID();
                         //Send the email..
+                        //Add the currency info + size info
+                        $this->request->data['Currency'] = $currency['Currency'];
+                        $this->request->data['Size'] = $size['Size'];
+
                         $Email = new CakeEmail('default');
                         $Email  ->template('order_invoice');
                         $Email  ->emailFormat('both');

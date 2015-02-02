@@ -229,7 +229,7 @@
                     <?php }  ?>
                     $(".badge-div").click(function(event){
                         $("#badge-comment").text($(this).find("img:first").attr('alt'));
-                        $("#OrderSize").val( $(this).data( "id" ) );
+                        $("#OrderSizeId").val( $(this).data( "id" ) );
                     });
                 });
             </script>
