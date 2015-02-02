@@ -119,17 +119,23 @@
 			<!--- //End-recent-posts----->
 			<!---start-contact---->
 			<div class="contact signup" id="signup">
-				<div class="wrap">
+				<div class="wrap" id="signup-top">
 				<div class="contact-head">
 					<h3>Buy Now</h3>
 					<p>We're up to the all important part. You think it's a great idea. You want your own dedicated video. You secretly want to see us get arrested / punched for doing this.<p>
 					<p>Only you can make it happen. Select a lock size, fill out the form, and make it so.
 					</p>
+
+					 <?php if (isset($hasErrors)) { ?>
+                        <div class="general-error">
+                            There was  problem processing your form - please double check the data below..
+                        </div>
+					 <?php } ?>
 				</div>
-				<?php echo $this->Form->create('Order', array('action' => 'add', 'inputDefaults' => array(
-                                                                                    'label' => false,
-                                                                                    'div' => false
-                                                                                ))); ?>
+				<?php echo $this->Form->create('Order', array( 'inputDefaults' => array(
+                                                                                        'label' => false,
+                                                                                        'div' => false
+                                                                                    ))); ?>
 					<div class="size-buttons">
 						<div class="small button grow badge-div" data-id="<?php echo array_search('small', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>5</div>
@@ -157,19 +163,22 @@
                             }
                         ?>
 					</div>
-					<div class="signup-form">
+					<div class="signup-form" id="signup-form">
 						<div class="security">
 							100% secure payment.
 							<img src="images/secure-payment.gif" />
 						</div>
-							<?php echo $this->Form->text('User.name', array(
+							<?php echo $this->Form->input('User.name', array(
 							        'placeholder' => 'Name :',
+							        'div' => 'form-element',
 							    )); ?>
-							<?php echo $this->Form->text('User.email', array(
+							<?php echo $this->Form->input('User.email', array(
 							        'placeholder' => 'Email :',
+							        'div' => 'form-element',
 							    )); ?>
-							<?php echo $this->Form->text('CreditCard.card_number', array(
+							<?php echo $this->Form->input('CreditCard.card_number', array(
 							        'placeholder' => 'Credit Card Number :',
+							        'div' => 'form-element',
 							    )); ?>
 							<?php
                                 echo $this->Form->input('CreditCard.cvv', array(
@@ -192,12 +201,9 @@
                                 ));
 							?>
 							<?php
-                                echo $this->Form->input('CreditCard.exp_v', array(
+                                echo $this->Form->input('CreditCard.exp_y', array(
                                     'options' => $years_list,
                                     'placeholder' => 'Exp. Year',
-                                    'dateFormat' => 'Y',
-                                    'minYear' => date('Y'),
-                                    'maxYear' => date('Y') + 10,
                                     'class' => 'exp_y',
                                     'label' => 'Card Expiry Year',
                                     'div' => 'form-element'
@@ -218,6 +224,9 @@
 			</div>
             <script type="text/javascript">
                 jQuery(document).ready(function($) {
+                    <?php if (isset($hasErrors)) { ?>
+                        $(window).scrollTop($('#signup-top').offset().top);
+                    <?php }  ?>
                     $(".badge-div").click(function(event){
                         $("#badge-comment").text($(this).find("img:first").attr('alt'));
                         $("#OrderSize").val( $(this).data( "id" ) );

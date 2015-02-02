@@ -67,11 +67,18 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'qx',
-		'password' => '3dwe45',
-		'database' => 'fucklove',
+		'host' => '[*DB_HOST_MASTER*]',
+		'login' => '[*DB_USER*]',
+		'password' => '[*DB_PASS*]',
+		'database' => '[*DB_NAME*]',
 		'prefix' => '',
-		'encoding' => 'utf8',
+		'encoding' => '[*DB_CHARSET*]',
 	);
+
+    public $wirecard = array(
+        'datasource' => 'Wirecard.WirecardSource',
+        'business_case' => '[*WC_BUSINESS_CASE*]',
+        'password' => '[*WC_PASSWORD*]',
+        'business_signature' => '[*WC_BUSINESS_SIGNATURE*]',
+    );
 }

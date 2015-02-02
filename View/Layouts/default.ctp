@@ -5,8 +5,6 @@
 		<title>Fuck Love: Ruin someone's happiness for your own.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="/images/fave-icon.png" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
    		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
    		<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<script src="/js/modernizr.custom.28468.js"></script>
@@ -69,10 +67,15 @@
 					<script type="text/javascript" src="/js/easing.js"></script>
 					<script type="text/javascript">
 						jQuery(document).ready(function($) {
-							$(".scroll").click(function(event){		
+							$(".scroll").click(function(event){
 								event.preventDefault();
 								$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 							});
+
+							//Check to see if we have a flash element
+							if ($('#flashMessage').length) {
+							    $('#flashMessage').delay(5000).fadeOut(400)
+							}
 						});
 					</script>
 					<!----move-top-path---->

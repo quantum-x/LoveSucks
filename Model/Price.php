@@ -1,22 +1,19 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Order Model
+ * Price Model
  *
- * @property Transaction $Transaction
- * @property Video $Video
- * @property User $User
  * @property Size $Size
- * @property Status $Status
+ * @property Currency $Currency
  */
-class Order extends AppModel {
+class Price extends AppModel {
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'price';
 
 /**
  * Validation rules
@@ -25,6 +22,24 @@ class Order extends AppModel {
  */
 	public $validate = array(
 		'size_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'price' => array(
+			'decimal' => array(
+				'rule' => array('decimal'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -34,29 +49,9 @@ class Order extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'status_id' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'created' => array(
-			'datetime' => array(
-				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'modified' => array(
-			'datetime' => array(
-				'rule' => array('datetime'),
+		'currency_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -69,47 +64,11 @@ class Order extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * hasOne associations
- *
- * @var array
- */
-	public $hasOne = array(
-		'Transaction' => array(
-			'className' => 'Transaction',
-			'foreignKey' => 'order_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Video' => array(
-			'className' => 'Video',
-			'foreignKey' => 'order_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-        'CreditCard' => array(
-            'className' => 'CreditCard',
-            'foreignKey' => 'order_id',
-            'conditions' => '',
-            'fields' => '',
-            'order' => ''
-        )
-	);
-
-/**
  * belongsTo associations
  *
  * @var array
  */
 	public $belongsTo = array(
-		'User' => array(
-			'className' => 'User',
-			'foreignKey' => 'user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
 		'Size' => array(
 			'className' => 'Size',
 			'foreignKey' => 'size_id',
@@ -117,9 +76,9 @@ class Order extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Status' => array(
-			'className' => 'Status',
-			'foreignKey' => 'status_id',
+		'Currency' => array(
+			'className' => 'Currency',
+			'foreignKey' => 'currency_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

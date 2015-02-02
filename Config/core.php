@@ -21,6 +21,9 @@ Configure::write('Security.salt', '[*CORE_SECURITY_SALT*]');
 Configure::write('Security.wifi_salt', '[*CORE_SECURITY_WIFI_SALT*]');
 Configure::write('Security.cipherSeed', '[*CORE_SECURITY_CIPHERSEED*]');
 
+Configure::write('Wirecard.case','[*WC_BUSINESS_CASE*]');
+Configure::write('Wirecard.password','[*WC_PASSWORD*]');
+Configure::write('Wirecard.signature','[*WC_BUSINESS_SIGNATURE*]');
 
 Cache::config('default', array(
                               'engine' => 'Memcached', //[required]

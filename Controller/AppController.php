@@ -20,7 +20,6 @@
  */
 
 App::uses('Controller', 'Controller');
-App::uses('CrudControllerTrait', 'Crud.Lib');
 App::uses('CakeTime', 'Utility');
 
 /**
@@ -33,14 +32,9 @@ App::uses('CakeTime', 'Utility');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    use CrudControllerTrait;
+
 
     public $components = array(
-        'Crud.Crud' => array(
-            'actions' => array(
-                'index', 'add', 'edit', 'view', 'delete'
-            )
-        ),
         'Session',
         'Security' => ['csrfExpires' => '+1 hour']
     );
@@ -164,7 +158,9 @@ class AppController extends Controller {
 
     protected function _setupLocale() {
         $this->set('months_list', $this->_getMonths($this->_getCurrentLang()));
-        $this->set('years_list', range(date('Y'), date('Y')+8));
+
+        $years = range(date('Y'), date('Y')+10);
+        $this->set('years_list', array_combine($years,$years));
     }
 
     protected function _getMonths($locale)
@@ -186,51 +182,5 @@ class AppController extends Controller {
         return $returnArray;
     }
 
-    public function add() {
-        $this->Crud->on('setFlash', function(CakeEvent $event) {
-            //Check to see if we've got errors
-            if (isset($event->subject->params['class']))    {
-                if (strpos($event->subject->params['class'],'error') !== false)    {
-                    //The error is set - now we set our custom class.
-                    $event->subject->element = 'alert_error';
-                } elseif (strpos($event->subject->params['class'],'success') !== false)    {
-                    $event->subject->element = 'alert_success';
-                }
-            }
-        });
-
-        return $this->Crud->execute();
-    }
-
-    public function edit($id) {
-        $this->Crud->on('setFlash', function(CakeEvent $event) {
-            //Check to see if we've got errors
-            if (isset($event->subject->params['class']))    {
-                if (strpos($event->subject->params['class'],'error') !== false)    {
-                    //The error is set - now we set our custom class.
-                    $event->subject->element = 'alert_error';
-                } elseif (strpos($event->subject->params['class'],'success') !== false)    {
-                    $event->subject->element = 'alert_success';
-                }
-            }
-        });
-
-        return $this->Crud->execute();
-    }
-    public function delete($id) {
-        $this->Crud->on('setFlash', function(CakeEvent $event) {
-            //Check to see if we've got errors
-            if (isset($event->subject->params['class']))    {
-                if (strpos($event->subject->params['class'],'error') !== false)    {
-                    //The error is set - now we set our custom class.
-                    $event->subject->element = 'alert_error';
-                } elseif (strpos($event->subject->params['class'],'success') !== false)    {
-                    $event->subject->element = 'alert_success';
-                }
-            }
-        });
-
-        return $this->Crud->execute();
-    }
 
 }

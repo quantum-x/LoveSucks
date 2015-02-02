@@ -26,6 +26,7 @@
 Cache::config('default', array('engine' => 'File'));
 CakePlugin::load('Crud');
 CakePlugin::load('Linkable');
+CakePlugin::load('Wirecard');
 Configure::write('Dispatcher.filters', array(
                                             'AssetDispatcher',
                                             'CacheDispatcher'
