@@ -16,6 +16,11 @@ class VideosController extends AppController {
      */
     public $components = array('Paginator');
 
+    public $helpers = array('Cache');
+    public $cacheAction = array(
+        'view' => "+5 days",
+    );
+
     public function view($_order_slug) {
         //Loads up an order via slug
         //Clean it up.

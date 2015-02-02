@@ -14,19 +14,17 @@ class OrdersController extends AppController {
      *
      * @var array
      */
+
     public $components = array('Paginator','Wirecard.Wirecard');
 
-    public function beforeFilter() {
-        $this->Security->blackHoleCallback = 'blackhole';
-
-        parent::beforeFilter();
-    }
-
-    public function blackhole($type) {
-        //var_dump($type);
-    }
+    public $helpers = array('Cache');
+    public $cacheAction = array(
+        'view' => "+1 hour",
+        'add' => "+1 day"
+    );
 
     public function view($_order_slug) {
+
         //Loads up an order via slug
         //Clean it up.
         $order_slug = preg_replace('`[^0-9a-zA-Z_-]`','', $_order_slug);
