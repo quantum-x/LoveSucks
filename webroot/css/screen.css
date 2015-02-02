@@ -16,7 +16,7 @@
   position: relative;
   margin: -30px auto;
   overflow: hidden;
-  background: transparent url(../images/waves.png) repeat 0% 0;
+  background: transparent url(/images/waves.png) repeat 0% 0;
   -webkit-transition: background-position 1.4s ease-in-out;
   -webkit-transition-delay: 0.3s;
   -moz-transition: background-position 1.4s ease-in-out 0.3s;
@@ -105,7 +105,7 @@
 	height: 32px;
 	margin: 3px;
 	cursor: pointer;
-	background: url(../images/slider-pagenate.png) no-repeat -49px 2px;
+	background: url(/images/slider-pagenate.png) no-repeat -49px 2px;
    }
     .da-dots span.da-dots-current:after {
       content: '';
@@ -115,7 +115,7 @@
       top:0px;
       left:0px;
       /* non-css3 */
-      background: url(../images/slider-pagenate.png) no-repeat 0px 2px;
+      background: url(/images/slider-pagenate.png) no-repeat 0px 2px;
       /* for ie */
       *zoom: 1;
       /* css3 */

@@ -24,31 +24,31 @@ img{max-width:100%;}
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    src: url('/fonts/OpenSans-Regular-webfont.eot');
+    src: url('/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'script';
-    src: url('../fonts/kaushanscript-regular-webfont.eot');
-    src: url('../fonts/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/kaushanscript-regular-webfont.woff') format('woff'),
-         url('../fonts/kaushanscript-regular-webfont.ttf') format('truetype'),
-         url('../fonts/kaushanscript-regular-webfont.svg#open_sansregular') format('svg');
+    src: url('/fonts/kaushanscript-regular-webfont.eot');
+    src: url('/fonts/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/kaushanscript-regular-webfont.woff') format('woff'),
+         url('/fonts/kaushanscript-regular-webfont.ttf') format('truetype'),
+         url('/fonts/kaushanscript-regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'trump_town_proregular';
-    src: url('../fonts/Trump_Town_Pro-webfont.eot');
-    src: url('../fonts/Trump_Town_Pro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Trump_Town_Pro-webfont.woff') format('woff'),
-         url('../fonts/Trump_Town_Pro-webfont.ttf') format('truetype'),
-         url('../fonts/Trump_Town_Pro-webfont.svg#trump_town_proregular') format('svg');
+    src: url('/fonts/Trump_Town_Pro-webfont.eot');
+    src: url('/fonts/Trump_Town_Pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Trump_Town_Pro-webfont.woff') format('woff'),
+         url('/fonts/Trump_Town_Pro-webfont.ttf') format('truetype'),
+         url('/fonts/Trump_Town_Pro-webfont.svg#trump_town_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -116,13 +116,13 @@ ol.blue  > li:before {
 	
 	font-size: 32px !important;
 	font-family: trebuchet ms,'open_sansregular';
-	font-weight: 900;	
+	font-weight: 900;
 
 	border-radius: 50%;
     width: 36px;
     height: 36px;
     padding: 8px;
-    text-align: center;		
+    text-align: center;
 }
 ol.white {
 	margin-top: 2em;
@@ -139,16 +139,16 @@ ol.white-text  > li:before {
 ol.white  > li:before {
     background: #fff;
     border: 2px solid #fff;
-	
+
 	font-size: 46px !important;
 	font-family: trebuchet ms,'open_sansregular';
-	font-weight: 400;	
+	font-weight: 400;
 
 	border-radius: 50%;
     width: 56px;
     height: 56px;
     padding: 10px;
-    text-align: center;		
+    text-align: center;
 }
 
 li ol,
@@ -180,11 +180,11 @@ ol ol li:last-child {margin-bottom:0;}
 	padding-bottom: 0;
 }
 .header{
-	background: url(../images/header-bg.jpg);
+	background: url(/images/header-bg.jpg);
 	min-height: 120px;
 }
 .header-footer{
-	background: url(../images/header-bg.gif);
+	background: url(/images/header-bg.gif);
 	background-repeat: repeat-x;
 	max-height: 48px;
 }
@@ -214,7 +214,7 @@ ol ol li:last-child {margin-bottom:0;}
 .top-nav li.active> a, .top-nav li> a:hover {
 	color: #A5D3DB;
 	background:#3A494C;
-	
+
 }
 .da-title h3{
 	width:50%;
@@ -253,11 +253,11 @@ ol ol li:last-child {margin-bottom:0;}
 .top-service-grid a span, .top-service-grid h3 {
 	font-size: 1.5em;
 	color: #323232;
-	font-family: trebuchet ms,'open_sansregular';
+	font-family: 'open_sansregular',trebuchet ms;
 	font-weight: 900;
 	margin:1em 0 .6em 0;
 	display:inline-block;
-}  
+}
 .top-service-grid p{
 	color:#5E5E5E;
 	line-height:1.5em;
@@ -272,7 +272,7 @@ ol ol li:last-child {margin-bottom:0;}
 }
 /*---start-gallery-----*/
 .recent-works {
-	background: url(../images/portfolio-bg.jpg) no-repeat;
+	background: url(/images/portfolio-bg.jpg) no-repeat;
 	padding: 4em 0;
 }
 .gallery{
@@ -281,7 +281,7 @@ ol ol li:last-child {margin-bottom:0;}
 #info {
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
-	border-radius:5px;				
+	border-radius:5px;
 	background:#fcf8e3;
 	border:1px solid  #fbeed5;
 	width:95%;
@@ -302,16 +302,16 @@ ol ol li:last-child {margin-bottom:0;}
 #info a {
 	color:#c09853;
 	text-decoration:none;
-}	
+}
 #info p {
 	margin:5px 0 0 0;
 }
-.container { 
-	position: relative; 
+.container {
+	position: relative;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
-	transition: all 1s ease;	
+	transition: all 1s ease;
 }
 #filters {
 	margin:1% auto 5% auto;
@@ -491,7 +491,7 @@ ol ol li:last-child {margin-bottom:0;}
 	width: 339px;
 	height: 270px;
 	display: block;
-	background: url(../images/blog-pic1.png) no-repeat;
+	background: url(/images/blog-pic1.png) no-repeat;
 	cursor:pointer;
 }
 .blog-grid-right{
@@ -502,7 +502,7 @@ ol ol li:last-child {margin-bottom:0;}
 	font-size: 2em;
 	color: #3A494C;
 	padding: 0.4em 0;
-	font-family: trebuchet ms,'open_sansregular';
+	font-family: 'open_sansregular',trebuchet ms;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -571,7 +571,7 @@ ol ol li:last-child {margin-bottom:0;}
 }
 /*---start-team----*/
 .team{
-	background:url(../images/meet-bg.jpg) no-repeat;
+	background:url(/images/meet-bg.jpg) no-repeat;
 	padding:4em 0
 }
 .team-head{
@@ -615,7 +615,7 @@ ol ol li:last-child {margin-bottom:0;}
 	width:80px;
 	height:80px;
 	display:inline-block;
-	background:url(../images/people-pic.png) no-repeat;
+	background:url(/images/people-pic.png) no-repeat;
 }
 .team-member span{
 	background: #E9E9E9;
@@ -659,17 +659,17 @@ ol ol li:last-child {margin-bottom:0;}
 	display: block;
 }
 .facebook{
-	background:url(../images/social-icons.png) no-repeat 0px 0px;
+	background:url(/images/social-icons.png) no-repeat 0px 0px;
 }
 .twitter{
-	background: url(../images/social-icons.png) no-repeat -59px 0px;
+	background: url(/images/social-icons.png) no-repeat -59px 0px;
 }
 .pin{
-	background: url(../images/social-icons.png) no-repeat -120px 0px;
+	background: url(/images/social-icons.png) no-repeat -120px 0px;
 }
 /*------recent-postings-----*/
 .recent-posts{
-	background: url(../images/post-bg.jpg);
+	background: url(/images/post-bg.jpg);
 	padding: 3em 0;
 }
 .recent-posts h4, .recent-posts h4{
@@ -744,12 +744,12 @@ ol ol li:last-child {margin-bottom:0;}
 	width: 80px;
 	height: 80px;
 	display: inline-block;
-	background: url(../images/post-icon.png) no-repeat;
+	background: url(/images/post-icon.png) no-repeat;
 }
 .post-grid h4 a{
 	color: #383838;
 	font-family: 'open_sansregular';
-	font-size: 1.8em;
+	font-size: 1.2em;
 	margin: 1em 0 0em 0;
 	display: block;
 	font-weight: 900;
@@ -1048,28 +1048,28 @@ ol ol li:last-child {margin-bottom:0;}
 	margin-right:5px;
 }
 .ftwiter{
-	background:url(../images/footer-social-icons.png) no-repeat 0px 0px;
+	background:url(/images/footer-social-icons.png) no-repeat 0px 0px;
 }
 .ftwiter:hover{
-	background:url(../images/footer-social-icons.png) no-repeat 0px -56px;
+	background:url(/images/footer-social-icons.png) no-repeat 0px -56px;
 }
 .fface{
-	background: url(../images/footer-social-icons.png) no-repeat -70px 0px;
+	background: url(/images/footer-social-icons.png) no-repeat -70px 0px;
 }
 .fface:hover{
-	background: url(../images/footer-social-icons.png) no-repeat -70px -56px;
+	background: url(/images/footer-social-icons.png) no-repeat -70px -56px;
 }
 .fhtml{
-	background: url(../images/footer-social-icons.png) no-repeat -143px 0px;
+	background: url(/images/footer-social-icons.png) no-repeat -143px 0px;
 }
 .fhtml:hover{
-	background: url(../images/footer-social-icons.png) no-repeat -143px -56px;
+	background: url(/images/footer-social-icons.png) no-repeat -143px -56px;
 }
 .fflick{
-	background: url(../images/footer-social-icons.png) no-repeat -221px 0px;
+	background: url(/images/footer-social-icons.png) no-repeat -221px 0px;
 }
 .fflick:hover{
-	background: url(../images/footer-social-icons.png) no-repeat -221px -56px;
+	background: url(/images/footer-social-icons.png) no-repeat -221px -56px;
 }
 .footer-right{
 	float: right;
@@ -1101,7 +1101,7 @@ ol ol li:last-child {margin-bottom:0;}
 	height: 49px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/move-top.png) no-repeat 0px 0px;
+	background: url(/images/move-top.png) no-repeat 0px 0px;
 	bottom: 10px;
 }
 #toTopHover {
@@ -1248,7 +1248,7 @@ ol ol li:last-child {margin-bottom:0;}
 		margin-bottom:1.5em;
 	}
 	.team {
-		background: url(../images/meet-bg.jpg);
+		background: url(/images/meet-bg.jpg);
 	}
 	.signup-form {
 		width: 80%;
@@ -1363,7 +1363,7 @@ ol ol li:last-child {margin-bottom:0;}
 		margin-bottom:1.5em;
 	}
 	.team {
-		background: url(../images/meet-bg.jpg);
+		background: url(/images/meet-bg.jpg);
 	}
 	.signup-form {
 		width: 80%;
@@ -1503,7 +1503,7 @@ ol ol li:last-child {margin-bottom:0;}
 		margin-bottom:1.5em;
 	}
 	.team {
-		background: url(../images/meet-bg.jpg);
+		background: url(/images/meet-bg.jpg);
 		padding: 2em 0;
 	}
 	.signup-form {
@@ -1687,7 +1687,7 @@ ol ol li:last-child {margin-bottom:0;}
 		margin-bottom:1.5em;
 	}
 	.team {
-		background: url(../images/meet-bg.jpg);
+		background: url(/images/meet-bg.jpg);
 		padding: 2em 0;
 	}
 	.signup-form {
@@ -1777,7 +1777,7 @@ ol ol li:last-child {margin-bottom:0;}
 		display: inline-block;
 		width: 264px;
 		height: 207px;
-		background: url(../images/blog-pic1.png) no-repeat;
+		background: url(/images/blog-pic1.png) no-repeat;
 		background-size: 100%;
 		cursor: pointer;
 	}
