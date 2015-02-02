@@ -18,6 +18,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+define('CAKE_CORE_INCLUDE_PATH', DS. 'var' . DS . 'www' . DS . 'cakephp' . DS . 'lib' );
+
 /**
  * Use the DS to separate the directories in other defines
  */
