@@ -22,11 +22,11 @@
 					</div>
 					<div class="top-nav">
 						<ul>
-							<li class="active"><a href="#home" class="scroll">Home</a></li>
-							<li><a href="#what" class="scroll">What?</a></li>
-							<li><a href="#why" class="scroll">Why?</a></li>
-							<li><a href="#how" class="scroll">How?</a></li>							
-							<li><a href="#signup" class="scroll">Buy Now!</a></li>							
+							<li class="active"><a href="<?php echo Router::url('/') ?>#home">Home</a></li>
+							<li><a href="<?php echo Router::url('/') ?>#what">What?</a></li>
+							<li><a href="<?php echo Router::url('/') ?>#why">Why?</a></li>
+							<li><a href="<?php echo Router::url('/') ?>#how">How?</a></li>
+							<li><a href="<?php echo Router::url('/') ?>#signup">Buy Now!</a></li>
 							<div class="clear"> </div>
 						</ul>
 					</div>

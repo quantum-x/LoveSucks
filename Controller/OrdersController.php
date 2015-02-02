@@ -26,6 +26,27 @@ class OrdersController extends AppController {
         //var_dump($type);
     }
 
+    public function view($_order_slug) {
+        //Loads up an order via slug
+        //Clean it up.
+        $order_slug = preg_replace('`[^0-9a-zA-Z_-]`','', $_order_slug);
+        if ($order_slug != $_order_slug) throw new NotFoundException('Order not found');
+
+        $this->Order->recursive = -1;
+        $this->Order->Behaviors->load('Containable');
+
+        $options = array('conditions' => array('Order.slug' => $order_slug),
+                         'contain' => array('Transaction','User','Size','Status', 'Video', 'Transaction' => ['Currency']));
+        $order = $this->Order->find('first', $options);
+
+        if ($order === false || empty($order)) {
+            //404 die
+            throw new NotFoundException('Order not found');
+        } else {
+            $this->set('order', $order);
+        }
+    }
+
     public function add() {
         if ($this->request->is('post')) {
             if ($this->Order->saveAll( $this->request->data, array('validate' => 'only'))) {
@@ -95,6 +116,7 @@ class OrdersController extends AppController {
                 //Prepare to save everything
                 unset($this->request->data['CreditCard']);
                 if ($this->Order->saveAll( $this->request->data)) {
+                    $this->request->data['Order']['id'] = $this->Order->getInsertID();
                     //Send the email..
                     $Email = new CakeEmail('default');
                     $Email  ->template('order_invoice');
@@ -102,16 +124,16 @@ class OrdersController extends AppController {
                     $Email  ->to($this->request->data['User']['email']);
                     $Email  ->subject(__('FL: Your recent purchase'));
                     $Email  ->viewVars([
-                                       'user' => $this->request->data['User'],
+                                       'order' => $this->request->data,
+                                       'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
+                                       'unsub_url' => Router::url(array('controller' => 'users', 'action' => 'unsubscribe', base64_encode($this->request->data['User']['email'])), true)
                                        ]);
                     $Email  ->send();
 
-                    $this->Session->setFlash(__('An email with instructions on how to reset your password has been sent!'),'alert_success');
-
-
                     if ($result === true) {
-
-                        die('sending to success-page');
+                        return $this->redirect(
+                            array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug'])
+                        );
                     } else  {
                         $this->set('hasErrors',true);
                         $this->Session->setFlash(__('The order was declined. Please try again..'));

@@ -112,7 +112,7 @@
 						<p>Because we never learnt that posting videos of doing stupid things online is stupid, we'll upload, for your pleasure, a selection of videos to YouTube, until we are murdered in our sleep. In the meantime, check them out below.</p>
 					</div>
 
-					<a class="morebtn popup-with-zoom-anim" href="#small-dialog1">More videos</a>
+					<a class="morebtn popup-with-zoom-anim" href="https://www.youtube.com/channel/UCjVe-eukfgvS_5MPEiefBtw" target="_blank">More videos</a>
 				</div>
 				</div>
 			</div>

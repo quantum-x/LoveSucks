@@ -1,0 +1,35 @@
+			<!--- start-recent-posts----->
+			<div class="recent-posts" id="blog">
+				<div class="wrap">
+				<div class="recent-posts-head">
+					<h3>Thank you</h3>
+					<p>Your order has been approved!</p>
+				</div>
+				<div class="summary">
+					<h4>Order Summary</h4>
+					<ul>
+						<li><b>Order Number:</b> <?php echo $order['Order']['slug'] ?></li>
+						<li><b>Transaction ID:</b> <?php echo $order['Transaction']['biller_id'] ?></li>
+						<li><b>Amount:</b> <?php echo $order['Transaction']['Currency']['symbol'] ?><?php echo $order['Transaction']['amount'] ?></li>
+						<li><b>Lock Size:</b> <?php echo $order['Size']['size'] ?></li>
+						<li><b>Message:</b> <?php echo $order['Order']['message'] ?></li>
+						<li><b>Status:</b> <?php echo $order['Status']['status'] ?></li>
+					</ul>
+					<?php if (isset($order['Video']['slug']) && !empty($order['Video']['slug'])) { ?>
+    					<h4><a href="<?php echo $this->Html->url(array('controller' => 'videos', 'action' => 'view', $order['Order']['slug']))?>">Your video</a></h4>
+					<?php } ?>
+				</div>
+				<ol class="blue white-text">
+					<li>
+						<h4>Sit tight</h4>
+						<p>We're going to go out and execute a lock on your behalf. This requires us going outside. And if you've ever tried walking around a city at midnight with boltcutters, you'll know why we prefer daytime.
+						Within 24 hours (or so..) - we'll have cut your lock, and you'll get an email. You can also refresh this page lots, because it will update.</p>
+					</li>
+					<li>
+						<h4>Share your video, tell your friends.</h4>
+						<p>You'll get an email with your video link. Send it to your friends. Brag about it to your mother.
+						Use it to mock your stupidly-in-love friends and co-workers. Especially the ones that recently took a trip to Paris.</p>
+					</li>
+				</ol>
+			</div>
+			<!--- //End-recent-posts----->

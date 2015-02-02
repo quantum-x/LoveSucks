@@ -1,7 +1,11 @@
-<?php echo $user['User']['first_name']; ?> -
-<?php echo __('There was recently a request made to reset your password.')?>.
-<?php echo __('To complete the reset, simply click on the link below:')?>
+Thanks for your order
+Your order was approved, thank you.
 
-<?php echo $reset_url; ?>
+For your reference, payment summary is below:
+Order ID: <?php echo $order['Order']['slug']; ?>
+Transaction ID: <?php echo $order['Transaction']['biller_id']; ?>
+Amount: <?php echo $order['Transaction']['Currency']['symbol']; ?><?php echo $order['Transaction']['amount']; ?>
+Lock Size: <?php echo $order['Size']['size']; ?>
 
-<?php echo __("If you didn't request a password reset, simply discard this email.")?>
+We're loading up the bolt-cutters, and heading to the the nearest bridge infested with selfie-taking-horribly-in-love couples, and will pry you off a lock. As soon as the video is uploaded, we'll send you another email.
+Or, you can refresh your order summary <?php echo $order_url; ?> like it's a FedEx delivery.

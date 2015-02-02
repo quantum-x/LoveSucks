@@ -133,6 +133,9 @@ ol.pink-text  > li:before {
 ol.green-text  > li:before {
 	color: #98d3a5 !important;
 }
+ol.white-text  > li:before {
+	color: #fff !important;
+}
 ol.white  > li:before {
     background: #fff;
     border: 2px solid #fff;
@@ -669,6 +672,12 @@ ol ol li:last-child {margin-bottom:0;}
 	background: url(../images/post-bg.jpg);
 	padding: 3em 0;
 }
+.recent-posts h4, .recent-posts h4{
+	color: #3a494c;
+	font-size: 1.5em;
+	font-family: 'open_sansregular';
+	font-weight: 900;
+}
 .post-grids {
 	margin: 3em 0 1em;
 }
@@ -688,6 +697,17 @@ ol ol li:last-child {margin-bottom:0;}
 /*----recent-posts-head-----*/
 .recent-posts-head{
 	text-align:center;
+}
+.recent-posts  .summary {
+	width: 40%;
+	margin: 1em auto 2em;
+}
+.recent-posts  .summary  b {
+	font-weight: 800;
+}
+.recent-posts  .summary h4 {
+	text-align: center;
+	margin-bottom: .4em;
 }
 .recent-posts-head h3{
 	color: #3A494C;
@@ -872,7 +892,7 @@ ol ol li:last-child {margin-bottom:0;}
 	vertical-align: top;
 }
 
-.signup-form input[type="text"],.signup-form textarea, .signup-form select{
+.signup-form input[type="text"],.signup-form input[type="email"],.signup-form textarea, .signup-form select{
 	background: #FFF;
 	padding: 0.8em 1em;
 	font-size: 1.5em;
@@ -895,11 +915,10 @@ ol ol li:last-child {margin-bottom:0;}
 	margin-bottom: 2em;
 }
 .signup-form label {
-	border: 5px solid red;
 	position: absolute;
 	top:4em;
 	left: 0;
-
+	
 	background: #656565;
 	font-style: italic;
 	padding: 0.5em 0.6em;
@@ -913,7 +932,54 @@ ol ol li:last-child {margin-bottom:0;}
 	outline: none;
 	color: #b9b9b9;
 	font-family: 'open_sansregular';
-	margin-bottom: 1em;
+	margin-bottom: 1em;	
+}
+#flashMessage { 
+	top: 0;
+	position: fixed;
+	z-index: 100;
+	background: #9e2d3a;
+	font-style: italic;
+	padding: 0.5em 0.6em;
+	font-size: 1em;
+	width: 95%;
+	text-align:center;
+	margin: 1.5em;
+	
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	border: none;
+	outline: none;
+	color: #fccbc9;
+	font-family: 'open_sansregular';
+}
+
+.signup-form .error .error-message, .general-error {
+	background: #9e2d3a;
+	font-style: italic;
+	padding: 0.5em 0.6em;
+	font-size: 0.8em;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	border: none;
+	outline: none;
+	color: #fccbc9;
+	font-family: 'open_sansregular';
+	margin-bottom: 1em;	
+}
+.signup-form .error .error-message {
+	width: 99%;
+}
+
+.general-error {
+	font-size: 1.0em;
+	margin: 1em auto 1em;
+	font-style: normal;
+	width: 70%;
 }
 
 .signup-form input.cvv[type="text"]  {
@@ -923,13 +989,13 @@ ol ol li:last-child {margin-bottom:0;}
 }
 .signup-form select.exp_m  {
 	width: 30% !important;
-	display: inline-block;
+	display: inline-block;	
 	margin-right: .5em;
-
+	
 }
 .signup-form select.exp_y  {
 	width: 30% !important;
-	display: inline-block;
+	display: inline-block;	
 }
 .signup-form textarea{
 	height:180px;
@@ -1097,7 +1163,7 @@ ol ol li:last-child {margin-bottom:0;}
 	.post-grid {
 		width: 31%;
 		margin-right: 3%;
-	}
+	}	
 }
 @media only screen and (max-width: 1024px) and (min-width:768px) {
 	.wrap{
@@ -1121,7 +1187,7 @@ ol ol li:last-child {margin-bottom:0;}
 	.post-grid {
 		width: 31%;
 		margin-right: 3%;
-	}
+	}	
 	.top-nav ul li {
 		margin-left: 0em;
 	}
@@ -1134,6 +1200,10 @@ ol ol li:last-child {margin-bottom:0;}
 	}
 }
 @media only screen and (max-width: 768px) and (min-width:640px) {
+	#yt-video {
+		width: 480px;
+		height: 320px;
+	}
 	.wrap{
 		width:90%;
 	}
@@ -1191,7 +1261,7 @@ ol ol li:last-child {margin-bottom:0;}
 		width:100%;
 		margin-right:0%;
 		margin-bottom:1.5em;
-	}
+	}	
 	.top-nav ul li {
 		margin-left: 0em;
 	}
@@ -1240,9 +1310,13 @@ ol ol li:last-child {margin-bottom:0;}
 	.contact-head h3 {
 		font-size: 4em;
 	}
-
+	
 }
 @media only screen and (max-width: 640px) and (min-width:480px) {
+	#yt-video {
+		width: 320px;
+		height: 240px;
+	}
 	.wrap{
 		width:90%;
 	}
@@ -1303,7 +1377,7 @@ ol ol li:last-child {margin-bottom:0;}
 		width:100%;
 		margin-right:0%;
 		margin-bottom:1.5em;
-	}
+	}	
 	.top-nav ul li {
 		margin-left: 0em;
 	}
@@ -1366,6 +1440,11 @@ ol ol li:last-child {margin-bottom:0;}
 	}
 }
 @media only screen and (max-width: 480px) and (min-width:320px) {
+	#yt-video {
+		width: 320px;
+		height: 160px;
+	}
+
 	.wrap{
 		width:90%;
 	}
@@ -1440,7 +1519,7 @@ ol ol li:last-child {margin-bottom:0;}
 		width:100%;
 		margin-right:0%;
 		margin-bottom:1.5em;
-	}
+	}	
 	.top-nav ul li {
 		margin-left: 0em;
 	}
@@ -1517,7 +1596,7 @@ ol ol li:last-child {margin-bottom:0;}
 	.contact {
 		padding: 2em 0;
 	}
-	.signup-form input[type="text"], .signup-form textarea, .signup-form select {
+	.signup-form input[type="text"],.signup-form input[type="email"], .signup-form textarea, .signup-form select {
 		padding: 0.8em;
 		width: 94%;
 		border-radius: 0.3em;
@@ -1525,15 +1604,15 @@ ol ol li:last-child {margin-bottom:0;}
 		-moz-border-radius: 0.3em;
 		-o-border-radius: 0.3em;
 		font-size:1em;
-	}
+	}	
 	.signup-form select {
 		margin-bottom: 2.9em;
-	}
-
+	}	
+	
 	.signup-form label {
 		top: 3.5em;
-	}
-
+	}	
+	
 	.footer-left {
 		float: none;
 		text-align:center;
@@ -1545,6 +1624,10 @@ ol ol li:last-child {margin-bottom:0;}
 	}
 }
 @media only screen and (max-width: 320px) and (min-width:240px) {
+	#yt-video {
+		width: 240px;
+		height: 100px;
+	}
 	.wrap{
 		width:90%;
 	}
@@ -1620,7 +1703,7 @@ ol ol li:last-child {margin-bottom:0;}
 		width:100%;
 		margin-right:0%;
 		margin-bottom:1.5em;
-	}
+	}	
 	.top-nav ul li {
 		margin-left: 0em;
 		display:block;
@@ -1702,31 +1785,6 @@ ol ol li:last-child {margin-bottom:0;}
 		font-size: 2em;
 	}
 	.team-member label {
-		font-size: 1.2em;
-	}
-	.team-member span {
-		padding: 1em 0px;
-	}
-	.team-member p {
-		font-size:0.875em;
-	}
-	.blog {
-		padding: 0em 0;
-	}
-	.blog-grid2 {
-		display:none;
-	}
-	.logo a {
-		font-size: 1.8em;
-	}
-	.post-grid p {
-		margin: 0.8em auto 1em auto;
-		font-size: 0.875em;
-	}
-	.contact {
-		padding: 2em 0;
-	}
-	.signup-form input[type="text{
 		font-size: 1.2em;
 	}
 	.team-member span {
