@@ -18,8 +18,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-define('CAKE_CORE_INCLUDE_PATH', DS. 'var' . DS . 'www' . DS . 'cakephp' . DS . 'lib' );
-
 /**
  * Use the DS to separate the directories in other defines
  */
@@ -64,7 +62,7 @@ if (!defined('APP_DIR')) {
  * /lib/Cake/Console/Templates/skel/webroot/index.php
  */
 //define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
-
+define('CAKE_CORE_INCLUDE_PATH', DS. 'var' . DS . 'www' . DS . 'cakephp' . DS . 'lib' );
 /**
  * This auto-detects CakePHP as a composer installed library.
  * You may remove this if you are not planning to use composer (not recommended, though).
