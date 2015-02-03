@@ -88,6 +88,7 @@
 					<h3>The Proof</h3>
 					<p>So, you really want to do it and brag to your friends, but you don't want to get ripped off. To be fair, we both know you're a professional skeptic. Qwell your fears. Here are some videos of us risking beatings from angry brides to deliver you service.</p>
 				</div>
+                <div class="post-grids">
 					<div class="post-grid">
 						<span><a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/eP21UiABYsM?autoplay=1"><img src="/images/thumb-medium.jpg" class="fade" /></a></span>
 						<h4><a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/eP21UiABYsM?autoplay=1">Combo Bonus!</a></h4>
@@ -101,7 +102,7 @@
 						<p>Angry gasping toursists, and an annoylingly solid lock. This has it all. It's either true love, or someone was really fucking clingy and needy. Either way, it's dead.</p>
 					</div>
 					<div class="post-grid">
-						<a href="//www.youtube.com/embed/hipl6M8givc?autoplay=1"><img src="/images/thumb-small.jpg" class="fade" /></a></span>
+						<a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/hipl6M8givc?autoplay=1"><img src="/images/thumb-small.jpg" class="fade" /></a></span>
 						<h4><a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/hipl6M8givc?autoplay=1">Still-Warm Love</a></h4>
 						<label>Buy love's demise: <a href="#signup">click here</a></label>
 						<p>Barely had her trembling hand placed the home-decorated lock before we cut it the fuck off, and threw it into the river. This will probably get us stabbed.</p>
