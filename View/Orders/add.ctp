@@ -99,7 +99,7 @@
 						<a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/HSWtxByVttY?autoplay=1"><img src="/images/thumb-large.jpg" class="fade" /></a>
 						<h4><a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/HSWtxByVttY?autoplay=1">Highly-resistant love</a></h4>
 						<label><?php echo __('Kill a large lock now:') ?> <a href="#signup"><?php echo __('click here') ?></a></label>
-						<p><?php echo __('Angry gasping tourists, and an annoyingly solid lock. This has it all. It\'s either true love, or someone was really fucking clingy and needy. Either way, it''s dead.') ?></p>
+						<p><?php echo __('Angry gasping tourists, and an annoyingly solid lock. This has it all. It\'s either true love, or someone was really fucking clingy and needy. Either way, it\'s dead.') ?></p>
 					</div>
 					<div class="post-grid">
 						<a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/hipl6M8givc?autoplay=1"><img src="/images/thumb-small.jpg" class="fade" /></a></span>
