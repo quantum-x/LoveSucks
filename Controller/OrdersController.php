@@ -134,7 +134,7 @@ class OrdersController extends AppController {
                             $Email  ->emailFormat('both');
                             $Email  ->to($this->request->data['User']['email']);
                             $Email  ->bcc( Configure::read('Email.bcc_email') );
-                            $Email  ->subject(__('FL: Your recent purchase'));
+                            $Email  ->subject(__('FL: Your recent purchase ').'['.$this->request->data['Order']['slug'].']');
                             $Email  ->viewVars([
                                                'order' => $this->request->data,
                                                'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),

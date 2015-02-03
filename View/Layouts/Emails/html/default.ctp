@@ -902,7 +902,7 @@ a:hover{color:#30495c !important}.wrapper .logo div{color:#41637e}.wrapper .logo
               <tbody><tr>
                 <td class="title" style="padding: 0;vertical-align: top;padding-top: 10px;padding-bottom: 12px;font-size: 12px;line-height: 21px;text-align: left;color: #999;font-family: Georgia,serif">FuckLove</td>
                 <td class="webversion" style="padding: 0;vertical-align: top;padding-top: 10px;padding-bottom: 12px;font-size: 12px;line-height: 21px;text-align: right;width: 300px;color: #999;font-family: Georgia,serif">
-                  No Images? <a style="text-decoration: none;transition: all .2s;color: #999;font-weight: bold" href="<?php echo $offline_url ?>">Click here</a>
+                  <?php echo __('No Images?') ?> <a style="text-decoration: none;transition: all .2s;color: #999;font-weight: bold" href="<?php echo $offline_url ?>"><?php echo __('Click here') ?></a>
                 </td>
               </tr>
             </tbody></table>
@@ -961,12 +961,12 @@ http://fucklove.paris</div>
                   <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
                     <tbody><tr>
                       <td class="padded" style="padding: 0;vertical-align: top;padding-left: 10px;padding-right: 0;font-size: 12px;line-height: 20px;color: #999;font-family: Georgia,serif;text-align: right">
-                        <div>You received this email because you recently made a purchase on fucklove.paris</div>
+                        <div><?php echo __('You received this email because you recently made a purchase on fucklove.paris') ?></div>
                         <div>
                           <span class="block">
 
                           </span>
-                          <span class="block"><a style="font-weight: bold;text-decoration: none;transition: all .2s;color: #999" href="<?php echo $unsub_url ?>">Unsubscribe</a></span>
+                          <span class="block"><a style="font-weight: bold;text-decoration: none;transition: all .2s;color: #999" href="<?php echo $unsub_url ?>"><?php echo __('Unsubscribe') ?></a></span>
                         </div>
                       </td>
                     </tr>

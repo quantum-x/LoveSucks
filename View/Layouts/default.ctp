@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<?php echo $this->Html->charset(); ?>
-		<title>Fuck Love: Ruin someone's happiness for your own.</title>
+		<title><?php echo __('Fuck Love: Ruin someone's happiness for your own.') ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="/images/fave-icon.png" />
    		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -21,15 +21,15 @@
 				<div class="wrap">
 				<div class="top-header">
 					<div class="logo">
-						<a href="<?php echo Router::url('/') ?>">Fuck Love</a>
+						<a href="<?php echo Router::url('/') ?>"><?php echo __('Fuck Love') ?></a>
 					</div>
 					<div class="top-nav">
 						<ul>
-							<li class="active"><a href="<?php echo Router::url('/') ?>#home">Home</a></li>
-							<li><a href="<?php echo Router::url('/') ?>#what">What?</a></li>
-							<li><a href="<?php echo Router::url('/') ?>#why">Why?</a></li>
-							<li><a href="<?php echo Router::url('/') ?>#how">How?</a></li>
-							<li><a href="<?php echo Router::url('/') ?>#signup">Buy Now!</a></li>
+							<li class="active"><a href="<?php echo Router::url('/') ?>#home"><?php echo __('Home') ?></a></li>
+							<li><a href="<?php echo Router::url('/') ?>#what"><?php echo __('What?') ?></a></li>
+							<li><a href="<?php echo Router::url('/') ?>#why"><?php echo __('Why?') ?></a></li>
+							<li><a href="<?php echo Router::url('/') ?>#how"><?php echo __('How?') ?></a></li>
+							<li><a href="<?php echo Router::url('/') ?>#signup"><?php echo __('Buy Now!') ?></a></li>
 							<div class="clear"> </div>
 						</ul>
 					</div>
@@ -59,7 +59,7 @@
 						</ul>
 					</div>
 					<div class="footer-right">
-						<p>Send us some <a href="mailto:support@fucklove.paris">hate mail</a></p>
+						<p><?php echo __('Send us some <a href="mailto:support@fucklove.paris">hate mail</a>') ?></p>
 									<script type="text/javascript">
 						$(document).ready(function() {
 							$().UItoTop({ easingType: 'easeOutQuart' });
