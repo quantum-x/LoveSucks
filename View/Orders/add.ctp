@@ -140,17 +140,17 @@
                                                                                     ))); ?>
 					<div class="size-buttons">
 						<div class="small button grow badge-div" data-id="<?php echo array_search('small', $sizes); ?>">
-							<div class="price"><span class="sign">$</span>5</div>
+							<div class="price"><span class="sign">$</span>1</div>
 							<div class="badge fade"><img src="images/buy-small.png"alt="<?php echo __('so small? that hardly even qualifies as love..') ?>" /></div>
 							<div class="label"><?php echo __('small') ?></div>
 						</div>
 						<div class="large button grow badge-div" data-id="<?php echo array_search('large', $sizes); ?>">
-							<div class="price"><span class="sign">$</span>15</div>
+							<div class="price"><span class="sign">$</span>9</div>
 							<div class="badge"><img src="images/buy-large.png" alt="<?php echo __('good choice. let\'s fuck up true love.') ?>" /></div>
 							<div class="label"><?php echo __('huge') ?></div>
 						</div>
 						<div class="medium button grow badge-div"data-id="<?php echo array_search('medium', $sizes); ?>">
-							<div class="price"><span class="sign">$</span>9</div>
+							<div class="price"><span class="sign">$</span>4</div>
 							<div class="badge fade"><img src="images/buy-small.png" alt="<?php echo __('you deserve bigger. other people would cut yours off.') ?>" /></div>
 							<div class="label"><?php echo __('regular') ?></div>
 						</div>
