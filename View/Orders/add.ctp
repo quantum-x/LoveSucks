@@ -5,7 +5,7 @@
 						<h3><?php echo __('What is this?') ?></h3>
 						<p><?php echo __('Valentines day sucks. And it\'s even worse when there are sickeningly happy couples everywhere around you. Paris is like the blackhole of disgustingly happy couples. And like the Parisian dogs, they leave their shit everywhere: those fucking love-locks.') ?></p>
 						<p><?php echo __('You are a jilted, twisted, emotionally dead person. We are your beacon of hope.') ?></p>
-						<p><?php echo __('For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. We\'ll even send you the video of it, and may even yell out something you\'ve chosen in the process.') ?></p>
+						<p><?php echo __('For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple\'s eternal love, and toss it into the river. We\'ll even send you the video of it, and may even yell out something you\'ve chosen in the process.') ?></p>
 						</p>
 					</div>
 					<div class="top-service-grid">

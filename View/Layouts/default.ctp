@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<?php echo $this->Html->charset(); ?>
-		<title><?php echo __('Fuck Love: Ruin someone's happiness for your own.') ?></title>
+		<title><?php echo __('Fuck Love: Ruin someone\'s happiness for your own.') ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="/images/fave-icon.png" />
    		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
