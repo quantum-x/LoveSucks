@@ -86,7 +86,7 @@
 				<div class="wrap">
 				<div class="recent-posts-head">
 					<h3><?php echo __('The Proof') ?></h3>
-					<p><?php echo __('So, you really want to do it and brag to your friends, but you don\'t want to get ripped off. To be fair, we both know you're a professional skeptic. Qwell your fears. Here are some videos of us risking beatings from angry brides to deliver you service.') ?></p>
+					<p><?php echo __('So, you really want to do it and brag to your friends, but you don\'t want to get ripped off. To be fair, we both know you\'re a professional skeptic. Qwell your fears. Here are some videos of us risking beatings from angry brides to deliver you service.') ?></p>
 				</div>
                 <div class="post-grids">
 					<div class="post-grid">
@@ -99,7 +99,7 @@
 						<a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/HSWtxByVttY?autoplay=1"><img src="/images/thumb-large.jpg" class="fade" /></a>
 						<h4><a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/HSWtxByVttY?autoplay=1">Highly-resistant love</a></h4>
 						<label><?php echo __('Kill a large lock now:') ?> <a href="#signup"><?php echo __('click here') ?></a></label>
-						<p><?php echo __('Angry gasping tourists, and an annoylingly solid lock. This has it all. It's either true love, or someone was really fucking clingy and needy. Either way, it's dead.') ?></p>
+						<p><?php echo __('Angry gasping tourists, and an annoyingly solid lock. This has it all. It\'s either true love, or someone was really fucking clingy and needy. Either way, it''s dead.') ?></p>
 					</div>
 					<div class="post-grid">
 						<a data-fancybox-type="iframe" class="video-link" href="//www.youtube.com/embed/hipl6M8givc?autoplay=1"><img src="/images/thumb-small.jpg" class="fade" /></a></span>
@@ -146,7 +146,7 @@
 						</div>
 						<div class="large button grow badge-div" data-id="<?php echo array_search('large', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>15</div>
-							<div class="badge"><img src="images/buy-large.png" alt="<?php echo __('good choice. let's fuck up true love.') ?>" /></div>
+							<div class="badge"><img src="images/buy-large.png" alt="<?php echo __('good choice. let\'s fuck up true love.') ?>" /></div>
 							<div class="label"><?php echo __('huge') ?></div>
 						</div>
 						<div class="medium button grow badge-div"data-id="<?php echo array_search('medium', $sizes); ?>">
