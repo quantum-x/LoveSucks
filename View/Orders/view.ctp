@@ -8,11 +8,11 @@
 				<div class="summary">
 					<h4>Order Summary</h4>
 					<ul>
-						<li><b><?php echo __('Order Number:') ?></b> <?php __(echo $order['Order']['slug']) ?></li>
-						<li><b><?php echo __('Transaction ID:') ?></b> <?php __(echo $order['Transaction']['biller_id']) ?></li>
-						<li><b><?php echo __('Amount:') ?></b> <?php echo $order['Transaction']['Currency']['symbol'] ?><?php echo __($order['Transaction']['amount']) ?></li>
+						<li><b><?php echo __('Order Number:') ?></b> <?php echo $order['Order']['slug'] ?></li>
+						<li><b><?php echo __('Transaction ID:') ?></b> <?php echo $order['Transaction']['biller_id'] ?></li>
+						<li><b><?php echo __('Amount:') ?></b> <?php echo $order['Transaction']['Currency']['symbol'] ?><?php echo $order['Transaction']['amount'] ?></li>
 						<li><b><?php echo __('Lock Size:') ?></b> <?php echo __($order['Size']['size']) ?></li>
-						<li><b><?php echo __('Message:') ?></b> <?php echo __($order['Order']['message']) ?></li>
+						<li><b><?php echo __('Message:') ?></b> <?php echo $order['Order']['message'] ?></li>
 						<li><b><?php echo __('Status:') ?></b> <?php echo __($order['Status']['status']) ?></li>
 					</ul>
 					<?php if (isset($order['Video']['slug']) && !empty($order['Video']['slug'])) { ?>
