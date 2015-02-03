@@ -22,8 +22,8 @@
 						<div><span class="nc nc-blue">1</span><h3><?php echo __('Pick a lock size') ?></h3></div>
 						<p>
 						<?php echo __('Everyone knows that money = love.') ?><br />
-						<b><?php echo __('Small') ?></b>: <?php echo __('It's not even highschool puppy love.') ?><br />
-						<b><?php echo __('Medium') ?></b>: <?php echo __('I'm so in love! mid twenties love') ?><br />
+						<b><?php echo __('Small') ?></b>: <?php echo __('It\'s not even highschool puppy love.') ?><br />
+						<b><?php echo __('Medium') ?></b>: <?php echo __('I\'m so in love! mid twenties love') ?><br />
 						<b><?php echo __('Large') ?></b>: <?php echo __('Annoyingly genuine love') ?></p>
 					</div>
 					<div class="top-service-grid">
