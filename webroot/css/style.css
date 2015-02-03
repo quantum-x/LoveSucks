@@ -691,6 +691,8 @@ ol ol li:last-child {margin-bottom:0;}
 	margin-bottom: 3em;
 	box-shadow: 0px 0px 10px rgba(238, 238, 238, 0.08);
 }
+
+
 .post-grid:nth-child(3){
 	margin-right:0;
 }
@@ -736,16 +738,18 @@ ol ol li:last-child {margin-bottom:0;}
 .post-grid span{
 	background: #E9E9E9;
 	width: 100%;
-	padding: 4em 0px;
 	display: block;
 	cursor:pointer;
 }
 .post-grid span a{
-	width: 80px;
-	height: 80px;
 	display: inline-block;
 	background: url(/images/post-icon.png) no-repeat;
 }
+
+.post-grid span img {
+	width: 100%;
+}
+
 .post-grid h4 a{
 	color: #383838;
 	font-family: 'open_sansregular';

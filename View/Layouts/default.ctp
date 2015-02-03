@@ -10,6 +10,9 @@
 		<script src="/js/modernizr.custom.28468.js"></script>
 		<link rel="stylesheet" type="text/css" href="/css/simptip-mini.css" media="screen,projection" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js"></script>
+
 	</head>
 	<body>
 		<!---start-wrap----->
