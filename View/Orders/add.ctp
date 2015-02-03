@@ -36,7 +36,7 @@
 				<div class="wrap">
 					<div class="team-head" id="why">
 						<h3><?php echo __('Why?') ?></h3>
-						<p><?php echo __('We've all got our reasons.  Maybe one of these is yours.') ?></p>
+						<p><?php echo __('We\'ve all got our reasons.  Maybe one of these is yours.') ?></p>
 						<ol class="white pink-text">
 							<li>
 								<h4><?php echo __('Pragmatist: Reality Dose') ?></h4>

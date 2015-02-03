@@ -29,7 +29,7 @@
 					<div class="top-service-grid">
 						<div class="badge grow"><img src="images/what-badge-2.gif" alt="" />></div>
 						<div><span class="nc nc-blue">2</span><h3><?php echo __('We cut it & drown it') ?></h3></div>
-						<p><?php echo __('We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we'll even yell something you want.') ?></p>
+						<p><?php echo __('We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we\'ll even yell something you want.') ?></p>
 					</div>
 					<div class="top-service-grid">
 						<div class="badge grow"><img src="images/what-badge-3.gif" alt="" /></div>
