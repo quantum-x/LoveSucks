@@ -1,0 +1,46 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-01-13 02:08+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Crud/Error/Exception/CrudValidationException.php:35
+msgid "A validation error occurred"
+msgid_plural "%d validation errors occurred"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:1
+msgid "Config"
+msgstr ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:4
+msgid "Current action is not handled by Crud"
+msgstr ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:8
+msgid "Action"
+msgstr ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:9
+msgid "Component"
+msgstr ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:10
+msgid "Listeners"
+msgstr ""
+
+#: Plugin/Crud/View/Elements/crud_panel.ctp:15
+msgid "Events triggered"
+msgstr ""
+

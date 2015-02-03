@@ -1,0 +1,412 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-01-13 02:08+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/OrdersController.php:137
+msgid "FL: Your recent purchase "
+msgstr ""
+
+#: Controller/OrdersController.php:153;161
+msgid "The order was declined. Please try again.."
+msgstr ""
+
+#: Controller/OrdersController.php:158
+msgid "Your order was successful, but we had a technical issue in updating the database. We will take care of it and keep you informed"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:3
+#: View/Emails/text/order_invoice.ctp:1
+msgid "Thanks for your order"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:3
+#: View/Emails/text/order_invoice.ctp:2
+msgid "Your order was approved, thank you."
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:4
+#: View/Emails/text/order_invoice.ctp:4
+msgid "For your reference, payment summary is below:"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:4
+#: View/Emails/text/order_invoice.ctp:5
+msgid "Order ID:"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:5
+#: View/Emails/text/order_invoice.ctp:6
+#: View/Orders/view.ctp:12
+msgid "Transaction ID:"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:6
+#: View/Emails/text/order_invoice.ctp:7
+#: View/Orders/view.ctp:13
+msgid "Amount:"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:7
+#: View/Emails/text/order_invoice.ctp:8
+#: View/Orders/view.ctp:14
+msgid "Lock Size:"
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:7
+#: View/Emails/text/order_invoice.ctp:10
+msgid "We're loading up the bolt-cutters, and heading to the the nearest bridge infested with selfie-taking-horribly-in-love couples, and will pry you off a lock. As soon as the video is uploaded, we'll send you another email."
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:7
+msgid "Or, you can refresh <a style=\"text-decoration: underline;transition: all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a FedEx delivery."
+msgstr ""
+
+#: View/Emails/text/order_invoice.ctp:11
+msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
+msgstr ""
+
+#: View/Layouts/default.ctp:5
+msgid "Fuck Love: Ruin someone"
+msgstr ""
+
+#: View/Layouts/Emails/html/default.ctp:905
+msgid "No Images?"
+msgstr ""
+
+#: View/Layouts/Emails/html/default.ctp:905
+msgid "Click here"
+msgstr ""
+
+#: View/Layouts/Emails/html/default.ctp:964
+msgid "You received this email because you recently made a purchase on fucklove.paris"
+msgstr ""
+
+#: View/Layouts/Emails/html/default.ctp:969
+msgid "Unsubscribe"
+msgstr ""
+
+#: View/Layouts/Emails/text/default.ctp:6
+msgid "Manage your email settings and unsubscribe from any future emails by visiting:"
+msgstr ""
+
+#: View/Orders/add.ctp:5
+#: View/Videos/view.ctp:14
+msgid "What is this?"
+msgstr ""
+
+#: View/Orders/add.ctp:6
+#: View/Videos/view.ctp:15
+msgid "Valentines day sucks. And it's even worse when there are sickeningly happy couples everywhere around you. Paris is like the blackhole of disgustingly happy couples. And like the Parisian dogs, they leave their shit everywhere: those fucking love-locks."
+msgstr ""
+
+#: View/Orders/add.ctp:7
+#: View/Videos/view.ctp:16
+msgid "You are a jilted, twisted, emotionally dead person. We are your beacon of hope."
+msgstr ""
+
+#: View/Orders/add.ctp:8
+#: View/Videos/view.ctp:17
+msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple"
+msgstr ""
+
+#: View/Orders/add.ctp:13
+#: View/Videos/view.ctp:22
+msgid "Pick a lock size"
+msgstr ""
+
+#: View/Orders/add.ctp:15
+#: View/Videos/view.ctp:24
+msgid "Everyone knows that money = love."
+msgstr ""
+
+#: View/Orders/add.ctp:16
+#: View/Videos/view.ctp:25
+msgid "Small"
+msgstr ""
+
+#: View/Orders/add.ctp:16
+#: View/Videos/view.ctp:25
+msgid "It"
+msgstr ""
+
+#: View/Orders/add.ctp:18
+#: View/Videos/view.ctp:27
+msgid "Large"
+msgstr ""
+
+#: View/Orders/add.ctp:18
+#: View/Videos/view.ctp:27
+msgid "Annoyingly genuine love"
+msgstr ""
+
+#: View/Orders/add.ctp:22
+#: View/Videos/view.ctp:31
+msgid "We cut it & drown it"
+msgstr ""
+
+#: View/Orders/add.ctp:23
+#: View/Videos/view.ctp:32
+msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we"
+msgstr ""
+
+#: View/Orders/add.ctp:42
+msgid "Pragmatist: Reality Dose"
+msgstr ""
+
+#: View/Orders/add.ctp:43
+msgid "Your lover has left you and wine can only carry you so far.  Sick of giving well wishes to the newly engaged and awkward smiles when your ex tells you just how happy they are?  It's okay, this time you can revel in your bitterness and know you're helping symbolise reality, not disney fairytales. Break a lock. Fuck love."
+msgstr ""
+
+#: View/Orders/add.ctp:46
+msgid "Idealist: Love should be unburdened"
+msgstr ""
+
+#: View/Orders/add.ctp:47
+msgid "Think love should be free? We're not so different. Unshackle the burden of forever; give locks their freedom. Watch them arc gracefully into a river that has been full of sewage for centuries.  It's so romantic. Break a lock. Let love fly free."
+msgstr ""
+
+#: View/Orders/add.ctp:50
+msgid "Good samaritan: aka coward"
+msgstr ""
+
+#: View/Orders/add.ctp:51
+msgid "You love Paris so much you let your dog shit everywhere and drown your depression in red wine. Love Locks are officially illegal. You want them gone, but you're too much a pussy to do it yourself. Lucky for you, we're not. Outsource your bravery: we'll save your bridge."
+msgstr ""
+
+#: View/Orders/add.ctp:62
+msgid "How?"
+msgstr ""
+
+#: View/Orders/add.ctp:63
+msgid "You really want to know how this works? You probably also think a toaster is magic, and immunisation is evil."
+msgstr ""
+
+#: View/Orders/add.ctp:64
+msgid "Anyhow: only three steps to fuck love and break a lock."
+msgstr ""
+
+#: View/Orders/add.ctp:67
+msgid "You select a lock size"
+msgstr ""
+
+#: View/Orders/add.ctp:68
+msgid "You fill out the form, pay us money. Our computer goes 'ping', and we untangle ourselves from our French lover(s), or tax papers (depending on the day of the week)."
+msgstr ""
+
+#: View/Orders/add.ctp:71
+msgid "We cut the fucking lock"
+msgstr ""
+
+#: View/Orders/add.ctp:72
+msgid "We head to the love lock bridge. We unsheathe our boltcutters, and do God's work. Unless you chose a small lock. Then we'll probably just rip it off with our bare hands. We throw the fucking thing into the river."
+msgstr ""
+
+#: View/Orders/add.ctp:75
+msgid "You watch your video"
+msgstr ""
+
+#: View/Orders/add.ctp:76
+msgid "A day or so later, when we've drunk the profits, you'll get sent a video of your outsourced-crime. You send it to your friends, and they send us drinking money, too. We all ruin Valentine's day."
+msgstr ""
+
+#: View/Orders/add.ctp:88
+msgid "The Proof"
+msgstr ""
+
+#: View/Orders/add.ctp:89
+msgid "So, you really want to do it and brag to your friends, but you don't want to get ripped off. To be fair, we both know you"
+msgstr ""
+
+#: View/Orders/add.ctp:107
+msgid "click here"
+msgstr ""
+
+#: View/Orders/add.ctp:108
+msgid "Barely had her trembling hand placed the home-decorated lock before we cut it the fuck off, and threw it into the river. This will probably get us stabbed."
+msgstr ""
+
+#: View/Orders/add.ctp:113
+msgid "Because we never learnt that posting videos of doing stupid things online is stupid, we'll upload, for your pleasure, a selection of videos to YouTube, until we are murdered in our sleep. In the meantime, check them out below."
+msgstr ""
+
+#: View/Orders/add.ctp:116
+msgid "More videos"
+msgstr ""
+
+#: View/Orders/add.ctp:126
+msgid "Buy Now"
+msgstr ""
+
+#: View/Orders/add.ctp:127
+msgid "We're up to the all important part. You think it's a great idea. You want your own dedicated video. You secretly want to see us get arrested / punched for doing this."
+msgstr ""
+
+#: View/Orders/add.ctp:128
+msgid "Only you can make it happen. Select a lock size, fill out the form, and make it so."
+msgstr ""
+
+#: View/Orders/add.ctp:133
+msgid "There was  problem processing your form - please double check the data below.."
+msgstr ""
+
+#: View/Orders/add.ctp:144
+msgid "so small? that hardly even qualifies as love.."
+msgstr ""
+
+#: View/Orders/add.ctp:145
+msgid "small"
+msgstr ""
+
+#: View/Orders/add.ctp:149
+msgid "good choice. let"
+msgstr ""
+
+#: View/Orders/view.ctp:5
+msgid "Thank you"
+msgstr ""
+
+#: View/Orders/view.ctp:6
+msgid "Your order has been approved!"
+msgstr ""
+
+#: View/Orders/view.ctp:11
+msgid "Order Number:"
+msgstr ""
+
+#: View/Orders/view.ctp:15
+msgid "Message:"
+msgstr ""
+
+#: View/Orders/view.ctp:16
+msgid "Status:"
+msgstr ""
+
+#: View/Orders/view.ctp:19
+msgid "Your video"
+msgstr ""
+
+#: View/Orders/view.ctp:24
+msgid "Sit tight"
+msgstr ""
+
+#: View/Orders/view.ctp:25
+msgid "We're going to go out and execute a lock on your behalf. This requires us going outside. And if you've ever tried walking around a city at midnight with boltcutters, you'll know why we prefer daytime."
+msgstr ""
+
+#: View/Orders/view.ctp:26
+msgid "Within 24 hours (or so..) - we'll have cut your lock, and you'll get an email. You can also refresh this page lots, because it will update."
+msgstr ""
+
+#: View/Orders/view.ctp:29
+msgid "Share your video, tell your friends."
+msgstr ""
+
+#: View/Orders/view.ctp:30
+msgid "You'll get an email with your video link. Send it to your friends. Brag about it to your mother."
+msgstr ""
+
+#: View/Orders/view.ctp:31
+msgid "Use it to mock your stupidly-in-love friends and co-workers. Especially the ones that recently took a trip to Paris."
+msgstr ""
+
+#: View/Pages/home.ctp:156
+msgid "you need to select a size..."
+msgstr ""
+
+#: View/Videos/view.ctp:5
+msgid "Watch love die"
+msgstr ""
+
+#: View/Videos/view.ctp:7
+msgid "This is %s's video. %s paid good money to watch us execute love."
+msgstr ""
+
+#: View/Videos/view.ctp:8
+msgid "%s is a hero; saving bridges, ridding the world of horrible fucking love-locks. Fuck love."
+msgstr ""
+
+#: Model/CreditCard.php:validation for field card_number
+msgid "A credit card number is required"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field card_number
+msgid "The credit card number you supplied was invalid."
+msgstr ""
+
+#: Model/CreditCard.php:validation for field cvv
+msgid "CVV is required"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field cvv
+msgid "A valid CVV is required"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field exp_m
+msgid "Expiry Month is required"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field exp_m
+msgid "Expiry Month is invalid"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field exp_y
+msgid "Expiry Year is required"
+msgstr ""
+
+#: Model/CreditCard.php:validation for field exp_y
+msgid "Credit Card has expired"
+msgstr ""
+
+#: Model/Currency.php:validation for field currency;validation for field symbol
+#: Model/Language.php:validation for field locale
+#: Model/Order.php:validation for field size_id;validation for field status_id
+#: Model/Price.php:validation for field price
+#: Model/Size.php:validation for field size
+#: Model/Status.php:validation for field status
+#: Model/Video.php:validation for field slug
+msgid "notEmpty"
+msgstr ""
+
+#: Model/Order.php:validation for field created;validation for field modified
+#: Model/Transaction.php:validation for field created;validation for field modified
+#: Model/User.php:validation for field created;validation for field modified
+#: Model/Video.php:validation for field created;validation for field modified
+msgid "datetime"
+msgstr ""
+
+#: Model/Price.php:validation for field size_id;validation for field currency_id
+#: Model/Transaction.php:validation for field order_id;validation for field currency_id;validation for field status_id
+#: Model/User.php:validation for field language_id
+#: Model/Video.php:validation for field order_id
+msgid "numeric"
+msgstr ""
+
+#: Model/Price.php:validation for field price
+#: Model/Transaction.php:validation for field amount
+msgid "decimal"
+msgstr ""
+
+#: Model/User.php:validation for field name
+msgid "Name is required"
+msgstr ""
+
+#: Model/User.php:validation for field email
+msgid "Email is required"
+msgstr ""
+
+#: Model/User.php:validation for field admin
+msgid "boolean"
+msgstr ""
+
