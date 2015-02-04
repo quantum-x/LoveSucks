@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-13 17:12+0000\n"
+"POT-Creation-Date: 2015-01-13 20:55+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,15 +14,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/OrdersController.php:137
+#: Controller/OrdersController.php:159
 msgid "FL: Your recent purchase "
 msgstr ""
 
-#: Controller/OrdersController.php:153;161
+#: Controller/OrdersController.php:176;184
 msgid "The order was declined. Please try again.."
 msgstr ""
 
-#: Controller/OrdersController.php:158
+#: Controller/OrdersController.php:181
 msgid "Your order was successful, but we had a technical issue in updating the database. We will take care of it and keep you informed"
 msgstr ""
 
@@ -65,16 +65,14 @@ msgid "Lock Size:"
 msgstr ""
 
 #: View/Emails/html/order_invoice.ctp:7
-#: View/Emails/text/order_invoice.ctp:10
+#: View/Emails/text/order_invoice.ctp:9
 msgid "We're loading up the bolt-cutters, and heading to the the nearest bridge infested with selfie-taking-horribly-in-love couples, and will pry you off a lock. As soon as the video is uploaded, we'll send you another email."
 msgstr ""
 
 #: View/Emails/html/order_invoice.ctp:7
-msgid "Or, you can refresh <a style=\"text-decoration: underline;transition: all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a FedEx delivery."
-msgstr ""
-
-#: View/Emails/text/order_invoice.ctp:11
-msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
+#: View/Emails/text/order_invoice.ctp:10
+#: View/Orders/view.ctp:18
+msgid "You apparently give a fuck about the environment, so we'll toss the lock in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people's happiness. That"
 msgstr ""
 
 #: View/Layouts/default.ctp:5
@@ -132,82 +130,82 @@ msgid "Manage your email settings and unsubscribe from any future emails by visi
 msgstr ""
 
 #: View/Orders/add.ctp:5
-#: View/Videos/view.ctp:14
+#: View/Videos/view.ctp:15
 msgid "What is this?"
 msgstr ""
 
 #: View/Orders/add.ctp:6
-#: View/Videos/view.ctp:15
+#: View/Videos/view.ctp:16
 msgid "Valentines day sucks. And it's even worse when there are sickeningly happy couples everywhere around you. Paris is like the blackhole of disgustingly happy couples. And like the Parisian dogs, they leave their shit everywhere: those fucking love-locks."
 msgstr ""
 
 #: View/Orders/add.ctp:7
-#: View/Videos/view.ctp:16
+#: View/Videos/view.ctp:17
 msgid "You are a jilted, twisted, emotionally dead person. We are your beacon of hope."
 msgstr ""
 
 #: View/Orders/add.ctp:8
-#: View/Videos/view.ctp:17
+#: View/Videos/view.ctp:18
 msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. We'll even send you the video of it, and may even yell out something you've chosen in the process."
 msgstr ""
 
 #: View/Orders/add.ctp:13
-#: View/Videos/view.ctp:22
+#: View/Videos/view.ctp:23
 msgid "Pick a lock size"
 msgstr ""
 
 #: View/Orders/add.ctp:15
-#: View/Videos/view.ctp:24
+#: View/Videos/view.ctp:25
 msgid "Everyone knows that money = love."
 msgstr ""
 
 #: View/Orders/add.ctp:16
-#: View/Videos/view.ctp:25
+#: View/Videos/view.ctp:26
 msgid "Small"
 msgstr ""
 
 #: View/Orders/add.ctp:16
-#: View/Videos/view.ctp:25
+#: View/Videos/view.ctp:26
 msgid "It's not even highschool puppy love."
 msgstr ""
 
 #: View/Orders/add.ctp:17
-#: View/Videos/view.ctp:26
+#: View/Videos/view.ctp:27
 msgid "Medium"
 msgstr ""
 
 #: View/Orders/add.ctp:17
-#: View/Videos/view.ctp:26
+#: View/Videos/view.ctp:27
 msgid "I'm so in love! mid twenties love"
 msgstr ""
 
 #: View/Orders/add.ctp:18
-#: View/Videos/view.ctp:27
+#: View/Videos/view.ctp:28
 msgid "Large"
 msgstr ""
 
 #: View/Orders/add.ctp:18
-#: View/Videos/view.ctp:27
+#: View/Videos/view.ctp:28
 msgid "Annoyingly genuine love"
 msgstr ""
 
 #: View/Orders/add.ctp:22
-#: View/Videos/view.ctp:31
+#: View/Videos/view.ctp:32
 msgid "We cut it & drown it"
 msgstr ""
 
 #: View/Orders/add.ctp:23
-#: View/Videos/view.ctp:32
+#: View/Videos/view.ctp:33
 msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we'll even yell something you want."
 msgstr ""
 
 #: View/Orders/add.ctp:27
-#: View/Videos/view.ctp:36
+#: View/Videos/view.ctp:37
 msgid "Watch true love die"
 msgstr ""
 
 #: View/Orders/add.ctp:28
-#: View/Videos/view.ctp:37
+#: View/Videos/view.ctp:38
 msgid "We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying."
 msgstr ""
 
@@ -392,51 +390,67 @@ msgstr ""
 msgid "CVV :"
 msgstr ""
 
-#: View/Orders/add.ctp:189
+#: View/Orders/add.ctp:190
 msgid "Card Security Number"
 msgstr ""
 
-#: View/Orders/add.ctp:196
+#: View/Orders/add.ctp:199
 msgid "Exp. Month"
 msgstr ""
 
-#: View/Orders/add.ctp:201
+#: View/Orders/add.ctp:205
 msgid "Card Expiry Month"
 msgstr ""
 
-#: View/Orders/add.ctp:208
+#: View/Orders/add.ctp:214
 msgid "Exp. Year"
 msgstr ""
 
-#: View/Orders/add.ctp:210
+#: View/Orders/add.ctp:217
 msgid "Card Expiry Year"
 msgstr ""
 
-#: View/Orders/add.ctp:219
+#: View/Orders/add.ctp:228
 msgid "Message :"
 msgstr ""
 
-#: View/Orders/add.ctp:221
+#: View/Orders/add.ctp:233
+msgid "<b>Go Green?</b> We'll toss the lock into recycling instead of the river."
+msgstr ""
+
+#: View/Orders/add.ctp:237
+msgid "Order Summary:"
+msgstr ""
+
+#: View/Orders/add.ctp:239
+msgid "1x Lock cut off"
+msgstr ""
+
+#: View/Orders/add.ctp:241
+msgid "1x Video made of said stupidity"
+msgstr ""
+
+#: View/Orders/add.ctp:255
 msgid "Buy now"
 msgstr ""
 
-#: View/Orders/add.ctp:228
+#: View/Orders/add.ctp:262
 msgid "pending"
 msgstr ""
 
-#: View/Orders/add.ctp:229
+#: View/Orders/add.ctp:263
 msgid "ordered"
 msgstr ""
 
-#: View/Orders/add.ctp:230
+#: View/Orders/add.ctp:264
 msgid "completed"
 msgstr ""
 
-#: View/Orders/add.ctp:231
+#: View/Orders/add.ctp:265
 msgid "delivered"
 msgstr ""
 
-#: View/Orders/add.ctp:232
+#: View/Orders/add.ctp:266
 msgid "declined"
 msgstr ""
 
@@ -446,6 +460,10 @@ msgstr ""
 
 #: View/Orders/view.ctp:6
 msgid "Your order has been approved!"
+msgstr ""
+
+#: View/Orders/view.ctp:9
+msgid "Order Summary"
 msgstr ""
 
 #: View/Orders/view.ctp:11
@@ -460,31 +478,19 @@ msgstr ""
 msgid "Status:"
 msgstr ""
 
-#: View/Orders/view.ctp:19
-msgid "Your video"
-msgstr ""
-
-#: View/Orders/view.ctp:24
-msgid "Sit tight"
-msgstr ""
-
-#: View/Orders/view.ctp:25
-msgid "We're going to go out and execute a lock on your behalf. This requires us going outside. And if you've ever tried walking around a city at midnight with boltcutters, you'll know why we prefer daytime."
-msgstr ""
-
-#: View/Orders/view.ctp:26
+#: View/Orders/view.ctp:29
 msgid "Within 24 hours (or so..) - we'll have cut your lock, and you'll get an email. You can also refresh this page lots, because it will update."
 msgstr ""
 
-#: View/Orders/view.ctp:29
+#: View/Orders/view.ctp:32
 msgid "Share your video, tell your friends."
 msgstr ""
 
-#: View/Orders/view.ctp:30
+#: View/Orders/view.ctp:33
 msgid "You'll get an email with your video link. Send it to your friends. Brag about it to your mother."
 msgstr ""
 
-#: View/Orders/view.ctp:31
+#: View/Orders/view.ctp:34
 msgid "Use it to mock your stupidly-in-love friends and co-workers. Especially the ones that recently took a trip to Paris."
 msgstr ""
 
@@ -533,6 +539,8 @@ msgid "Credit Card has expired"
 msgstr ""
 
 #: Model/Currency.php:validation for field currency;validation for field symbol
+#: Model/Extra.php:validation for field name
+#: Model/ExtraPrice.php:validation for field extra_id;validation for field currency_id
 #: Model/Language.php:validation for field locale
 #: Model/Order.php:validation for field size_id;validation for field status_id
 #: Model/Price.php:validation for field price
@@ -542,6 +550,7 @@ msgstr ""
 msgid "notEmpty"
 msgstr ""
 
+#: Model/Extra.php:validation for field created;validation for field modified
 #: Model/Order.php:validation for field created;validation for field modified
 #: Model/Transaction.php:validation for field created;validation for field modified
 #: Model/User.php:validation for field created;validation for field modified
@@ -549,16 +558,18 @@ msgstr ""
 msgid "datetime"
 msgstr ""
 
+#: Model/ExtraPrice.php:validation for field price
+#: Model/Price.php:validation for field price
+#: Model/Transaction.php:validation for field amount
+msgid "decimal"
+msgstr ""
+
+#: Model/OrderExtra.php:validation for field order_id;validation for field extra_id
 #: Model/Price.php:validation for field size_id;validation for field currency_id
 #: Model/Transaction.php:validation for field order_id;validation for field currency_id;validation for field status_id
 #: Model/User.php:validation for field language_id
 #: Model/Video.php:validation for field order_id
 msgid "numeric"
-msgstr ""
-
-#: Model/Price.php:validation for field price
-#: Model/Transaction.php:validation for field amount
-msgid "decimal"
 msgstr ""
 
 #: Model/User.php:validation for field name

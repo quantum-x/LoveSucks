@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-13 17:12+0000\n"
-"PO-Revision-Date: 2015-02-04 10:15+0100\n"
+"POT-Creation-Date: 2015-01-13 20:55+0000\n"
+"PO-Revision-Date: 2015-02-04 13:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,15 +13,15 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: Controller/OrdersController.php:137
+#: Controller/OrdersController.php:159
 msgid "FL: Your recent purchase "
 msgstr "Vos achats récents"
 
-#: Controller/OrdersController.php:153;161
+#: Controller/OrdersController.php:176;184
 msgid "The order was declined. Please try again.."
 msgstr "Votre commande a été déclinée, SVP essayez encore."
 
-#: Controller/OrdersController.php:158
+#: Controller/OrdersController.php:181
 msgid ""
 "Your order was successful, but we had a technical issue in updating the "
 "database. We will take care of it and keep you informed"
@@ -61,7 +61,7 @@ msgstr "Montant:"
 msgid "Lock Size:"
 msgstr "taille de cadenas:"
 
-#: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:10
+#: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:9
 msgid ""
 "We're loading up the bolt-cutters, and heading to the the nearest bridge "
 "infested with selfie-taking-horribly-in-love couples, and will pry you off a "
@@ -72,21 +72,13 @@ msgstr ""
 "sera éternel. Nous allons bien entendu mettre fin à ça pour vous et nous "
 "vous enverrons un Email dès que la vidéo sera en ligne."
 
-#: View/Emails/html/order_invoice.ctp:7
+#: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:10
+#: View/Orders/view.ctp:18
 msgid ""
-"Or, you can refresh <a style=\"text-decoration: underline;transition: "
-"all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a "
-"FedEx delivery."
+"You apparently give a fuck about the environment, so we'll toss the lock in "
+"the recycling.<br />In the meantime, ask yourself why you care for the "
+"environment more than other people's happiness. That"
 msgstr ""
-"Ou vous pouvez rafraichir <a style=\"text-decoration: underline;transition: "
-"all .2s;color: #41637e\" href=\"%s\">récapitulatif de votre commande</a> "
-"Comme si c'était une livraison Chronopost."
-
-#: View/Emails/text/order_invoice.ctp:11
-msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
-msgstr ""
-"Ou vous pouvez rafraichir votre commande %s comme si c'était une livraison "
-"Chronopost."
 
 #: View/Layouts/default.ctp:5
 msgid "Fuck Love: Ruin someone's happiness for your own."
@@ -150,11 +142,11 @@ msgstr ""
 "Gérez vos paramètres et désabonnez vous de toute future communications en "
 "visitant:"
 
-#: View/Orders/add.ctp:5 View/Videos/view.ctp:14
+#: View/Orders/add.ctp:5 View/Videos/view.ctp:15
 msgid "What is this?"
 msgstr "Qu'est-ce que c'est?"
 
-#: View/Orders/add.ctp:6 View/Videos/view.ctp:15
+#: View/Orders/add.ctp:6 View/Videos/view.ctp:16
 msgid ""
 "Valentines day sucks. And it's even worse when there are sickeningly happy "
 "couples everywhere around you. Paris is like the blackhole of disgustingly "
@@ -167,7 +159,7 @@ msgstr ""
 "romantiques qui polluent l'environnement avec leurs démonstrations "
 "cadenathétiques."
 
-#: View/Orders/add.ctp:7 View/Videos/view.ctp:16
+#: View/Orders/add.ctp:7 View/Videos/view.ctp:17
 msgid ""
 "You are a jilted, twisted, emotionally dead person. We are your beacon of "
 "hope."
@@ -175,7 +167,7 @@ msgstr ""
 "Vous êtes, délaissé(e), bizarre, aigris, émotionnellement mort(e), "
 "abandonné(e). Nous sommes votre lueur d'espoir."
 
-#: View/Orders/add.ctp:8 View/Videos/view.ctp:17
+#: View/Orders/add.ctp:8 View/Videos/view.ctp:18
 msgid ""
 "For a small sum, we will take a trip to the famous love-lock bridge in "
 "paris, cut off some couple's eternal love, and toss it into the river. We'll "
@@ -187,43 +179,43 @@ msgstr ""
 "couples dans la seine tout en imortlisant un message que vous aurez choisi "
 "dans une vidéo personnalisée!"
 
-#: View/Orders/add.ctp:13 View/Videos/view.ctp:22
+#: View/Orders/add.ctp:13 View/Videos/view.ctp:23
 msgid "Pick a lock size"
 msgstr "Choisissez une taille"
 
-#: View/Orders/add.ctp:15 View/Videos/view.ctp:24
+#: View/Orders/add.ctp:15 View/Videos/view.ctp:25
 msgid "Everyone knows that money = love."
 msgstr "Tout le monde sait que l'agent = l'amour"
 
-#: View/Orders/add.ctp:16 View/Videos/view.ctp:25
+#: View/Orders/add.ctp:16 View/Videos/view.ctp:26
 msgid "Small"
 msgstr "Petit"
 
-#: View/Orders/add.ctp:16 View/Videos/view.ctp:25
+#: View/Orders/add.ctp:16 View/Videos/view.ctp:26
 msgid "It's not even highschool puppy love."
 msgstr "C'est meme pas l'amour d'enfance."
 
-#: View/Orders/add.ctp:17 View/Videos/view.ctp:26
+#: View/Orders/add.ctp:17 View/Videos/view.ctp:27
 msgid "Medium"
 msgstr "Moyen"
 
-#: View/Orders/add.ctp:17 View/Videos/view.ctp:26
+#: View/Orders/add.ctp:17 View/Videos/view.ctp:27
 msgid "I'm so in love! mid twenties love"
 msgstr "Regarde comme je t'aime mamour"
 
-#: View/Orders/add.ctp:18 View/Videos/view.ctp:27
+#: View/Orders/add.ctp:18 View/Videos/view.ctp:28
 msgid "Large"
 msgstr "Gros"
 
-#: View/Orders/add.ctp:18 View/Videos/view.ctp:27
+#: View/Orders/add.ctp:18 View/Videos/view.ctp:28
 msgid "Annoyingly genuine love"
 msgstr "l'amour authentique, autrement dit, le plus ennervant"
 
-#: View/Orders/add.ctp:22 View/Videos/view.ctp:31
+#: View/Orders/add.ctp:22 View/Videos/view.ctp:32
 msgid "We cut it & drown it"
 msgstr "Coupé et tué"
 
-#: View/Orders/add.ctp:23 View/Videos/view.ctp:32
+#: View/Orders/add.ctp:23 View/Videos/view.ctp:33
 msgid ""
 "We will find a lock, snap it with bolt cutters, and toss it into that "
 "stupidly romantic river. Maybe we'll even yell something you want."
@@ -232,11 +224,11 @@ msgstr ""
 "cette rivière insupportablement romantique en criant le message que vous "
 "désirez peut être ?"
 
-#: View/Orders/add.ctp:27 View/Videos/view.ctp:36
+#: View/Orders/add.ctp:27 View/Videos/view.ctp:37
 msgid "Watch true love die"
 msgstr "Tuer l'Amour éternel "
 
-#: View/Orders/add.ctp:28 View/Videos/view.ctp:37
+#: View/Orders/add.ctp:28 View/Videos/view.ctp:38
 msgid ""
 "We will send you the video of the lock getting cut off and drowned in the "
 "river. If you listen closely, you can hear love whimpering and dying."
@@ -531,51 +523,70 @@ msgstr "Numéro de carte de crédit :"
 msgid "CVV :"
 msgstr "N. de securite:"
 
-#: View/Orders/add.ctp:189
+#: View/Orders/add.ctp:190
 msgid "Card Security Number"
 msgstr "Numéro de sécurité de la carte"
 
-#: View/Orders/add.ctp:196
+#: View/Orders/add.ctp:199
 msgid "Exp. Month"
 msgstr "Date d'expiration"
 
-#: View/Orders/add.ctp:201
+#: View/Orders/add.ctp:205
 msgid "Card Expiry Month"
 msgstr "Mois d'expiration de la carte"
 
-#: View/Orders/add.ctp:208
+#: View/Orders/add.ctp:214
 msgid "Exp. Year"
 msgstr "Année d'expiration"
 
-#: View/Orders/add.ctp:210
+#: View/Orders/add.ctp:217
 msgid "Card Expiry Year"
 msgstr "Année d'expiration de la carte"
 
-#: View/Orders/add.ctp:219
+#: View/Orders/add.ctp:228
 msgid "Message :"
 msgstr "Message:"
 
-#: View/Orders/add.ctp:221
+#: View/Orders/add.ctp:233
+msgid ""
+"<b>Go Green?</b> We'll toss the lock into recycling instead of the river."
+msgstr ""
+"<b>Soyez bio!</b> Nous allons lancer le verrou dans le recyclage à la place "
+"de la rivière."
+
+#: View/Orders/add.ctp:237
+msgid "Order Summary:"
+msgstr "Récapitulatif de votre commande:"
+
+#: View/Orders/add.ctp:239
+msgid "1x Lock cut off"
+msgstr "1x Cadenas découpé: "
+
+#: View/Orders/add.ctp:241
+msgid "1x Video made of said stupidity"
+msgstr "1x Video de cette connerie"
+
+#: View/Orders/add.ctp:255
 msgid "Buy now"
 msgstr "Achetez!"
 
-#: View/Orders/add.ctp:228
+#: View/Orders/add.ctp:262
 msgid "pending"
 msgstr "en attente"
 
-#: View/Orders/add.ctp:229
+#: View/Orders/add.ctp:263
 msgid "ordered"
 msgstr "commandé"
 
-#: View/Orders/add.ctp:230
+#: View/Orders/add.ctp:264
 msgid "completed"
 msgstr "terminé"
 
-#: View/Orders/add.ctp:231
+#: View/Orders/add.ctp:265
 msgid "delivered"
 msgstr "livré"
 
-#: View/Orders/add.ctp:232
+#: View/Orders/add.ctp:266
 msgid "declined"
 msgstr "refusé"
 
@@ -586,6 +597,10 @@ msgstr "Merci"
 #: View/Orders/view.ctp:6
 msgid "Your order has been approved!"
 msgstr "Votre commande a été approuvée"
+
+#: View/Orders/view.ctp:9
+msgid "Order Summary"
+msgstr "Récapitulatif de votre commande"
 
 #: View/Orders/view.ctp:11
 msgid "Order Number:"
@@ -599,26 +614,7 @@ msgstr "Message:"
 msgid "Status:"
 msgstr "Statut:"
 
-#: View/Orders/view.ctp:19
-msgid "Your video"
-msgstr "Votre Vidéo"
-
-#: View/Orders/view.ctp:24
-msgid "Sit tight"
-msgstr "Tenez vous bien"
-
-#: View/Orders/view.ctp:25
-msgid ""
-"We're going to go out and execute a lock on your behalf. This requires us "
-"going outside. And if you've ever tried walking around a city at midnight "
-"with boltcutters, you'll know why we prefer daytime."
-msgstr ""
-"Nous allons sortir et executer un cadenas d'amour en votre honneur. Afin "
-"d'accomplir cette tâche il nous faut sortir dehors et si vous avez déjà "
-"essayer de marcher aux alentours de minuit avec un coupe boulon dans les "
-"rues ... vous comprendrez pourquoi nous préférons faire ça en plain jour ;)"
-
-#: View/Orders/view.ctp:26
+#: View/Orders/view.ctp:29
 msgid ""
 "Within 24 hours (or so..) - we'll have cut your lock, and you'll get an "
 "email. You can also refresh this page lots, because it will update."
@@ -627,11 +623,11 @@ msgstr ""
 "avertis par email. Sinon vous pouvez rafraichir cette page toutes les 5 "
 "secondes car la page sera bien entendu updatée . "
 
-#: View/Orders/view.ctp:29
+#: View/Orders/view.ctp:32
 msgid "Share your video, tell your friends."
 msgstr "Partagez votre vidéo, prévenez vos amis."
 
-#: View/Orders/view.ctp:30
+#: View/Orders/view.ctp:33
 msgid ""
 "You'll get an email with your video link. Send it to your friends. Brag "
 "about it to your mother."
@@ -639,7 +635,7 @@ msgstr ""
 "Vous recevrez un email avec le lien de votre vidéo. Envoyez la à vos amis , "
 "Vantez vous auprès de vos famille :)"
 
-#: View/Orders/view.ctp:31
+#: View/Orders/view.ctp:34
 msgid ""
 "Use it to mock your stupidly-in-love friends and co-workers. Especially the "
 "ones that recently took a trip to Paris."
@@ -698,30 +694,31 @@ msgid "Credit Card has expired"
 msgstr "La carte de crédit est expirée"
 
 #: Model/Currency.php:validation for field currency;validation symbol
-#: Model/Language.php:validation locale Model/Order.php:validation
-#: size_id;validation status_id Model/Price.php:validation price
-#: Model/Size.php:validation size Model/Status.php:validation status
-#: Model/Video.php:validation slug
+#: Model/Extra.php:validation name Model/ExtraPrice.php:validation
+#: extra_id;validation currency_id Model/Language.php:validation locale
+#: Model/Order.php:validation size_id;validation status_id
+#: Model/Price.php:validation price Model/Size.php:validation size
+#: Model/Status.php:validation status Model/Video.php:validation slug
 msgid "notEmpty"
 msgstr "non vide"
 
-#: Model/Order.php:validation for field created;validation modified
-#: Model/Transaction.php:validation Model/User.php:validation
-#: Model/Video.php:validation
+#: Model/Extra.php:validation for field created;validation modified
+#: Model/Order.php:validation Model/Transaction.php:validation
+#: Model/User.php:validation Model/Video.php:validation
 msgid "datetime"
 msgstr "date"
 
-#: Model/Price.php:validation for field size_id;validation currency_id
-#: Model/Transaction.php:validation order_id;validation currency_id;validation
-#: status_id Model/User.php:validation language_id Model/Video.php:validation
-#: order_id
-msgid "numeric"
-msgstr "numerique"
-
-#: Model/Price.php:validation for field price Model/Transaction.php:validation
-#: amount
+#: Model/ExtraPrice.php:validation for field price Model/Price.php:validation
+#: Model/Transaction.php:validation amount
 msgid "decimal"
 msgstr "décimal"
+
+#: Model/OrderExtra.php:validation for field order_id;validation extra_id
+#: Model/Price.php:validation size_id;validation currency_id
+#: Model/Transaction.php:validation currency_id;validation status_id
+#: Model/User.php:validation language_id Model/Video.php:validation order_id
+msgid "numeric"
+msgstr "numerique"
 
 #: Model/User.php:validation for field name
 msgid "Name is required"
@@ -734,3 +731,35 @@ msgstr "Prière d'indiquer votre adresse email"
 #: Model/User.php:validation for field admin
 msgid "boolean"
 msgstr ""
+
+#~ msgid ""
+#~ "Or, you can refresh <a style=\"text-decoration: underline;transition: "
+#~ "all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a "
+#~ "FedEx delivery."
+#~ msgstr ""
+#~ "Ou vous pouvez rafraichir <a style=\"text-decoration: underline;"
+#~ "transition: all .2s;color: #41637e\" href=\"%s\">récapitulatif de votre "
+#~ "commande</a> Comme si c'était une livraison Chronopost."
+
+#~ msgid ""
+#~ "Or, you can refresh your order summary %s like it's a FedEx delivery."
+#~ msgstr ""
+#~ "Ou vous pouvez rafraichir votre commande %s comme si c'était une "
+#~ "livraison Chronopost."
+
+#~ msgid "Your video"
+#~ msgstr "Votre Vidéo"
+
+#~ msgid "Sit tight"
+#~ msgstr "Tenez vous bien"
+
+#~ msgid ""
+#~ "We're going to go out and execute a lock on your behalf. This requires us "
+#~ "going outside. And if you've ever tried walking around a city at midnight "
+#~ "with boltcutters, you'll know why we prefer daytime."
+#~ msgstr ""
+#~ "Nous allons sortir et executer un cadenas d'amour en votre honneur. Afin "
+#~ "d'accomplir cette tâche il nous faut sortir dehors et si vous avez déjà "
+#~ "essayer de marcher aux alentours de minuit avec un coupe boulon dans les "
+#~ "rues ... vous comprendrez pourquoi nous préférons faire ça en plain "
+#~ "jour ;)"
