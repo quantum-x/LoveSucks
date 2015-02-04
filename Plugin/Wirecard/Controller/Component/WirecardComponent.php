@@ -62,7 +62,7 @@ class WirecardComponent extends Component {
             $this->data = $data;
 
             //Set the amount into cents
-            $this->data['amount'] = (int) $this->data['amount'] * 100;
+            $this->data['amount'] = (int) ($this->data['amount'] * 100);
 
         } catch (Exception $e) {
            $this->errors = $e->getMessage();
