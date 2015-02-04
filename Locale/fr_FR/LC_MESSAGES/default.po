@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-13 22:18+0000\n"
-"PO-Revision-Date: 2015-02-04 21:34+0100\n"
+"POT-Creation-Date: 2015-01-14 04:36+0000\n"
+"PO-Revision-Date: 2015-02-04 21:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -64,8 +64,8 @@ msgstr "taille de cadenas:"
 #: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:9
 msgid ""
 "We're loading up the bolt-cutters, and heading to the the nearest bridge "
-"infested with selfie-taking-horribly-in-love couples, and will pry you off a "
-"lock. As soon as the video is uploaded, we'll send you another email."
+"infested with selfie-taking-horribly-in-love couples, and will pry you off "
+"some locks. As soon as the video is uploaded, we'll send you another email."
 msgstr ""
 "Le coupe-boulon est prêt et nous nous dirigeons de ce pas vers un pont "
 "infesté de ces infâmes cadenas posés par ces couples certains que leur amour "
@@ -75,7 +75,7 @@ msgstr ""
 #: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:10
 #: View/Orders/view.ctp:18
 msgid ""
-"You apparently give a fuck about the environment, so we'll toss the lock in "
+"You apparently give a fuck about the environment, so we'll toss the locks in "
 "the recycling.<br />In the meantime, ask yourself why you care for the "
 "environment more than other people's happiness. That's fairly fucking "
 "twisted."
@@ -192,11 +192,11 @@ msgstr ""
 #: View/Orders/add.ctp:8 View/Videos/view.ctp:18
 msgid ""
 "For a small sum, we will take a trip to the famous love-lock bridge in "
-"paris, cut off some couple's eternal love, and toss it into the river. Or "
-"not. If you only want the river to be polluted by beer bottles and "
+"paris, cut off the eternal love of three couples, and toss them into the "
+"river. Or not. If you only want the river to be polluted by beer bottles and "
 "effluence, the choice is yours. When we are done, we'll will send you a "
-"personalised video of of your very own lock getting cut, and may even yell "
-"out something you've chosen in the process."
+"personalised video of the locks getting cut, and may even yell out something "
+"you've chosen in the process."
 msgstr ""
 "Pour une modique somme, nous irons pour vous sur le pont des Arts afin de "
 "mettre fin à ces promesses d'amour éternel et jeter 3 symboles de ces "
@@ -238,13 +238,14 @@ msgid "Annoyingly genuine love"
 msgstr "l'amour authentique, autrement dit, le plus énervant"
 
 #: View/Orders/add.ctp:22 View/Videos/view.ctp:32
-msgid "We cut it & drown it"
+msgid "We cut 'em & drown 'em"
 msgstr "Coupés et tués"
 
 #: View/Orders/add.ctp:23 View/Videos/view.ctp:33
 msgid ""
-"We will find a lock, snap it with bolt cutters, and toss it into that "
-"stupidly romantic river (or recycle it). We'll even yell something you want."
+"We will find three locks, snap 'em with bolt cutters, and toss them into "
+"that stupidly romantic river (or recycle them). We'll even yell something "
+"you want."
 msgstr ""
 "Nous trouverons 3 cadenas, nous les couperons pour vous et les jetterons "
 "dans cette rivière insupportablement romantique (ou à la poubelle) en criant "
@@ -256,11 +257,11 @@ msgstr "Tuer l'Amour éternel "
 
 #: View/Orders/add.ctp:28 View/Videos/view.ctp:38
 msgid ""
-"We will send you the video of the lock getting cut off and drowned in the "
+"We will send you the video of the locks getting cut off and drowned in the "
 "river (or recycled..) If you listen closely, you can hear love whimpering "
 "and dying."
 msgstr ""
-"Nous vous enverrons la vidéo de la coupe des cadenas et son jet dans la "
+"Nous vous enverrons la vidéo de la coupe des cadenas et ses jets dans la "
 "Seine (ou à la poubelle), si vous écoutez attentivement vous pourrez même "
 "entendre les gémissements insoutenable de l'amour qui se meurt."
 
@@ -333,9 +334,10 @@ msgstr ""
 "diabolique."
 
 #: View/Orders/add.ctp:64
-msgid "Anyhow: only three steps to fuck love and break a lock."
+msgid "Anyhow: only three steps to fuck love and break locks."
 msgstr ""
-"Quoi qu'il en soit: en seulement trois étapes Fuck love et brisez un cadenas."
+"Quoi qu'il en soit: en seulement trois étapes Fuck love et brisez des "
+"cadenas."
 
 #: View/Orders/add.ctp:67
 msgid "You select a lock size"
@@ -359,14 +361,14 @@ msgstr "Nous coupons ces satanés cadenas!"
 #: View/Orders/add.ctp:72
 msgid ""
 "We head to the love lock bridge. We unsheathe our boltcutters, and do God's "
-"work. Unless you chose a small lock. Then we'll probably just rip it off "
-"with our bare hands. We throw the fucking thing into the river. Or fucking "
-"recycle it. Which is less satisfying, but apparently more popular."
+"work. Unless you chose small locks. Then we'll probably just rip them off "
+"with our bare hands. We throw the fucking things into the river. Or fucking "
+"recycle them. Which is less satisfying, but apparently more popular."
 msgstr ""
 "Nous nous pressons vers le pont des arts. Nous sortons notre coupe-boulon et "
-"exécutons notre tâche divine. Ok si c'est un petit cadenas nous faisons le "
+"exécutons notre tâche divine. Ok si ce sont petits cadenas nous faisons le "
 "travail à mains nues et nous jetons ces abominations dans la Seine! Ou bien "
-"on va le recycler. Qui est moins satisfaisant, mais apparemment plus "
+"on va les recycler. Qui est moins satisfaisant, mais apparemment plus "
 "populaire."
 
 #: View/Orders/add.ctp:75
@@ -495,7 +497,7 @@ msgid ""
 "Only you can make it happen. Select a lock size, fill out the form, and make "
 "it so."
 msgstr ""
-"Nous comptons sur VOUS pour ruiner l'amour! sélectionnez une taille de "
+"Nous comptons sur VOUS pour ruiner l'amour! Sélectionnez une taille de "
 "cadenas maintenant, remplissez les formulaires ."
 
 #: View/Orders/add.ctp:133
@@ -580,9 +582,9 @@ msgstr "Message:"
 
 #: View/Orders/add.ctp:233
 msgid ""
-"<b>Go Green?</b> We'll toss the lock into recycling instead of the river."
+"<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
 msgstr ""
-"<b>Soyez bio!</b> Nous allons lancer le cadenas une poubelle de recyclage "
+"<b>Soyez bio!</b> Nous allons lancer les cadenas une poubelle de recyclage "
 "plutôt que dans la Seine."
 
 #: View/Orders/add.ctp:237
@@ -590,8 +592,8 @@ msgid "Order Summary:"
 msgstr "Récapitulatif de votre commande:"
 
 #: View/Orders/add.ctp:239
-msgid "1x Lock cut off"
-msgstr "1x Cadenas découpé "
+msgid "3x Locks cut off"
+msgstr "3x Cadenas découpés"
 
 #: View/Orders/add.ctp:241
 msgid "1x Video made of said stupidity"
@@ -654,9 +656,10 @@ msgid "Sit tight"
 msgstr "Tenez-vous bien"
 
 #: View/Orders/view.ctp:28
+#, fuzzy
 msgid ""
-"We're going to go out and execute a lock on your behalf. This requires us "
-"going outside. And if you've ever tried walking around a city at midnight "
+"We're going to go out and execute some locks on your behalf. This requires "
+"us going outside. And if you've ever tried walking around a city at midnight "
 "with boltcutters, you'll know why we prefer daytime."
 msgstr ""
 "Nous allons sortir et exécuter un cadenas d'amour en votre honneur. Afin "
@@ -666,10 +669,10 @@ msgstr ""
 
 #: View/Orders/view.ctp:29
 msgid ""
-"Within 24 hours (or so..) - we'll have cut your lock, and you'll get an "
+"Within 24 hours (or so..) - we'll have cut your locks, and you'll get an "
 "email. You can also refresh this page lots, because it will update."
 msgstr ""
-"Sous 24 heures (plus ou moins...) votre cadenas sera sacrifié et vous serez "
+"Sous 24 heures (plus ou moins...) vos cadenas seront sacrifié et vous serez "
 "avertis par email. Sinon vous pouvez rafraichir cette page toutes les 5 "
 "secondes car la page sera bien entendu updatée . "
 
