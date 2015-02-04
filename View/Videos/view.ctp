@@ -8,7 +8,7 @@
 					<?php echo __('%s is a hero; saving bridges, ridding the world of horrible fucking love-locks. Fuck love.',$video['User']['name']) ?></p>
 				</div>
 
-			<div class="wrap">
+
 			<!---start-top-grids---->
 				<div class="top-service-grids" id="what">
 					<div class="services-head">
