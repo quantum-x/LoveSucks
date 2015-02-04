@@ -236,7 +236,7 @@
 							<div class="extras">
 								<?php echo __('Order Summary:') ?>
 								<table>
-									<tr><td colspan="2" class="item"><?php echo __('3x Locks cut off') ?> (<span id="lockSize"></span>)</td></tr>
+									<tr><td colspan="2" class="item"><?php echo __('3x Locks cut off') ?>: <span id="lockSize"></span></td></tr>
 									<tr>
 										<td class="item"><?php echo __('1x Video made of said stupidity') ?></td>
 										<td class="price"><?php echo $currency['symbol']?><span id="lockCost">0</span></td>
@@ -275,7 +275,6 @@
                         $("#badge-comment").text($(this).find("img:first").attr('alt'));
                         $("#OrderSizeId").val( $(this).data( "id" ) );
                         $("#lockCost").text($(this).find("span:last").text());
-                        $("#lockSize").text($(this).find("div:last").text());
                         updateTotals();
                     });
                     $('#OrderExtrasBio').change(function() {

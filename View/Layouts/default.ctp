@@ -101,7 +101,6 @@
           ga('send', 'pageview');
 
         </script>
-        <?php echo $this->Session->flash('ga'); ?>
 	</body>
 </html>
 
