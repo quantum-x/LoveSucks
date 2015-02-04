@@ -59,13 +59,14 @@ class OrdersController extends AppController {
                 $this->loadModel('Order');
                 $this->loadModel('Transaction');
                 $this->loadModel('Price');
+                $this->loadModel('Language');
 
-                if ($this->_getCurrentLang() == "en_US") {
-                    $currency = "USD";
-                } else {
-                    $currency = "EUR";
-                }
-                $currency = $this->Currency->find('first',['conditions' => ['currency' => $currency], 'recursive' => -1]);
+                $currency = $this->_getCurrency();
+
+                //Get the language ID
+                $this->loadModel('Language');
+                $language = $this->Language->find('first',['conditions' => ['locale' => $this->_getCurrentLang()]])['Language'];
+
 
                 //Find the price for this size + currency
                 $price = $this->Price->find('first',['fields' => 'Price.price', 'conditions' => ['currency_id' => $currency['Currency']['id'], 'size_id' => $this->request->data['Order']['size_id']], 'recursive' => -1])['Price']['price'];
@@ -115,6 +116,9 @@ class OrdersController extends AppController {
                 if (!empty($user_id) && isset($user_id['User']['id']) !== false)    {
                     $this->request->data['User']['id'] = $user_id['User']['id'];
                 }
+
+                //Set the language preference
+                $this->request->data['User']['language_id'] = $language['id'];
 
                 //Prepare to save everything
                 unset($this->request->data['CreditCard']);
@@ -174,6 +178,20 @@ class OrdersController extends AppController {
             } else {
                 $this->Session->setFlash(__('The order could not be saved. Please, try again.'));
             }*/
+        } else {
+
+            //Sets pricing
+            $this->loadModel('Size');
+            $this->loadModel('Price');
+
+            $sizes = $this->Size->find('list');
+
+            foreach ($sizes as $id => $size) {
+                $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
+                $returnArray[$size] = reset($price);
+            }
+            $this->set('prices',$returnArray);
+
         }
     }
 
