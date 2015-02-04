@@ -97,13 +97,13 @@ class OrdersController extends AppController {
                 //If we've got an extra, grab its price
                 if (isset($this->request->data['OrderExtras']['bio']) && $this->request->data['OrderExtras']['bio'] == 1) {
                     $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['Extra.name' => array_keys($this->request->data['OrderExtras'])[0], 'ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
-                    $price = $price + $extras['ExtraPrice']['price'];
+                    $finalPrice = $price + $extras['ExtraPrice']['price'];
                     $hasExtra = true;
                 } else {
                     $hasExtra = false;
                 }
 
-                $data = [   'amount' => $price,
+                $data = [   'amount' => $finalPrice,
                             'transaction_id' => $this->createUniqueID(),
                             'currency' => $currency['Currency']['currency'],
                             'currency_id' => $currency['Currency']['id'],
@@ -165,6 +165,7 @@ class OrdersController extends AppController {
                         //Add the currency info + size info
                         $this->request->data['Currency'] = $currency['Currency'];
                         $this->request->data['Size'] = $size['Size'];
+                        $this->request->data['Price']['price'] = $price;
 
                         try {
 
@@ -185,6 +186,10 @@ class OrdersController extends AppController {
                         } catch(Exception $e) {
 
                         }
+
+                        //Trigger the Google Analytics Flash
+                        $this->Session->setFlash('Order approved!', 'default', array(), 'ga');
+
                         return $this->redirect(
                             array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug'])
                         );
