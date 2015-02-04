@@ -197,25 +197,24 @@ class OrdersController extends AppController {
             } else {
                 $this->Session->setFlash(__('The order could not be saved. Please, try again.'));
             }*/
-        } else {
-
-            //Sets pricing
-            $this->loadModel('Size');
-            $this->loadModel('Price');
-            $this->loadModel('Extra');
-            $this->Extra->Behaviors->load('Containable');
-
-            $sizes = $this->Size->find('list');
-            $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
-            $this->set('extras',$extras);
-
-            foreach ($sizes as $id => $size) {
-                $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
-                $returnArray[$size] = reset($price);
-            }
-            $this->set('prices',$returnArray);
-
         }
+
+        //Sets pricing
+        $this->loadModel('Size');
+        $this->loadModel('Price');
+        $this->loadModel('Extra');
+        $this->Extra->Behaviors->load('Containable');
+
+        $sizes = $this->Size->find('list');
+        $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
+        $this->set('extras',$extras);
+
+        foreach ($sizes as $id => $size) {
+            $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
+            $returnArray[$size] = reset($price);
+        }
+        $this->set('prices',$returnArray);
+
     }
 
     protected function createUniqueID() {
