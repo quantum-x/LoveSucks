@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-13 02:08+0000\n"
+"POT-Creation-Date: 2015-01-13 02:23+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -78,7 +78,37 @@ msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
 msgstr ""
 
 #: View/Layouts/default.ctp:5
-msgid "Fuck Love: Ruin someone"
+msgid "Fuck Love: Ruin someone's happiness for your own."
+msgstr ""
+
+#: View/Layouts/default.ctp:24
+msgid "Fuck Love"
+msgstr ""
+
+#: View/Layouts/default.ctp:28
+msgid "Home"
+msgstr ""
+
+#: View/Layouts/default.ctp:29
+msgid "What?"
+msgstr ""
+
+#: View/Layouts/default.ctp:30
+#: View/Orders/add.ctp:38
+msgid "Why?"
+msgstr ""
+
+#: View/Layouts/default.ctp:31
+#: View/Orders/add.ctp:62
+msgid "How?"
+msgstr ""
+
+#: View/Layouts/default.ctp:32
+msgid "Buy Now!"
+msgstr ""
+
+#: View/Layouts/default.ctp:62
+msgid "Send us some <a href=\"mailto:support@fucklove.paris\">hate mail</a>"
 msgstr ""
 
 #: View/Layouts/Emails/html/default.ctp:905
@@ -118,7 +148,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:8
 #: View/Videos/view.ctp:17
-msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple"
+msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. We'll even send you the video of it, and may even yell out something you've chosen in the process."
 msgstr ""
 
 #: View/Orders/add.ctp:13
@@ -138,7 +168,17 @@ msgstr ""
 
 #: View/Orders/add.ctp:16
 #: View/Videos/view.ctp:25
-msgid "It"
+msgid "It's not even highschool puppy love."
+msgstr ""
+
+#: View/Orders/add.ctp:17
+#: View/Videos/view.ctp:26
+msgid "Medium"
+msgstr ""
+
+#: View/Orders/add.ctp:17
+#: View/Videos/view.ctp:26
+msgid "I'm so in love! mid twenties love"
 msgstr ""
 
 #: View/Orders/add.ctp:18
@@ -158,7 +198,21 @@ msgstr ""
 
 #: View/Orders/add.ctp:23
 #: View/Videos/view.ctp:32
-msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we"
+msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we'll even yell something you want."
+msgstr ""
+
+#: View/Orders/add.ctp:27
+#: View/Videos/view.ctp:36
+msgid "Watch true love die"
+msgstr ""
+
+#: View/Orders/add.ctp:28
+#: View/Videos/view.ctp:37
+msgid "We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying."
+msgstr ""
+
+#: View/Orders/add.ctp:39
+msgid "We've all got our reasons.  Maybe one of these is yours."
 msgstr ""
 
 #: View/Orders/add.ctp:42
@@ -183,10 +237,6 @@ msgstr ""
 
 #: View/Orders/add.ctp:51
 msgid "You love Paris so much you let your dog shit everywhere and drown your depression in red wine. Love Locks are officially illegal. You want them gone, but you're too much a pussy to do it yourself. Lucky for you, we're not. Outsource your bravery: we'll save your bridge."
-msgstr ""
-
-#: View/Orders/add.ctp:62
-msgid "How?"
 msgstr ""
 
 #: View/Orders/add.ctp:63
@@ -226,11 +276,35 @@ msgid "The Proof"
 msgstr ""
 
 #: View/Orders/add.ctp:89
-msgid "So, you really want to do it and brag to your friends, but you don't want to get ripped off. To be fair, we both know you"
+msgid "So, you really want to do it and brag to your friends, but you don't want to get ripped off. To be fair, we both know you're a professional skeptic. Qwell your fears. Here are some videos of us risking beatings from angry brides to deliver you service."
+msgstr ""
+
+#: View/Orders/add.ctp:94
+msgid "Combo Bonus!"
+msgstr ""
+
+#: View/Orders/add.ctp:95
+msgid "Get your own combo:"
+msgstr ""
+
+#: View/Orders/add.ctp:95;101;107
+msgid "click here"
+msgstr ""
+
+#: View/Orders/add.ctp:96
+msgid "This was fantastic. Not only did some grumpy old guy help pick the lock, when it went, it took out a bunch of others. Combo bonus, ruined love never felt so good."
+msgstr ""
+
+#: View/Orders/add.ctp:101
+msgid "Kill a large lock now:"
+msgstr ""
+
+#: View/Orders/add.ctp:102
+msgid "Angry gasping tourists, and an annoyingly solid lock. This has it all. It's either true love, or someone was really fucking clingy and needy. Either way, it's dead."
 msgstr ""
 
 #: View/Orders/add.ctp:107
-msgid "click here"
+msgid "Buy love's demise:"
 msgstr ""
 
 #: View/Orders/add.ctp:108
@@ -270,7 +344,72 @@ msgid "small"
 msgstr ""
 
 #: View/Orders/add.ctp:149
-msgid "good choice. let"
+msgid "good choice. let's fuck up true love."
+msgstr ""
+
+#: View/Orders/add.ctp:150
+msgid "huge"
+msgstr ""
+
+#: View/Orders/add.ctp:154
+msgid "you deserve bigger. other people would cut yours off."
+msgstr ""
+
+#: View/Orders/add.ctp:155
+msgid "regular"
+msgstr ""
+
+#: View/Orders/add.ctp:164
+#: View/Pages/home.ctp:156
+msgid "you need to select a size..."
+msgstr ""
+
+#: View/Orders/add.ctp:170
+msgid "100% secure payment."
+msgstr ""
+
+#: View/Orders/add.ctp:174
+msgid "Name :"
+msgstr ""
+
+#: View/Orders/add.ctp:178
+msgid "Email :"
+msgstr ""
+
+#: View/Orders/add.ctp:182
+msgid "Credit Card Number :"
+msgstr ""
+
+#: View/Orders/add.ctp:187
+msgid "CVV :"
+msgstr ""
+
+#: View/Orders/add.ctp:189
+msgid "Card Security Number"
+msgstr ""
+
+#: View/Orders/add.ctp:196
+msgid "Exp. Month"
+msgstr ""
+
+#: View/Orders/add.ctp:201
+msgid "Card Expiry Month"
+msgstr ""
+
+#: View/Orders/add.ctp:208
+msgid "Exp. Year"
+msgstr ""
+
+#: View/Orders/add.ctp:210
+msgid "Card Expiry Year"
+msgstr ""
+
+#: View/Orders/add.ctp:219
+msgid "Message :"
+msgstr ""
+
+#: View/Orders/add.ctp:221
+msgid "Buy now"
 msgstr ""
 
 #: View/Orders/view.ctp:5
@@ -319,10 +458,6 @@ msgstr ""
 
 #: View/Orders/view.ctp:31
 msgid "Use it to mock your stupidly-in-love friends and co-workers. Especially the ones that recently took a trip to Paris."
-msgstr ""
-
-#: View/Pages/home.ctp:156
-msgid "you need to select a size..."
 msgstr ""
 
 #: View/Videos/view.ctp:5
