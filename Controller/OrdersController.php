@@ -47,22 +47,6 @@ class OrdersController extends AppController {
 
     public function add() {
 
-        //Sets pricing
-        $this->loadModel('Size');
-        $this->loadModel('Price');
-        $this->loadModel('Extra');
-        $this->Extra->Behaviors->load('Containable');
-
-        $sizes = $this->Size->find('list');
-        $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
-        $this->set('extras',$extras);
-
-        foreach ($sizes as $id => $size) {
-            $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
-            $returnArray[$size] = reset($price);
-        }
-        $this->set('prices',$returnArray);
-
         if ($this->request->is('post')) {
             if ($this->Order->saveAll( $this->request->data, array('validate' => 'only'))) {
 
@@ -211,15 +195,22 @@ class OrdersController extends AppController {
                 $this->set('hasErrors',true);
             }
 
-
-/*            $this->Order->create();
-            if ($this->Order->save($this->request->data)) {
-                $this->Session->setFlash(__('The order has been saved.'));
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The order could not be saved. Please, try again.'));
-            }*/
         }
+        //Sets pricing
+        $this->loadModel('Size');
+        $this->loadModel('Price');
+        $this->loadModel('Extra');
+        $this->Extra->Behaviors->load('Containable');
+
+        $sizes = $this->Size->find('list');
+        $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
+        $this->set('extras',$extras);
+
+        foreach ($sizes as $id => $size) {
+            $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
+            $returnArray[$size] = reset($price);
+        }
+        $this->set('prices',$returnArray);
 
     }
 
