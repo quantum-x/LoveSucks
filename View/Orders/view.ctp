@@ -15,7 +15,7 @@
 						<li><b><?php echo __('Message:') ?></b> <?php echo $order['Order']['message'] ?></li>
 						<li><b><?php echo __('Status:') ?></b> <?php echo __($order['Status']['status']) ?></li>
 						<?php if (!empty($order['OrderExtra']) && $order['OrderExtra'][0]['Extra']['name'] == "bio") { ?>
-						    <li><?php echo __('You apparently give a fuck about the environment, so we\'ll toss the lock in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people\'s happiness. That\'s fairly fucking twisted.')?></li>
+						    <li><?php echo __('You apparently give a fuck about the environment, so we\'ll toss the locks in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people\'s happiness. That\'s fairly fucking twisted.')?></li>
 						<?php } ?>
 					</ul>
 					<?php if (isset($order['Video']['slug']) && !empty($order['Video']['slug'])) { ?>
@@ -25,8 +25,8 @@
 				<ol class="blue white-text">
 					<li>
 						<h4><?php echo __('Sit tight') ?></h4>
-						<p><?php echo __('We\'re going to go out and execute a lock on your behalf. This requires us going outside. And if you\'ve ever tried walking around a city at midnight with boltcutters, you\'ll know why we prefer daytime.') ?>
-						<?php echo __('Within 24 hours (or so..) - we\'ll have cut your lock, and you\'ll get an email. You can also refresh this page lots, because it will update.') ?></p>
+						<p><?php echo __('We\'re going to go out and execute some locks on your behalf. This requires us going outside. And if you\'ve ever tried walking around a city at midnight with boltcutters, you\'ll know why we prefer daytime.') ?>
+						<?php echo __('Within 24 hours (or so..) - we\'ll have cut your locks, and you\'ll get an email. You can also refresh this page lots, because it will update.') ?></p>
 					</li>
 					<li>
 						<h4><?php echo __('Share your video, tell your friends.') ?></h4>

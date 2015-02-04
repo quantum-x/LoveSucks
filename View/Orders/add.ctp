@@ -5,7 +5,7 @@
 						<h3><?php echo __('What is this?') ?></h3>
 						<p><?php echo __('Valentines day sucks. And it\'s even worse when there are sickeningly happy couples everywhere around you. Paris is like the blackhole of disgustingly happy couples. And like the Parisian dogs, they leave their shit everywhere: those fucking love-locks.') ?></p>
 						<p><?php echo __('You are a jilted, twisted, emotionally dead person. We are your beacon of hope.') ?></p>
-						<p><?php echo __('For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple\'s eternal love, and toss it into the river. Or not. If you only want the river to be polluted by beer bottles and effluence, the choice is yours. When we are done, we\'ll will send you a personalised video of of your very own lock getting cut, and may even yell out something you\'ve chosen in the process.') ?></p>
+						<p><?php echo __('For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off the eternal love of three couples, and toss them into the river. Or not. If you only want the river to be polluted by beer bottles and effluence, the choice is yours. When we are done, we\'ll will send you a personalised video of the locks getting cut, and may even yell out something you\'ve chosen in the process.') ?></p>
 						</p>
 					</div>
 					<div class="top-service-grid">
@@ -19,13 +19,13 @@
 					</div>
 					<div class="top-service-grid">
 						<div class="badge grow"><img src="/images/<?php echo $languages['current']; ?>/what-badge-2.gif" alt="" /></div>
-						<div><span class="nc nc-blue">2</span><h3><?php echo __('We cut it & drown it') ?></h3></div>
-						<p><?php echo __('We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river (or recycle it). We\'ll even yell something you want.') ?></p>
+						<div><span class="nc nc-blue">2</span><h3><?php echo __('We cut \'em & drown \'em') ?></h3></div>
+						<p><?php echo __('We will find three locks, snap \'em with bolt cutters, and toss them into that stupidly romantic river (or recycle them). We\'ll even yell something you want.') ?></p>
 					</div>
 					<div class="top-service-grid">
 						<div class="badge grow"><img src="/images/<?php echo $languages['current']; ?>/what-badge-3.gif" alt="" /></div>
 						<div><span class="nc nc-blue">3</span><h3><?php echo __('Watch true love die') ?></h3></div>
-						<p><?php echo __('We will send you the video of the lock getting cut off and drowned in the river (or recycled..) If you listen closely, you can hear love whimpering and dying.') ?></p>
+						<p><?php echo __('We will send you the video of the locks getting cut off and drowned in the river (or recycled..) If you listen closely, you can hear love whimpering and dying.') ?></p>
 					</div>
 					<div class="clear"> </div>
 				</div>
@@ -61,7 +61,7 @@
 					<div class="recent-works-head">
 						<h3><?php echo __('How?') ?></h3>
 						<p><?php echo __('You really want to know how this works? You probably also think a toaster is magic, and immunisation is evil.') ?>
-						<br /><?php echo __('Anyhow: only three steps to fuck love and break a lock.') ?></p>
+						<br /><?php echo __('Anyhow: only three steps to fuck love and break locks.') ?></p>
 						<ol class="white green-text">
 							<li>
 								<h4><?php echo __('You select a lock size') ?></h4>
@@ -69,7 +69,7 @@
 							</li>
 							<li>
 								<h4><?php echo __('We cut the fucking lock') ?></h4>
-								<p><?php echo __('We head to the love lock bridge. We unsheathe our boltcutters, and do God\'s work. Unless you chose a small lock. Then we\'ll probably just rip it off with our bare hands. We throw the fucking thing into the river. Or fucking recycle it. Which is less satisfying, but apparently more popular.') ?></p>
+								<p><?php echo __('We head to the love lock bridge. We unsheathe our boltcutters, and do God\'s work. Unless you chose small locks. Then we\'ll probably just rip them off with our bare hands. We throw the fucking things into the river. Or fucking recycle them. Which is less satisfying, but apparently more popular.') ?></p>
 							</li>
 							<li>
 								<h4><?php echo __('You watch your video') ?></h4>
@@ -230,13 +230,13 @@
                             <?php if (isset($extras)) { ?>
                                 <div class="extras">
                                     <?php echo $this->Form->checkbox('OrderExtras.bio'); ?>
-                                    <label for="OrderExtrasBio"><?php echo __('<b>Go Green?</b> We\'ll toss the lock into recycling instead of the river.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
+                                    <label for="OrderExtrasBio"><?php echo __('<b>Go Green?</b> We\'ll toss the locks into recycling instead of the river.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
                                 </div>
                             <?php } ?>
 							<div class="extras">
 								<?php echo __('Order Summary:') ?>
 								<table>
-									<tr><td colspan="2" class="item"><?php echo __('1x Lock cut off') ?>: <span id="lockSize"></span></td></tr>
+									<tr><td colspan="2" class="item"><?php echo __('3x Locks cut off') ?>: <span id="lockSize"></span></td></tr>
 									<tr>
 										<td class="item"><?php echo __('1x Video made of said stupidity') ?></td>
 										<td class="price"><?php echo $currency['symbol']?><span id="lockCost">0</span></td>
