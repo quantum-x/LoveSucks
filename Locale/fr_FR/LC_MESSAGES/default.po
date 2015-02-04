@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-01-13 02:23+0000\n"
-"PO-Revision-Date: 2015-02-04 09:47+0100\n"
+"PO-Revision-Date: 2015-02-04 10:07+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -189,7 +189,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:13 View/Videos/view.ctp:22
 msgid "Pick a lock size"
-msgstr "Choisissez une taille de cadenas"
+msgstr "Choisissez une taille"
 
 #: View/Orders/add.ctp:15 View/Videos/view.ctp:24
 msgid "Everyone knows that money = love."
@@ -201,7 +201,7 @@ msgstr "Petit"
 
 #: View/Orders/add.ctp:16 View/Videos/view.ctp:25
 msgid "It's not even highschool puppy love."
-msgstr "Si petit et ils appellent ça pour toujours?"
+msgstr "C'est meme pas l'amour d'enfance."
 
 #: View/Orders/add.ctp:17 View/Videos/view.ctp:26
 msgid "Medium"
@@ -517,11 +517,11 @@ msgstr "Email:"
 
 #: View/Orders/add.ctp:182
 msgid "Credit Card Number :"
-msgstr "Numéro de carte de crédit!"
+msgstr "Numéro de carte de crédit :"
 
 #: View/Orders/add.ctp:187
 msgid "CVV :"
-msgstr "Numéro au dos de votre carte"
+msgstr "N. de securite:"
 
 #: View/Orders/add.ctp:189
 msgid "Card Security Number"
@@ -549,7 +549,7 @@ msgstr "Message:"
 
 #: View/Orders/add.ctp:221
 msgid "Buy now"
-msgstr "Acheter maintenant"
+msgstr "Achetez!"
 
 #: View/Orders/view.ctp:5
 msgid "Thank you"
