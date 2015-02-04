@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-13 20:55+0000\n"
-"PO-Revision-Date: 2015-02-04 13:57+0100\n"
+"POT-Creation-Date: 2015-01-13 21:00+0000\n"
+"PO-Revision-Date: 2015-02-04 14:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -77,8 +77,29 @@ msgstr ""
 msgid ""
 "You apparently give a fuck about the environment, so we'll toss the lock in "
 "the recycling.<br />In the meantime, ask yourself why you care for the "
-"environment more than other people's happiness. That"
+"environment more than other people's happiness. That's fairly fucking "
+"twisted."
 msgstr ""
+"Vous apparemment aimez bien l'environnement, nous allons donc jetez la "
+"serrure dans le recyclage. <br /> En attendant, demandez-vous pourquoi vous "
+"vous souciez de l'environnement plus que le bonheur des autres. C'est un peu "
+"tordu, non?"
+
+#: View/Emails/html/order_invoice.ctp:7
+msgid ""
+"Or, you can refresh <a style=\"text-decoration: underline;transition: "
+"all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a "
+"FedEx delivery."
+msgstr ""
+"Ou vous pouvez rafraichir <a style=\"text-decoration: underline;transition: "
+"all .2s;color: #41637e\" href=\"%s\">récapitulatif de votre commande</a> "
+"Comme si c'était une livraison Chronopost."
+
+#: View/Emails/text/order_invoice.ctp:11
+msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
+msgstr ""
+"Ou vous pouvez rafraichir votre commande %s comme si c'était une livraison "
+"Chronopost."
 
 #: View/Layouts/default.ctp:5
 msgid "Fuck Love: Ruin someone's happiness for your own."
@@ -614,6 +635,25 @@ msgstr "Message:"
 msgid "Status:"
 msgstr "Statut:"
 
+#: View/Orders/view.ctp:22
+msgid "Your video"
+msgstr "Votre Vidéo"
+
+#: View/Orders/view.ctp:27
+msgid "Sit tight"
+msgstr "Tenez vous bien"
+
+#: View/Orders/view.ctp:28
+msgid ""
+"We're going to go out and execute a lock on your behalf. This requires us "
+"going outside. And if you've ever tried walking around a city at midnight "
+"with boltcutters, you'll know why we prefer daytime."
+msgstr ""
+"Nous allons sortir et executer un cadenas d'amour en votre honneur. Afin "
+"d'accomplir cette tâche il nous faut sortir dehors et si vous avez déjà "
+"essayer de marcher aux alentours de minuit avec un coupe boulon dans les "
+"rues ... vous comprendrez pourquoi nous préférons faire ça en plain jour ;)"
+
 #: View/Orders/view.ctp:29
 msgid ""
 "Within 24 hours (or so..) - we'll have cut your lock, and you'll get an "
@@ -731,35 +771,3 @@ msgstr "Prière d'indiquer votre adresse email"
 #: Model/User.php:validation for field admin
 msgid "boolean"
 msgstr ""
-
-#~ msgid ""
-#~ "Or, you can refresh <a style=\"text-decoration: underline;transition: "
-#~ "all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a "
-#~ "FedEx delivery."
-#~ msgstr ""
-#~ "Ou vous pouvez rafraichir <a style=\"text-decoration: underline;"
-#~ "transition: all .2s;color: #41637e\" href=\"%s\">récapitulatif de votre "
-#~ "commande</a> Comme si c'était une livraison Chronopost."
-
-#~ msgid ""
-#~ "Or, you can refresh your order summary %s like it's a FedEx delivery."
-#~ msgstr ""
-#~ "Ou vous pouvez rafraichir votre commande %s comme si c'était une "
-#~ "livraison Chronopost."
-
-#~ msgid "Your video"
-#~ msgstr "Votre Vidéo"
-
-#~ msgid "Sit tight"
-#~ msgstr "Tenez vous bien"
-
-#~ msgid ""
-#~ "We're going to go out and execute a lock on your behalf. This requires us "
-#~ "going outside. And if you've ever tried walking around a city at midnight "
-#~ "with boltcutters, you'll know why we prefer daytime."
-#~ msgstr ""
-#~ "Nous allons sortir et executer un cadenas d'amour en votre honneur. Afin "
-#~ "d'accomplir cette tâche il nous faut sortir dehors et si vous avez déjà "
-#~ "essayer de marcher aux alentours de minuit avec un coupe boulon dans les "
-#~ "rues ... vous comprendrez pourquoi nous préférons faire ça en plain "
-#~ "jour ;)"

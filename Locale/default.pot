@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-13 20:55+0000\n"
+"POT-Creation-Date: 2015-01-13 21:00+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -72,7 +72,15 @@ msgstr ""
 #: View/Emails/html/order_invoice.ctp:7
 #: View/Emails/text/order_invoice.ctp:10
 #: View/Orders/view.ctp:18
-msgid "You apparently give a fuck about the environment, so we'll toss the lock in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people's happiness. That"
+msgid "You apparently give a fuck about the environment, so we'll toss the lock in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people's happiness. That's fairly fucking twisted."
+msgstr ""
+
+#: View/Emails/html/order_invoice.ctp:7
+msgid "Or, you can refresh <a style=\"text-decoration: underline;transition: all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a FedEx delivery."
+msgstr ""
+
+#: View/Emails/text/order_invoice.ctp:11
+msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
 msgstr ""
 
 #: View/Layouts/default.ctp:5
@@ -476,6 +484,18 @@ msgstr ""
 
 #: View/Orders/view.ctp:16
 msgid "Status:"
+msgstr ""
+
+#: View/Orders/view.ctp:22
+msgid "Your video"
+msgstr ""
+
+#: View/Orders/view.ctp:27
+msgid "Sit tight"
+msgstr ""
+
+#: View/Orders/view.ctp:28
+msgid "We're going to go out and execute a lock on your behalf. This requires us going outside. And if you've ever tried walking around a city at midnight with boltcutters, you'll know why we prefer daytime."
 msgstr ""
 
 #: View/Orders/view.ctp:29
