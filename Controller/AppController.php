@@ -185,19 +185,22 @@ class AppController extends Controller {
         $uk = array('GB');
 
         $this->loadModel('Currency');
-
+        $hasMatch = false;
         if (isset($_SERVER["HTTP_CF_IPCOUNTRY"])) {
             //See if we're using euros
+            $hasMatch = false;
             if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $europe)) {
                 $currency = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => 'EUR']]);
                 $result = $currency;
-            }
-            //See if we're using pounds
-            if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $uk)) {
+                $hasMatch = true;
+            } elseif (in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $uk)) {
                 $currency = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => 'GBP']]);
                 $result = $currency;
+                $hasMatch = true;
             }
-        } else {
+        }
+
+        if (!$hasMatch) {
             $result = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => Configure::read('Currency.default')]]);
         }
 
