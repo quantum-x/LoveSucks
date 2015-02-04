@@ -6,7 +6,7 @@
 					<p><?php echo __('Your order has been approved!') ?></p>
 				</div>
 				<div class="summary">
-					<h4>Order Summary</h4>
+					<h4><?php echo __('Order Summary') ?></h4>
 					<ul>
 						<li><b><?php echo __('Order Number:') ?></b> <?php echo $order['Order']['slug'] ?></li>
 						<li><b><?php echo __('Transaction ID:') ?></b> <?php echo $order['Transaction']['biller_id'] ?></li>
@@ -14,6 +14,9 @@
 						<li><b><?php echo __('Lock Size:') ?></b> <?php echo __($order['Size']['size']) ?></li>
 						<li><b><?php echo __('Message:') ?></b> <?php echo $order['Order']['message'] ?></li>
 						<li><b><?php echo __('Status:') ?></b> <?php echo __($order['Status']['status']) ?></li>
+						<?php if (!empty($order['OrderExtra']) && $order['OrderExtra'][0]['Extra']['name'] == "bio") { ?>
+						    <li><?php echo __('You apparently give a fuck about the environment, so we\'ll toss the lock in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people\'s happiness. That's fairly fucking twisted.')?></li>
+						<?php } ?>
 					</ul>
 					<?php if (isset($order['Video']['slug']) && !empty($order['Video']['slug'])) { ?>
     					<h4><a href="<?php echo $this->Html->url(array('controller' => 'videos', 'action' => 'view', $order['Order']['slug']))?>"><?php echo __('Your video') ?></a></h4>

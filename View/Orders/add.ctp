@@ -140,17 +140,17 @@
                                                                                     ))); ?>
 					<div class="size-buttons">
 						<div class="small button grow badge-div" data-id="<?php echo array_search('small', $sizes); ?>">
-							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><?php echo (int) $prices['small']?></div>
+							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><span><?php echo (int) $prices['small']?></span></div>
 							<div class="badge fade"><img src="/images/buy-small.png"alt="<?php echo __('so small? that hardly even qualifies as love..') ?>" /></div>
 							<div class="label"><?php echo __('small') ?></div>
 						</div>
 						<div class="large button grow badge-div" data-id="<?php echo array_search('large', $sizes); ?>">
-							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><?php echo (int) $prices['large']?></div>
+							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><span><?php echo (int) $prices['large']?></span></div>
 							<div class="badge"><img src="/images/buy-large.png" alt="<?php echo __('good choice. let\'s fuck up true love.') ?>" /></div>
 							<div class="label"><?php echo __('huge') ?></div>
 						</div>
 						<div class="medium button grow badge-div"data-id="<?php echo array_search('medium', $sizes); ?>">
-							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><?php echo (int) $prices['medium']?></div>
+							<div class="price"><span class="sign"><?php echo $currency['symbol']?></span><span><?php echo (int) $prices['medium']?></span></div>
 							<div class="badge fade"><img src="/images/buy-small.png" alt="<?php echo __('you deserve bigger. other people would cut yours off.') ?>" /></div>
 							<div class="label"><?php echo __('regular') ?></div>
 						</div>
@@ -186,7 +186,10 @@
                                 echo $this->Form->input('CreditCard.cvv', array(
                                     'placeholder' => __('CVV :'),
                                     'class' => 'cvv',
-                                    'label' => __('Card Security Number'),
+                                    'label' => [
+                                                'text' => __('Card Security Number'),
+                                                'class' => 'sub',
+                                            ],
                                     'div' => 'form-element'
                                 ));
 							?>
@@ -198,7 +201,10 @@
                                     'minMonth' => 1,
                                     'maxMonth' => 2,
                                     'class' => 'exp_m',
-                                    'label' => __('Card Expiry Month'),
+                                    'label' => [
+                                                'text' => __('Card Expiry Month'),
+                                                'class' => 'sub',
+                                            ],
                                     'div' => 'form-element'
                                 ));
 							?>
@@ -207,7 +213,10 @@
                                     'options' => $years_list,
                                     'placeholder' => __('Exp. Year'),
                                     'class' => 'exp_y',
-                                    'label' => __('Card Expiry Year'),
+                                    'label' => [
+                                                'text' => __('Card Expiry Year'),
+                                                'class' => 'sub',
+                                            ],
                                     'div' => 'form-element'
                                 ));
 							?>
@@ -215,9 +224,34 @@
                                 'hidden' => true,
                                 'value' => array_flip($sizes)['large']
                             )); ?>
-							<?php echo $this->Form->textarea('Order.message', array(
+							<?php echo $this->Form->text('Order.message', array(
 							        'placeholder' => __('Message :'),
 							    )); ?>
+                            <?php if (isset($extras)) { ?>
+                                <div class="extras">
+                                    <?php echo $this->Form->checkbox('OrderExtras.bio'); ?>
+                                    <label for="OrderExtrasBio"><?php echo __('<b>Go Green?</b> We\'ll toss the lock into recycling instead of the river.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
+                                </div>
+                            <?php } ?>
+							<div class="extras">
+								<?php echo __('Order Summary:') ?>
+								<table>
+									<tr><td colspan="2" class="item"><?php echo __('1x Lock cut off') ?>: <span id="lockSize"></span></td></tr>
+									<tr>
+										<td class="item"><?php echo __('1x Video made of said stupidity') ?></td>
+										<td class="price"><?php echo $currency['symbol']?><span id="lockCost">0</span></td>
+									</tr>
+									<tr id="extraPricing" style="display: none">
+										<td class="item">Option Eco-Friendly</td>
+										<td class="price"><?php echo $currency['symbol']?><span id="extraCost">0</span></td>
+									</tr>
+									<tr>
+										<td>Total:</td>
+										<td class="price final"><?php echo $currency['symbol']?><span id="finalCost"></span></td>
+									</tr>
+								</table>
+							</div>
+
 							<?php echo $this->Form->button(__('Buy now'), array('type' => 'submit')); ?>
 
 					</div>
@@ -240,6 +274,21 @@
                     $(".badge-div").click(function(event){
                         $("#badge-comment").text($(this).find("img:first").attr('alt'));
                         $("#OrderSizeId").val( $(this).data( "id" ) );
+                        $("#lockCost").text($(this).find("span:last").text());
+                        updateTotals();
+                    });
+                    $('#OrderExtrasBio').change(function() {
+                       if($(this).is(":checked")) {
+                          $("#extraCost").text('<?php echo $extras['ExtraPrice']['price']?>');
+                          $("#extraPricing").show();
+                       } else {
+                          $("#extraCost").text('0');
+                          $("#extraPricing").hide();
+                       }
+                       updateTotals();
                     });
                 });
+                function updateTotals() {
+                        $("#finalCost").text(   parseFloat($("#lockCost").text()) +  parseFloat($("#extraCost").text()) );
+                }
             </script>

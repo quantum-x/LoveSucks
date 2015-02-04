@@ -34,7 +34,7 @@ class OrdersController extends AppController {
         $this->Order->Behaviors->load('Containable');
 
         $options = array('conditions' => array('Order.slug' => $order_slug),
-                         'contain' => array('Transaction','User','Size','Status', 'Video', 'Transaction' => ['Currency']));
+                         'contain' => array('Transaction','OrderExtra' => ['Extra'],'User','Size','Status', 'Video', 'Transaction' => ['Currency']));
         $order = $this->Order->find('first', $options);
 
         if ($order === false || empty($order)) {
@@ -60,6 +60,9 @@ class OrdersController extends AppController {
                 $this->loadModel('Transaction');
                 $this->loadModel('Price');
                 $this->loadModel('Language');
+                $this->loadModel('Extra');
+                $this->loadModel('OrderExtra');
+                $this->Extra->Behaviors->load('Containable');
 
                 $currency = $this->_getCurrency();
 
@@ -74,6 +77,14 @@ class OrdersController extends AppController {
                 //Find the size data
                 $size = $this->Size->find('first',['conditions' => ['id' => $this->request->data['Order']['size_id']], 'recursive' => -1]);
 
+                //If we've got an extra, grab its price
+                if (isset($this->request->data['OrderExtras']['bio']) && $this->request->data['OrderExtras']['bio'] == 1) {
+                    $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['Extra.name' => array_keys($this->request->data['OrderExtras'])[0], 'ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
+                    $price = $price + $extras['ExtraPrice']['price'];
+                    $hasExtra = true;
+                } else {
+                    $hasExtra = false;
+                }
 
                 $data = [   'amount' => $price,
                             'transaction_id' => $this->createUniqueID(),
@@ -125,7 +136,14 @@ class OrdersController extends AppController {
                 if ($this->Order->saveAll( $this->request->data)) {
 
                     if ($result === true) {
-                        //$this->request->data['Order']['id'] = $this->Order->getInsertID();
+
+                        //Save the order extras if there are..
+                        if (isset($extras)) {
+                            $orderExtra['order_id'] =  $this->Order->getInsertID();
+                            $orderExtra['extra_id'] =  $extras['Extra']['id'];
+                            $this->OrderExtra->save($orderExtra);
+                        }
+                        $this->request->data['Order']['id'] = $this->Order->getInsertID();
                         //Send the email..
                         //Add the currency info + size info
                         $this->request->data['Currency'] = $currency['Currency'];
@@ -141,6 +159,7 @@ class OrdersController extends AppController {
                             $Email  ->subject(__('FL: Your recent purchase ').'['.$this->request->data['Order']['slug'].']');
                             $Email  ->viewVars([
                                                'order' => $this->request->data,
+                                               'has_extra' => $hasExtra,
                                                'offline_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
                                                'order_url' => Router::url(array('controller' => 'orders', 'action' => 'view', $this->request->data['Order']['slug']), true),
                                                'unsub_url' => Router::url(array('controller' => 'users', 'action' => 'unsubscribe', base64_encode($this->request->data['User']['email'])), true)
@@ -183,8 +202,12 @@ class OrdersController extends AppController {
             //Sets pricing
             $this->loadModel('Size');
             $this->loadModel('Price');
+            $this->loadModel('Extra');
+            $this->Extra->Behaviors->load('Containable');
 
             $sizes = $this->Size->find('list');
+            $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
+            $this->set('extras',$extras);
 
             foreach ($sizes as $id => $size) {
                 $price = $this->Price->find('list',['conditions' => ['size_id' => $id, 'currency_id' => $this->viewVars['currency']['id']]]);
