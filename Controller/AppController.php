@@ -185,7 +185,7 @@ class AppController extends Controller {
         $uk = array('GB');
 
         $this->loadModel('Currency');
-
+        
         if (isset($_SERVER["HTTP_CF_IPCOUNTRY"])) {
             //See if we're using euros
             if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $europe)) {
@@ -197,11 +197,13 @@ class AppController extends Controller {
                 $currency = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => 'GBP']]);
                 $result = $currency;
             }
+        } else {
+            $result = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => Configure::read('Currency.default')]]);
         }
 
-        $result = $this->Currency->find('first',['recursive' => -1, 'conditions' => ['currency' => Configure::read('Currency.default')]]);
-        setcookie("CURRENCY", $result['Currency']['currency'], time()+86400, '/');
-
+        if(!isset($_COOKIE['CURRENCY']) || (isset($_COOKIE['cookie']) && $_COOKIE['CURRENCY'] != $result['Currency']['currency'])) {
+            setcookie("CURRENCY", $result['Currency']['currency'], time()+86400, '/');
+        }
         return $result;
 
     }
