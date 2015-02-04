@@ -127,31 +127,8 @@ class WirecardComponent extends Component {
         $this->request['body'] = $xml;
         $response = $this->httpSocket->request($this->request);
 
-        //if ($this->httpSocket->response['status']['code'] == 200) {
-        if (1) {
-           $return = '<?xml version="1.0" encoding="UTF-8"?>
-<WIRECARD_BXML xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wirecard.xsd">
-	<W_RESPONSE>
-		<W_JOB>
-			<JobID>job 2</JobID>
-			<FNC_CC_PURCHASE>
-				<FunctionID></FunctionID>
-				<CC_TRANSACTION>
-					<TransactionID>fl00001</TransactionID>
-					<PROCESSING_STATUS>
-						<GuWID>C272744142282266834895</GuWID>
-						<AuthorizationCode>380029</AuthorizationCode>
-						<StatusType>INFO</StatusType>
-						<FunctionResult>PENDING</FunctionResult>
-						<TimeStamp>2015-02-01 21:31:08</TimeStamp>
-					</PROCESSING_STATUS>
-				</CC_TRANSACTION>
-			</FNC_CC_PURCHASE>
-		</W_JOB>
-	</W_RESPONSE>
-</WIRECARD_BXML>';
-
-            $xml = simplexml_load_string($return);
+        if ($this->httpSocket->response['status']['code'] == 200) {
+            $xml = simplexml_load_string($response->body);
             $json = json_encode($xml);
             $array = json_decode($json,TRUE);
             $results = $array['W_RESPONSE']['W_JOB']['FNC_CC_PURCHASE']['CC_TRANSACTION']['PROCESSING_STATUS'];
