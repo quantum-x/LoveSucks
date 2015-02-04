@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-13 02:23+0000\n"
+"POT-Creation-Date: 2015-01-13 17:12+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -295,12 +295,20 @@ msgstr ""
 msgid "This was fantastic. Not only did some grumpy old guy help pick the lock, when it went, it took out a bunch of others. Combo bonus, ruined love never felt so good."
 msgstr ""
 
+#: View/Orders/add.ctp:100
+msgid "Highly-resistant love"
+msgstr ""
+
 #: View/Orders/add.ctp:101
 msgid "Kill a large lock now:"
 msgstr ""
 
 #: View/Orders/add.ctp:102
 msgid "Angry gasping tourists, and an annoyingly solid lock. This has it all. It's either true love, or someone was really fucking clingy and needy. Either way, it's dead."
+msgstr ""
+
+#: View/Orders/add.ctp:106
+msgid "Still-Warm Love"
 msgstr ""
 
 #: View/Orders/add.ctp:107
@@ -410,6 +418,26 @@ msgstr ""
 
 #: View/Orders/add.ctp:221
 msgid "Buy now"
+msgstr ""
+
+#: View/Orders/add.ctp:228
+msgid "pending"
+msgstr ""
+
+#: View/Orders/add.ctp:229
+msgid "ordered"
+msgstr ""
+
+#: View/Orders/add.ctp:230
+msgid "completed"
+msgstr ""
+
+#: View/Orders/add.ctp:231
+msgid "delivered"
+msgstr ""
+
+#: View/Orders/add.ctp:232
+msgid "declined"
 msgstr ""
 
 #: View/Orders/view.ctp:5

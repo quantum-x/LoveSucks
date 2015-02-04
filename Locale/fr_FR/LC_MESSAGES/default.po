@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-13 02:23+0000\n"
-"PO-Revision-Date: 2015-02-04 10:07+0100\n"
+"POT-Creation-Date: 2015-01-13 17:12+0000\n"
+"PO-Revision-Date: 2015-02-04 10:15+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -400,6 +400,10 @@ msgstr ""
 "verrou mais il en a aussi coupez plusieurs autres, combos bonus !!! Ruiner "
 "la st-valentin n'a jamais été aussi bon."
 
+#: View/Orders/add.ctp:100
+msgid "Highly-resistant love"
+msgstr "l'Amour bien résistant"
+
 #: View/Orders/add.ctp:101
 msgid "Kill a large lock now:"
 msgstr "Tuez un Gros amour maintenant "
@@ -413,6 +417,10 @@ msgstr ""
 "Touristes en colère et cadenas super solide. Tout est là! soit c'est de "
 "l'amour pure ou alors quelqu'un est vraiment très collant et demandant. En "
 "tout cas ... maintenant, c'est mort !"
+
+#: View/Orders/add.ctp:106
+msgid "Still-Warm Love"
+msgstr "l'Amour encore chaud"
 
 #: View/Orders/add.ctp:107
 msgid "Buy love's demise:"
@@ -550,6 +558,26 @@ msgstr "Message:"
 #: View/Orders/add.ctp:221
 msgid "Buy now"
 msgstr "Achetez!"
+
+#: View/Orders/add.ctp:228
+msgid "pending"
+msgstr "en attente"
+
+#: View/Orders/add.ctp:229
+msgid "ordered"
+msgstr "commandé"
+
+#: View/Orders/add.ctp:230
+msgid "completed"
+msgstr "terminé"
+
+#: View/Orders/add.ctp:231
+msgid "delivered"
+msgstr "livré"
+
+#: View/Orders/add.ctp:232
+msgid "declined"
+msgstr "refusé"
 
 #: View/Orders/view.ctp:5
 msgid "Thank you"
