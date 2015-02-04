@@ -224,6 +224,13 @@
 				<?php $this->Form->end(); ?>
 			</div>
 			</div>
+			<!--
+			    <?php __('pending'); ?>
+			    <?php __('ordered'); ?>
+			    <?php __('completed'); ?>
+			    <?php __('delivered'); ?>
+			    <?php __('declined'); ?>
+			-->
             <script type="text/javascript">
                 jQuery(document).ready(function($) {
                     $(".video-link").fancybox({});
