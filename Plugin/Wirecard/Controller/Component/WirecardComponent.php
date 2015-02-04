@@ -154,8 +154,7 @@ class WirecardComponent extends Component {
             }
 
             //We've made it through
-            //$this->results = [    'biller_id' => $results['GuWID']    ];
-            $this->results = [    'biller_id' => rand(0,99999)    ];
+            $this->results = [    'biller_id' => $results['GuWID']    ];
 
             return true;
 

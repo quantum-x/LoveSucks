@@ -185,7 +185,7 @@ class AppController extends Controller {
         $uk = array('GB');
 
         $this->loadModel('Currency');
-        
+
         if (isset($_SERVER["HTTP_CF_IPCOUNTRY"])) {
             //See if we're using euros
             if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $europe)) {
