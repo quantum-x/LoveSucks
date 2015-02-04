@@ -896,48 +896,95 @@ ol ol li:last-child {margin-bottom:0;}
 	vertical-align: top;
 }
 
+.signup-form .extras {
+    background: #656565;
+    padding: 0.8em 1em;
+    font-size: 1.3em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    width: 94%;
+    border: none;
+    outline: none;
+    color: #ccc;
+    font-family: 'open_sansregular';
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.signup-form .extras table {
+    margin: 0 auto;
+    font-size: 0.8em;
+    width: 85%;
+
+}
+
+.signup-form .extras table td{
+    text-align: left;
+}
+
+.signup-form .extras table .price{
+    text-align: right;
+    border-bottom: 1px dashed #ccc;
+}
+
+.signup-form .extras table .final{
+    text-align: right;
+    border-bottom: 3px solid #ccc;
+}
+.signup-form .extras input[type='checkbox']{
+    width: 18px;
+    height: 18px;
+}
+
+.signup-form .security img{
+    vertical-align: top;
+}
+
 .signup-form input[type="text"],.signup-form input[type="email"],.signup-form textarea, .signup-form select{
-	background: #FFF;
-	padding: 0.8em 1em;
-	font-size: 1.5em;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	-o-border-radius: 0.5em;
-	width: 94%;
-	border: none;
-	outline: none;
-	color: #A3A3A3;
-	font-family: 'open_sansregular';
-	margin-bottom: 1em;
+    background: #FFF;
+    padding: 0.8em 1em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    width: 94%;
+    border: none;
+    outline: none;
+    color: #A3A3A3;
+    font-family: 'open_sansregular';
+    margin-bottom: 1em;
 }
 .signup-form .form-element {
-	position: relative;
-	display: inline;
+    position: relative;
+    display: inline;
 }
 .signup-form select {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
-.signup-form label {
-	position: absolute;
-	top:4em;
-	left: 0;
-	
-	background: #656565;
-	font-style: italic;
-	padding: 0.5em 0.6em;
-	font-size: 0.8em;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	-o-border-radius: 0.5em;
-	width: 90%;
-	border: none;
-	outline: none;
-	color: #b9b9b9;
-	font-family: 'open_sansregular';
-	margin-bottom: 1em;	
+.signup-form label.sub{
+    position: absolute;
+    top:4em;
+    left: 0;
+
+    background: #656565;
+    font-style: italic;
+    padding: 0.5em 0.6em;
+    font-size: 0.8em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    width: 90%;
+    border: none;
+    outline: none;
+    color: #b9b9b9;
+    font-family: 'open_sansregular';
+    margin-bottom: 1em;
 }
+
 #flashMessage { 
 	top: 0;
 	position: fixed;
