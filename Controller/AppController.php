@@ -71,6 +71,9 @@ class AppController extends Controller {
         //Setup the vairables for the view template(s)
         $languages['available'] = $this->Session->read('Config.available_languages');
         $languages['current'] = $this->_getCurrentLang();
+        $currency = $this->_getCurrency();
+        $this->set('currency', $currency);
+        
         $this->set('languages', $languages);
         $this->set('locales', $this->Session->read('Config.available_locales'));
 
@@ -176,5 +179,26 @@ class AppController extends Controller {
         return $returnArray;
     }
 
+    protected function _getCurrency() {
+        //Relies on a country code coming from cloud-flare.
+        $europe = array('AD', 'AL', 'AT', 'AX', 'BA', 'BE', 'BG', 'BY', 'CH', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FO', 'FR', 'GG', 'GI', 'GR', 'HR', 'HU', 'IE', 'IM', 'IS', 'IT', 'JE', 'LI', 'LT', 'LU', 'LV', 'MC', 'MD', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'RU', 'SE', 'SI', 'SJ', 'SK', 'SM', 'UA', 'VA');
+        $uk = array('GB');
+        if (isset($_SERVER["HTTP_CF_IPCOUNTRY"])) {
+            $this->loadModel('Currency');
+            //See if we're using euros
+            if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $europe)) {
+                $currency = $this->Currency->find('list',['recursive' => -1, 'conditions' => ['currency' => 'EUR']]);
+                return $currency;
+            }
+            //See if we're using pounds
+            if(in_array($_SERVER["HTTP_CF_IPCOUNTRY"], $europe)) {
+                $currency = $this->Currency->find('list',['recursive' => -1, 'conditions' => ['currency' => 'EUR']]);
+                return $currency;
+            }
+        }
+
+        return $this->Currency->find('list',['recursive' => -1, 'conditions' => ['currency' => Configure::read('Currency.default')]]);
+
+    }
 
 }

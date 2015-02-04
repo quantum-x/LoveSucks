@@ -8,6 +8,7 @@
 					<?php echo __('%s is a hero; saving bridges, ridding the world of horrible fucking love-locks. Fuck love.',$video['User']['name']) ?></p>
 				</div>
 
+			<div class="wrap">
 			<!---start-top-grids---->
 				<div class="top-service-grids" id="what">
 					<div class="services-head">
@@ -18,7 +19,7 @@
 						</p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="/images/what-badge-1.gif" alt="" /></div>
+						<div class="badge grow"><img src="/images/<?php echo $languages['current']; ?>/what-badge-1.gif" alt="" /></div>
 						<div><span class="nc nc-blue">1</span><h3><?php echo __('Pick a lock size') ?></h3></div>
 						<p>
 						<?php echo __('Everyone knows that money = love.') ?><br />
@@ -27,12 +28,12 @@
 						<b><?php echo __('Large') ?></b>: <?php echo __('Annoyingly genuine love') ?></p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="/images/what-badge-2.gif" alt="" />></div>
+						<div class="badge grow"><img src="/images/<?php echo $languages['current']; ?>/what-badge-2.gif" alt="" /></div>
 						<div><span class="nc nc-blue">2</span><h3><?php echo __('We cut it & drown it') ?></h3></div>
 						<p><?php echo __('We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we\'ll even yell something you want.') ?></p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="/images/what-badge-3.gif" alt="" /></div>
+						<div class="badge grow"><img src="/images/<?php echo $languages['current']; ?>/what-badge-3.gif" alt="" /></div>
 						<div><span class="nc nc-blue">3</span><h3><?php echo __('Watch true love die') ?></h3></div>
 						<p><?php echo __('We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying.') ?></p>
 					</div>
