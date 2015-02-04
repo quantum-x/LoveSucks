@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-13 21:00+0000\n"
+"POT-Creation-Date: 2015-01-13 22:18+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -154,7 +154,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:8
 #: View/Videos/view.ctp:18
-msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. We'll even send you the video of it, and may even yell out something you've chosen in the process."
+msgid "For a small sum, we will take a trip to the famous love-lock bridge in paris, cut off some couple's eternal love, and toss it into the river. Or not. If you only want the river to be polluted by beer bottles and effluence, the choice is yours. When we are done, we'll will send you a personalised video of of your very own lock getting cut, and may even yell out something you've chosen in the process."
 msgstr ""
 
 #: View/Orders/add.ctp:13
@@ -204,7 +204,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:23
 #: View/Videos/view.ctp:33
-msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we'll even yell something you want."
+msgid "We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river (or recycle it). We'll even yell something you want."
 msgstr ""
 
 #: View/Orders/add.ctp:27
@@ -214,7 +214,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:28
 #: View/Videos/view.ctp:38
-msgid "We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying."
+msgid "We will send you the video of the lock getting cut off and drowned in the river (or recycled..) If you listen closely, you can hear love whimpering and dying."
 msgstr ""
 
 #: View/Orders/add.ctp:39
@@ -266,7 +266,7 @@ msgid "We cut the fucking lock"
 msgstr ""
 
 #: View/Orders/add.ctp:72
-msgid "We head to the love lock bridge. We unsheathe our boltcutters, and do God's work. Unless you chose a small lock. Then we'll probably just rip it off with our bare hands. We throw the fucking thing into the river."
+msgid "We head to the love lock bridge. We unsheathe our boltcutters, and do God's work. Unless you chose a small lock. Then we'll probably just rip it off with our bare hands. We throw the fucking thing into the river. Or fucking recycle it. Which is less satisfying, but apparently more popular."
 msgstr ""
 
 #: View/Orders/add.ctp:75
