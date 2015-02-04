@@ -9,7 +9,7 @@
 						</p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="images/what-badge-1.gif" alt="" /></div>
+						<div class="badge grow"><img src="/images/what-badge-1.gif" alt="" /></div>
 						<div><span class="nc nc-blue">1</span><h3><?php echo __('Pick a lock size') ?></h3></div>
 						<p>
 						<?php echo __('Everyone knows that money = love.') ?><br />
@@ -18,12 +18,12 @@
 						<b><?php echo __('Large') ?></b>: <?php echo __('Annoyingly genuine love') ?></p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="images/what-badge-2.gif" alt="" />></div>
+						<div class="badge grow"><img src="/images/what-badge-2.gif" alt="" /></div>
 						<div><span class="nc nc-blue">2</span><h3><?php echo __('We cut it & drown it') ?></h3></div>
 						<p><?php echo __('We will find a lock, snap it with bolt cutters, and toss it into that stupidly romantic river. Maybe we\'ll even yell something you want.') ?></p>
 					</div>
 					<div class="top-service-grid">
-						<div class="badge grow"><img src="images/what-badge-3.gif" alt="" /></div>
+						<div class="badge grow"><img src="/images/what-badge-3.gif" alt="" /></div>
 						<div><span class="nc nc-blue">3</span><h3><?php echo __('Watch true love die') ?></h3></div>
 						<p><?php echo __('We will send you the video of the lock getting cut off and drowned in the river. If you listen closely, you can hear love whimpering and dying.') ?></p>
 					</div>
@@ -141,17 +141,17 @@
 					<div class="size-buttons">
 						<div class="small button grow badge-div" data-id="<?php echo array_search('small', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>1</div>
-							<div class="badge fade"><img src="images/buy-small.png"alt="<?php echo __('so small? that hardly even qualifies as love..') ?>" /></div>
+							<div class="badge fade"><img src="/images/buy-small.png"alt="<?php echo __('so small? that hardly even qualifies as love..') ?>" /></div>
 							<div class="label"><?php echo __('small') ?></div>
 						</div>
 						<div class="large button grow badge-div" data-id="<?php echo array_search('large', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>9</div>
-							<div class="badge"><img src="images/buy-large.png" alt="<?php echo __('good choice. let\'s fuck up true love.') ?>" /></div>
+							<div class="badge"><img src="/images/buy-large.png" alt="<?php echo __('good choice. let\'s fuck up true love.') ?>" /></div>
 							<div class="label"><?php echo __('huge') ?></div>
 						</div>
 						<div class="medium button grow badge-div"data-id="<?php echo array_search('medium', $sizes); ?>">
 							<div class="price"><span class="sign">$</span>4</div>
-							<div class="badge fade"><img src="images/buy-small.png" alt="<?php echo __('you deserve bigger. other people would cut yours off.') ?>" /></div>
+							<div class="badge fade"><img src="/images/buy-small.png" alt="<?php echo __('you deserve bigger. other people would cut yours off.') ?>" /></div>
 							<div class="label"><?php echo __('regular') ?></div>
 						</div>
 						<div class="clear"> </div>
@@ -168,7 +168,7 @@
 					<div class="signup-form" id="signup-form">
 						<div class="security">
 							<?php echo __('100% secure payment.') ?>
-							<img src="images/secure-payment.gif" />
+							<img src="/images/secure-payment.gif" />
 						</div>
 							<?php echo $this->Form->input('User.name', array(
 							        'placeholder' => __('Name :'),

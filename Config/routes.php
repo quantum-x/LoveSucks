@@ -25,10 +25,9 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'orders', 'action' => 'add'));
-
     Router::connect('/:language/:controller/:action/*', array(), array('language' => '[a-z]{2}_[A-Z]{2}'));
     Router::connect('/:language/:controller', array('action' => 'index'), array('language' => '[a-z]{2}_[A-Z]{2}'));
-    Router::connect('/:language', array('controller' => 'scans', 'action' => 'index'), array('language' => '[a-z]{2}_[A-Z]{2}'));
+    Router::connect('/:language', array('controller' => 'orders', 'action' => 'add'), array('language' => '[a-z]{2}_[A-Z]{2}'));
 
 
 /**
