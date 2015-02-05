@@ -23,6 +23,13 @@ class OrdersController extends AppController {
         'add' => "+1 day"
     );
 
+    public function admin_index() {
+        $this->layout = 'admin';
+        $this->Order->Behaviors->load('Containable');
+        $this->paginate = array('contain' => array('Transaction','OrderExtra' => ['Extra'],'User','Size','Status', 'Video', 'Transaction' => ['Currency']));
+        $this->set('orders', $this->paginate('Order'));
+    }
+
     public function view($_order_slug) {
 
         //Loads up an order via slug

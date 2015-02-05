@@ -19,6 +19,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+App::uses('CrudControllerTrait', 'Crud.Lib');
 App::uses('Controller', 'Controller');
 App::uses('CakeTime', 'Utility');
 
@@ -33,9 +34,14 @@ App::uses('CakeTime', 'Utility');
  */
 class AppController extends Controller {
 
-
+    use CrudControllerTrait;
     public $components = array(
-        'Session'
+        'Crud.Crud' => array(
+            'actions' => array(
+                'admin_index', 'admin_add', 'admin_edit', 'admin_view', 'admin_delete'
+            )
+        ),
+        'Session',
     );
 
     public function beforeFilter() {

@@ -25,6 +25,8 @@ Configure::write('Wirecard.case','[*WC_BUSINESS_CASE*]');
 Configure::write('Wirecard.password','[*WC_PASSWORD*]');
 Configure::write('Wirecard.signature','[*WC_BUSINESS_SIGNATURE*]');
 
+Configure::write('Routing.prefixes', array('admin'));
+
 Cache::config('default', array(
                               'engine' => 'Memcached', //[required]
                               'probability'=> 100, //[optional]
