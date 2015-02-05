@@ -29,6 +29,11 @@
 					</div>
 					<div class="clear"> </div>
 				</div>
+                <div class="services-head">
+                    <p><?php echo __('Or, perhaps a few videos can explain the process better than we can,<br /> because we never paid attention in school and now have to cut locks to try to survive.')?><br />
+                        <iframe id="yt-header" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLI_ZFXgshw46Q-UIXwY2SMU6gfnUkg8M1" frameborder="0" allowfullscreen></iframe>
+                    </p>
+                </div>
 			<!---End-top-grids---->
 			</div>
 			<!---start-meet-our-team---->
@@ -108,13 +113,11 @@
 						<p><?php echo __('Barely had her trembling hand placed the home-decorated lock before we cut it the fuck off, and threw it into the river. This will probably get us stabbed.') ?></p>
 					</div>
 					<div class="clear"> </div>
-					<!--
 					<div class="recent-posts-footer">
 						<p><?php echo __('Because we never learnt that posting videos of doing stupid things online is stupid, we\'ll upload, for your pleasure, a selection of videos to YouTube, until we are murdered in our sleep. In the meantime, check them out below.') ?></p>
 					</div>
 
 					<a class="morebtn popup-with-zoom-anim" href="https://www.youtube.com/channel/UCjVe-eukfgvS_5MPEiefBtw" target="_blank"><?php echo __('More videos') ?></a>
-				    //-->
 				</div>
 				</div>
 			</div>

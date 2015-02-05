@@ -12,7 +12,6 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js"></script>
-
 	</head>
 	<body>
 		<!---start-wrap----->
@@ -101,6 +100,7 @@
           ga('send', 'pageview');
 
         </script>
+        <a href="https://plus.google.com/118275350827749726838" rel="publisher"></a>
 	</body>
 </html>
 
