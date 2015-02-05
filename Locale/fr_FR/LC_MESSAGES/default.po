@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-14 04:36+0000\n"
-"PO-Revision-Date: 2015-02-05 15:01+0100\n"
+"POT-Creation-Date: 2015-01-14 22:04+0000\n"
+"PO-Revision-Date: 2015-02-05 15:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,15 +13,15 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: Controller/OrdersController.php:159
+#: Controller/OrdersController.php:160
 msgid "FL: Your recent purchase "
 msgstr "Vos achats récents"
 
-#: Controller/OrdersController.php:176;184
+#: Controller/OrdersController.php:177;185
 msgid "The order was declined. Please try again.."
 msgstr "Votre commande a été déclinée, SVP essayez encore."
 
-#: Controller/OrdersController.php:181
+#: Controller/OrdersController.php:182
 msgid ""
 "Your order was successful, but we had a technical issue in updating the "
 "database. We will take care of it and keep you informed"
@@ -107,31 +107,31 @@ msgid "Fuck Love: Ruin someone's happiness for your own."
 msgstr ""
 "Fuck Love: Ruiner le bonheur de quelqu'un juste pour votre propre plaisir."
 
-#: View/Layouts/default.ctp:24
+#: View/Layouts/default.ctp:23
 msgid "Fuck Love"
 msgstr "Fuck Love"
 
-#: View/Layouts/default.ctp:28
+#: View/Layouts/default.ctp:27
 msgid "Home"
 msgstr "Accueil"
 
-#: View/Layouts/default.ctp:29
+#: View/Layouts/default.ctp:28
 msgid "What?"
 msgstr "Quoi?"
 
-#: View/Layouts/default.ctp:30 View/Orders/add.ctp:38
+#: View/Layouts/default.ctp:29 View/Orders/add.ctp:43
 msgid "Why?"
 msgstr "Pourquoi?"
 
-#: View/Layouts/default.ctp:31 View/Orders/add.ctp:62
+#: View/Layouts/default.ctp:30 View/Orders/add.ctp:67
 msgid "How?"
 msgstr "Comment?"
 
-#: View/Layouts/default.ctp:32
+#: View/Layouts/default.ctp:31
 msgid "Buy Now!"
 msgstr "Commander maintenant !"
 
-#: View/Layouts/default.ctp:62
+#: View/Layouts/default.ctp:61
 msgid "Send us some <a href=\"mailto:support@fucklove.paris\">hate mail</a>"
 msgstr ""
 "Envoyez nous des <a href=\"mailto:support@fucklove.paris\">email de haine</a>"
@@ -265,17 +265,28 @@ msgstr ""
 "Seine (ou à la poubelle), si vous écoutez attentivement vous pourrez même "
 "entendre les gémissements insoutenable de l'amour qui se meurt."
 
-#: View/Orders/add.ctp:39
+#: View/Orders/add.ctp:33
+msgid ""
+"Or, perhaps a few videos can explain the process better than we can,<br /> "
+"because we never paid attention in school and now have to cut locks to try "
+"to survive."
+msgstr ""
+"Bon, notre explication n'est peut-être pas très claire. En même temps si on "
+"en vient à couper des cadenas pour gagner notre vie, c'est parce qu'on n'a "
+"jamais vraiment suivi les cours de Français à l'école. Regardez la vidéo "
+"vous comprendrez."
+
+#: View/Orders/add.ctp:44
 msgid "We've all got our reasons.  Maybe one of these is yours."
 msgstr ""
 "Nous avons tous nos raisons, mais vous vous reconnaitrez peut-être dans "
 "l'une des suivantes :"
 
-#: View/Orders/add.ctp:42
+#: View/Orders/add.ctp:47
 msgid "Pragmatist: Reality Dose"
 msgstr "Réaliste: mettons fin à ces bêtises !"
 
-#: View/Orders/add.ctp:43
+#: View/Orders/add.ctp:48
 msgid ""
 "Your lover has left you and wine can only carry you so far.  Sick of giving "
 "well wishes to the newly engaged and awkward smiles when your ex tells you "
@@ -290,11 +301,11 @@ msgstr ""
 "Plus de contes de fée pour vous ! Vous avez besoin d'agir concrètement ! "
 "Fuck love ! "
 
-#: View/Orders/add.ctp:46
+#: View/Orders/add.ctp:51
 msgid "Idealist: Love should be unburdened"
 msgstr "Idéaliste, l'amour ne devrait pas être un fardeau"
 
-#: View/Orders/add.ctp:47
+#: View/Orders/add.ctp:52
 msgid ""
 "Think love should be free? We're not so different. Unshackle the burden of "
 "forever; give locks their freedom. Watch them arc gracefully into a river "
@@ -306,11 +317,11 @@ msgstr ""
 "par ces couples horribles et regardez les regagner les ordures au fond de la "
 "Seine ce qui sera toujours une fin plus noble que leurs précédent destin !"
 
-#: View/Orders/add.ctp:50
+#: View/Orders/add.ctp:55
 msgid "Good samaritan: aka coward"
 msgstr "Bon samaritain : autrement dit, un lâche"
 
-#: View/Orders/add.ctp:51
+#: View/Orders/add.ctp:56
 msgid ""
 "You love Paris so much you let your dog shit everywhere and drown your "
 "depression in red wine. Love Locks are officially illegal. You want them "
@@ -324,7 +335,7 @@ msgstr ""
 "Heureusement pour vous, nous sommes là! Mettez votre bravoure entre nos "
 "mains et sauvez votre pont !"
 
-#: View/Orders/add.ctp:63
+#: View/Orders/add.ctp:68
 msgid ""
 "You really want to know how this works? You probably also think a toaster is "
 "magic, and immunisation is evil."
@@ -333,17 +344,17 @@ msgstr ""
 "les toasteurs sont des objets magiques et que les vaccins sont une création "
 "diabolique."
 
-#: View/Orders/add.ctp:64
+#: View/Orders/add.ctp:69
 msgid "Anyhow: only three steps to fuck love and break locks."
 msgstr ""
 "Quoi qu'il en soit: en seulement trois étapes Fuck love et brisez des "
 "cadenas."
 
-#: View/Orders/add.ctp:67
+#: View/Orders/add.ctp:72
 msgid "You select a lock size"
 msgstr "Vous sélectionnez une taille"
 
-#: View/Orders/add.ctp:68
+#: View/Orders/add.ctp:73
 msgid ""
 "You fill out the form, pay us money. Our computer goes 'ping', and we "
 "untangle ourselves from our French lover(s), or tax papers (depending on the "
@@ -354,11 +365,11 @@ msgstr ""
 "chargeons de ruiner un amour qui de toute façon n'aurait jamais dû être "
 "matérialisé de cette sorte."
 
-#: View/Orders/add.ctp:71
+#: View/Orders/add.ctp:76
 msgid "We cut the fucking lock"
 msgstr "Nous coupons ces satanés cadenas !"
 
-#: View/Orders/add.ctp:72
+#: View/Orders/add.ctp:77
 msgid ""
 "We head to the love lock bridge. We unsheathe our boltcutters, and do God's "
 "work. Unless you chose small locks. Then we'll probably just rip them off "
@@ -371,11 +382,11 @@ msgstr ""
 "bien on va les recycler. Qui est moins satisfaisant, mais apparemment plus "
 "populaire."
 
-#: View/Orders/add.ctp:75
+#: View/Orders/add.ctp:80
 msgid "You watch your video"
 msgstr "Vous visionnez votre vidéo"
 
-#: View/Orders/add.ctp:76
+#: View/Orders/add.ctp:81
 msgid ""
 "A day or so later, when we've drunk the profits, you'll get sent a video of "
 "your outsourced-crime. You send it to your friends, and they send us "
@@ -386,11 +397,11 @@ msgstr ""
 "pouvez ensuite la  partager avec vos amis afin qu'ils puissent eux aussi "
 "contribuer. Unissons tous nos efforts afin de ruiner la St-Valentin !"
 
-#: View/Orders/add.ctp:88
+#: View/Orders/add.ctp:93
 msgid "The Proof"
 msgstr "La preuve"
 
-#: View/Orders/add.ctp:89
+#: View/Orders/add.ctp:94
 msgid ""
 "So, you really want to do it and brag to your friends, but you don't want to "
 "get ripped off. To be fair, we both know you're a professional skeptic. "
@@ -404,19 +415,19 @@ msgstr ""
 "par des futures mariées ou des petits amis bravaches afin de livrer votre "
 "commande."
 
-#: View/Orders/add.ctp:94
+#: View/Orders/add.ctp:99
 msgid "Combo Bonus!"
 msgstr "Combos Bonus"
 
-#: View/Orders/add.ctp:95
+#: View/Orders/add.ctp:100
 msgid "Get your own combo:"
 msgstr "Faites votre propre combo"
 
-#: View/Orders/add.ctp:95;101;107
+#: View/Orders/add.ctp:100;106;112
 msgid "click here"
 msgstr "Cliquez ici"
 
-#: View/Orders/add.ctp:96
+#: View/Orders/add.ctp:101
 msgid ""
 "This was fantastic. Not only did some grumpy old guy help pick the lock, "
 "when it went, it took out a bunch of others. Combo bonus, ruined love never "
@@ -426,15 +437,15 @@ msgstr ""
 "un cadenas mais il en a aussi coupé plusieurs autres, combos bonus !!! "
 "Ruiner la st-valentin n'a jamais été aussi bon."
 
-#: View/Orders/add.ctp:100
+#: View/Orders/add.ctp:105
 msgid "Highly-resistant love"
 msgstr "l'Amour bien résistant"
 
-#: View/Orders/add.ctp:101
+#: View/Orders/add.ctp:106
 msgid "Kill a large lock now:"
 msgstr "Tuez un Gros amour maintenant "
 
-#: View/Orders/add.ctp:102
+#: View/Orders/add.ctp:107
 msgid ""
 "Angry gasping tourists, and an annoyingly solid lock. This has it all. It's "
 "either true love, or someone was really fucking clingy and needy. Either "
@@ -444,15 +455,15 @@ msgstr ""
 "l'amour pure ou alors quelqu'un est vraiment très collant et demandant. En "
 "tout cas ... maintenant, c'est mort !"
 
-#: View/Orders/add.ctp:106
+#: View/Orders/add.ctp:111
 msgid "Still-Warm Love"
 msgstr "l'Amour encore chaud"
 
-#: View/Orders/add.ctp:107
+#: View/Orders/add.ctp:112
 msgid "Buy love's demise:"
 msgstr "Acheter l'éradication d'un amour garanti"
 
-#: View/Orders/add.ctp:108
+#: View/Orders/add.ctp:113
 msgid ""
 "Barely had her trembling hand placed the home-decorated lock before we cut "
 "it the fuck off, and threw it into the river. This will probably get us "
@@ -462,7 +473,7 @@ msgstr ""
 "mutuelle juste avant que nous ne nous occupions de la situation :) Ceci "
 "aurait pu nous coûter la vie !"
 
-#: View/Orders/add.ctp:113
+#: View/Orders/add.ctp:117
 msgid ""
 "Because we never learnt that posting videos of doing stupid things online is "
 "stupid, we'll upload, for your pleasure, a selection of videos to YouTube, "
@@ -475,15 +486,15 @@ msgstr ""
 "sommeil . jusqu'à la fin violente qui nous est destinée , regardez les "
 "vidéos, ci dessous."
 
-#: View/Orders/add.ctp:116
+#: View/Orders/add.ctp:120
 msgid "More videos"
 msgstr "Plus de vidéos"
 
-#: View/Orders/add.ctp:126
+#: View/Orders/add.ctp:129
 msgid "Buy Now"
 msgstr "Commandez maintenant"
 
-#: View/Orders/add.ctp:127
+#: View/Orders/add.ctp:130
 msgid ""
 "We're up to the all important part. You think it's a great idea. You want "
 "your own dedicated video. You secretly want to see us get arrested / punched "
@@ -493,7 +504,7 @@ msgstr ""
 "personnalisée. Vous désirez secrètement nous voir nous faire arrêtés / "
 "tabassés pendant le production des vidéos ."
 
-#: View/Orders/add.ctp:128
+#: View/Orders/add.ctp:131
 msgid ""
 "Only you can make it happen. Select a lock size, fill out the form, and make "
 "it so."
@@ -501,7 +512,7 @@ msgstr ""
 "Nous comptons sur VOUS pour ruiner l'amour ! Sélectionnez une taille de "
 "cadenas maintenant, remplissez les formulaires ."
 
-#: View/Orders/add.ctp:133
+#: View/Orders/add.ctp:136
 msgid ""
 "There was  problem processing your form - please double check the data "
 "below.."
@@ -509,118 +520,118 @@ msgstr ""
 "Il y a eu un problème  pendant le traitement du formulaire - vous êtes prié "
 "de bien vouloir controller vos données."
 
-#: View/Orders/add.ctp:144
+#: View/Orders/add.ctp:147
 msgid "so small? that hardly even qualifies as love.."
 msgstr "Si petit, ça ne peux à peine être qualifié d'amour."
 
-#: View/Orders/add.ctp:145
+#: View/Orders/add.ctp:148
 msgid "small"
 msgstr "petit"
 
-#: View/Orders/add.ctp:149
+#: View/Orders/add.ctp:152
 msgid "good choice. let's fuck up true love."
 msgstr "Excellent choix, allons ruiner cet amour !"
 
-#: View/Orders/add.ctp:150
+#: View/Orders/add.ctp:153
 msgid "huge"
 msgstr "Enorme"
 
-#: View/Orders/add.ctp:154
+#: View/Orders/add.ctp:157
 msgid "you deserve bigger. other people would cut yours off."
 msgstr "Vous méritez bien plus. d'autres vous couperaient le vôtre."
 
-#: View/Orders/add.ctp:155
+#: View/Orders/add.ctp:158
 msgid "regular"
 msgstr "Normal"
 
-#: View/Orders/add.ctp:164 View/Pages/home.ctp:156
+#: View/Orders/add.ctp:167 View/Pages/home.ctp:156
 msgid "you need to select a size..."
 msgstr "Vous devez choisir une taille"
 
-#: View/Orders/add.ctp:170
+#: View/Orders/add.ctp:173
 msgid "100% secure payment."
 msgstr "Paiement 100% sécurisé "
 
-#: View/Orders/add.ctp:174
+#: View/Orders/add.ctp:177
 msgid "Name :"
 msgstr "Prenom + Nom:"
 
-#: View/Orders/add.ctp:178
+#: View/Orders/add.ctp:181
 msgid "Email :"
 msgstr "Email:"
 
-#: View/Orders/add.ctp:182
+#: View/Orders/add.ctp:185
 msgid "Credit Card Number :"
 msgstr "Numéro de carte de crédit :"
 
-#: View/Orders/add.ctp:187
+#: View/Orders/add.ctp:190
 msgid "CVV :"
 msgstr "N. de securite:"
 
-#: View/Orders/add.ctp:190
+#: View/Orders/add.ctp:193
 msgid "Card Security Number"
 msgstr "Numéro de sécurité de la carte"
 
-#: View/Orders/add.ctp:199
+#: View/Orders/add.ctp:202
 msgid "Exp. Month"
 msgstr "Date d'expiration"
 
-#: View/Orders/add.ctp:205
+#: View/Orders/add.ctp:208
 msgid "Card Expiry Month"
 msgstr "Mois d'expiration de la carte"
 
-#: View/Orders/add.ctp:214
+#: View/Orders/add.ctp:217
 msgid "Exp. Year"
 msgstr "Année d'expiration"
 
-#: View/Orders/add.ctp:217
+#: View/Orders/add.ctp:220
 msgid "Card Expiry Year"
 msgstr "Année d'expiration de la carte"
 
-#: View/Orders/add.ctp:228
+#: View/Orders/add.ctp:231
 msgid "Message :"
 msgstr "Message:"
 
-#: View/Orders/add.ctp:233
+#: View/Orders/add.ctp:236
 msgid ""
 "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
 msgstr ""
 "<b>Soyez bio !</b> Nous irons lancer (ou jeter plus juste..) les cadenas une "
 "poubelle de recyclage plutôt que dans la Seine."
 
-#: View/Orders/add.ctp:237
+#: View/Orders/add.ctp:240
 msgid "Order Summary:"
 msgstr "Récapitulatif de votre commande:"
 
-#: View/Orders/add.ctp:239
+#: View/Orders/add.ctp:242
 msgid "3x Locks cut off"
 msgstr "3x Cadenas découpés"
 
-#: View/Orders/add.ctp:241
+#: View/Orders/add.ctp:244
 msgid "1x Video made of said stupidity"
 msgstr "1x Video de cette connerie"
 
-#: View/Orders/add.ctp:255
+#: View/Orders/add.ctp:258
 msgid "Buy now"
 msgstr "Achetez !"
 
-#: View/Orders/add.ctp:262
+#: View/Orders/add.ctp:265
 msgid "pending"
 msgstr "en attente"
 
-#: View/Orders/add.ctp:263
+#: View/Orders/add.ctp:266
 msgid "ordered"
 msgstr "commandé"
 
-#: View/Orders/add.ctp:264
+#: View/Orders/add.ctp:267
 msgid "completed"
 msgstr "terminé"
 
-#: View/Orders/add.ctp:265
+#: View/Orders/add.ctp:268
 msgid "delivered"
 msgstr "livré"
 
-#: View/Orders/add.ctp:266
+#: View/Orders/add.ctp:269
 msgid "declined"
 msgstr "refusé"
 
