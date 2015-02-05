@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2015-01-14 04:36+0000\n"
-"PO-Revision-Date: 2015-02-04 21:40+0100\n"
+"PO-Revision-Date: 2015-02-05 14:23+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -113,7 +113,7 @@ msgstr "Fuck Love"
 
 #: View/Layouts/default.ctp:28
 msgid "Home"
-msgstr "Acceuil"
+msgstr "Accueil"
 
 #: View/Layouts/default.ctp:29
 msgid "What?"
@@ -129,7 +129,7 @@ msgstr "Comment?"
 
 #: View/Layouts/default.ctp:32
 msgid "Buy Now!"
-msgstr "Commander maintenant!"
+msgstr "Commander maintenant !"
 
 #: View/Layouts/default.ctp:62
 msgid "Send us some <a href=\"mailto:support@fucklove.paris\">hate mail</a>"
@@ -286,7 +286,7 @@ msgstr ""
 "Votre amour vous a laissé tomber et la boisson n'aide plus. Exténué de "
 "toujours souhaiter tout ce qu'il y a de mieux aux nouveaux couples et de "
 "sourire inconfortablement lorsque votre ex vous annonce qu'il/elle est "
-"tellement heureux(se)maintenant, vous ne pouvez plus cacher votre amertume! "
+"tellement heureux(se)maintenant, vous ne pouvez plus cacher votre amertume ! "
 "Plus de contes de fée pour vous ! Vous avez besoin d'agir concrètement ! "
 "Fuck love ! "
 
@@ -304,7 +304,7 @@ msgstr ""
 "Vous pensez que l'amour devrait être libre? Nous sommes comme vous. Adieu le "
 "poids du \"pour toujours\" rendez la liberté à ces pauvres cadenas asservis "
 "par ces couples horribles et regardez les regagner les ordures au fond de la "
-"Seine ce qui sera toujours une fin plus noble que leurs précédant destin!"
+"Seine ce qui sera toujours une fin plus noble que leurs précédant destin !"
 
 #: View/Orders/add.ctp:50
 msgid "Good samaritan: aka coward"
@@ -319,8 +319,8 @@ msgid ""
 msgstr ""
 "Vous aimez tellement Paris que vous laissez votre chien chier partout et "
 "noyez votre dépression dans le vin rouge. Les cadenas d'amour sont "
-"officiellement illégaux! Nous savons  que vous souhaitez l'extermination de "
-"ces petits parasites  mais que vous ne pouvez le faire vous-même! "
+"officiellement illégaux ! Nous savons  que vous souhaitez l'extermination de "
+"ces petits parasites  mais que vous ne pouvez le faire vous-même ! "
 "Heureusement pour vous, nous sommes là! Mettez votre bravoure entre nos "
 "mains et sauvez votre pont !"
 
@@ -356,7 +356,7 @@ msgstr ""
 
 #: View/Orders/add.ctp:71
 msgid "We cut the fucking lock"
-msgstr "Nous coupons ces satanés cadenas!"
+msgstr "Nous coupons ces satanés cadenas !"
 
 #: View/Orders/add.ctp:72
 msgid ""
@@ -367,7 +367,7 @@ msgid ""
 msgstr ""
 "Nous nous pressons vers le pont des arts. Nous sortons notre coupe-boulon et "
 "exécutons notre tâche divine. Ok si ce sont petits cadenas nous faisons le "
-"travail à mains nues et nous jetons ces abominations dans la Seine! Ou bien "
+"travail à mains nues et nous jetons ces abominations dans la Seine ! Ou bien "
 "on va les recycler. Qui est moins satisfaisant, mais apparemment plus "
 "populaire."
 
@@ -399,9 +399,10 @@ msgid ""
 msgstr ""
 "Alors ? Vous voulez réellement le faire et vous vanter auprès de vos amis, "
 "mais vous ne voulez pas vous faire avoir? Nous savons bien tous les deux que "
-"vous êtes un sceptique professionnel! Alors voici quelques vidéos démontrant "
-"nos prouesses et notre bravoure face aux risques d'être tabassé par des "
-"futures mariées ou des petits amis bravaches afin de livrer votre commande."
+"vous êtes un sceptique professionnel ! Alors voici quelques vidéos "
+"démontrant nos prouesses et notre bravoure face aux risques d'être tabassé "
+"par des futures mariées ou des petits amis bravaches afin de livrer votre "
+"commande."
 
 #: View/Orders/add.ctp:94
 msgid "Combo Bonus!"
@@ -421,7 +422,7 @@ msgid ""
 "when it went, it took out a bunch of others. Combo bonus, ruined love never "
 "felt so good."
 msgstr ""
-"C'était fantastique! Non seulement un vieillard aigri nous a aidé à enlever "
+"C'était fantastique ! Non seulement un vieillard aigri nous a aidé à enlever "
 "un cadenas mais il en a aussi coupé plusieurs autres, combos bonus !!! "
 "Ruiner la st-valentin n'a jamais été aussi bon."
 
@@ -439,7 +440,7 @@ msgid ""
 "either true love, or someone was really fucking clingy and needy. Either "
 "way, it's dead."
 msgstr ""
-"Touristes en colère et cadenas super solide. Tout est là! soit c'est de "
+"Touristes en colère et cadenas super solide. Tout est là ! Soit c'est de "
 "l'amour pure ou alors quelqu'un est vraiment très collant et demandant. En "
 "tout cas ... maintenant, c'est mort !"
 
@@ -489,15 +490,15 @@ msgid ""
 "for doing this."
 msgstr ""
 "Vous pensez que c'est l'idée du siècle. Vous aimeriez avoir votre vidéo "
-"personnalisée. Vous désirez secrètement nous voir arrêtés / tabassés pendant "
-"le production des vidéos ."
+"personnalisée. Vous désirez secrètement nous voir nous faire arrêtés / "
+"tabassés pendant le production des vidéos ."
 
 #: View/Orders/add.ctp:128
 msgid ""
 "Only you can make it happen. Select a lock size, fill out the form, and make "
 "it so."
 msgstr ""
-"Nous comptons sur VOUS pour ruiner l'amour! Sélectionnez une taille de "
+"Nous comptons sur VOUS pour ruiner l'amour ! Sélectionnez une taille de "
 "cadenas maintenant, remplissez les formulaires ."
 
 #: View/Orders/add.ctp:133
@@ -584,8 +585,8 @@ msgstr "Message:"
 msgid ""
 "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
 msgstr ""
-"<b>Soyez bio!</b> Nous allons lancer les cadenas une poubelle de recyclage "
-"plutôt que dans la Seine."
+"<b>Soyez bio !</b> Nous irons lancer (ou jeter plus juste..) les cadenas une "
+"poubelle de recyclage plutôt que dans la Seine."
 
 #: View/Orders/add.ctp:237
 msgid "Order Summary:"
@@ -601,7 +602,7 @@ msgstr "1x Video de cette connerie"
 
 #: View/Orders/add.ctp:255
 msgid "Buy now"
-msgstr "Achetez!"
+msgstr "Achetez !"
 
 #: View/Orders/add.ctp:262
 msgid "pending"
@@ -656,7 +657,6 @@ msgid "Sit tight"
 msgstr "Tenez-vous bien"
 
 #: View/Orders/view.ctp:28
-#, fuzzy
 msgid ""
 "We're going to go out and execute some locks on your behalf. This requires "
 "us going outside. And if you've ever tried walking around a city at midnight "
@@ -712,7 +712,7 @@ msgid ""
 "locks. Fuck love."
 msgstr ""
 "%s est un héro, aidant à préserver l'architecture parisienne, sauvant le "
-"monde de ces horribles cadenas d'amour! Fuck l'amour!"
+"monde de ces horribles cadenas d'amour ! Fuck l'amour !"
 
 #: Model/CreditCard.php:validation for field card_number
 msgid "A credit card number is required"
