@@ -122,6 +122,34 @@
 				</div>
 			</div>
 			<!--- //End-recent-posts----->
+			<!---start-recent-works----->
+			<div class="recent-works" id="faq">
+				<div class="wrap">
+					<div class="recent-works-head">
+						<h3><?php echo __('FAQ') ?></h3>
+						<p><?php echo __('It blows our mind that we need an FAQ, but the bolt-cutters have given us RSI and typing the same thing over and over gets boring.') ?></p>
+						<ol class="white green-text">
+							<li>
+								<h4><?php echo __('Is this for real?') ?></h4>
+								<p><?php echo __('Yes. It is for real. All the videos we have made, that you have watched, are actually real. We really are cutting locks off bridges.') ?></p>
+							</li>
+							<li>
+								<h4><?php echo __('So if I fill out the form, you will cut me a lock?') ?></h4>
+								<p><?php echo __('Yes. Actually, we\'ll cut three. And we\'ll send you the video of it. Because that\'s what we promised.  We\'re assholes, not scammers.') ?></p>
+							</li>
+							<li>
+								<h4><?php echo __('STOP THROWING LOCKS IN THE RIVER') ?></h4>
+								<p><?php echo __('That\'s not a question. Also, please stop typing in capital letters. We\'re all for the idea of not throwing the locks in the river, because we can then sell them for scrap metal. But, if you, the dear customer doesn\'t opt for it, we\'re not going to force it on you. So essentially, everyone else are dicks. But you\'re apparently not. So order below, and select the \'Don\'t throw it in the river\' option, and feel good about yourself.') ?></p>
+							</li>
+							<li>
+								<h4><?php echo __('Why haven\'t I made an order yet?') ?></h4>
+								<p><?php echo __('Great question. We\'re glad you asked. We\'re confused as you are. Scroll down, fill out the form, and together, we\'ll fuck up love and save bridges.') ?></p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!---End-recent-works----->
 			<!---start-contact---->
 			<div class="contact signup" id="signup">
 				<div class="wrap" id="signup-top">
