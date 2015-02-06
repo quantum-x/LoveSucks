@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-14 22:04+0000\n"
-"PO-Revision-Date: 2015-02-05 15:20+0100\n"
+"POT-Creation-Date: 2015-01-15 19:28+0000\n"
+"PO-Revision-Date: 2015-02-06 13:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -491,10 +491,85 @@ msgid "More videos"
 msgstr "Plus de vidéos"
 
 #: View/Orders/add.ctp:129
+msgid "FAQ"
+msgstr "FAQ"
+
+#: View/Orders/add.ctp:130
+msgid ""
+"It blows our mind that we need an FAQ, but the bolt-cutters have given us "
+"RSI and typing the same thing over and over gets boring."
+msgstr ""
+"Ok les gens, ça nous fait halluciner de devoir faire une section avec les "
+"questions les plus posées... Ceci dit le coupe boulon nous donne des "
+"ampoules et répondre encore et encore aux même questions commence à nous "
+"gonfler."
+
+#: View/Orders/add.ctp:133
+msgid "Is this for real?"
+msgstr "C'est vraiment vrai ?"
+
+#: View/Orders/add.ctp:134
+msgid ""
+"Yes. It is for real. All the videos we have made, that you have watched, are "
+"actually real. We really are cutting locks off bridges."
+msgstr ""
+"Oui. C'est vraiment vrai. Toutes les vidéos sont réelles et tous les cadenas "
+"que vous voyez coupés sont bien des cadenas que nous coupons sur les Pont de "
+"Paris."
+
+#: View/Orders/add.ctp:137
+msgid "So if I fill out the form, you will cut me a lock?"
+msgstr "Donc si je remplis le formulaire, vous coupez un cadenas pour moi ?"
+
+#: View/Orders/add.ctp:138
+msgid ""
+"Yes. Actually, we'll cut three. And we'll send you the video of it. Because "
+"that's what we promised.  We're assholes, not scammers."
+msgstr ""
+"Oui, on en coupe même TROIS ! Parce que nous avons promis. Et on vous envoi "
+"la vidéo pour preuve et pour votre plus grand plaisir ! Nous sommes des "
+"petits cons, pas des arnaqueurs."
+
+#: View/Orders/add.ctp:141
+msgid "STOP THROWING LOCKS IN THE RIVER"
+msgstr "ARRETEZ DE BALANCER DES CADENAS DANS LE FLEUVE !"
+
+#: View/Orders/add.ctp:142
+msgid ""
+"That's not a question. Also, please stop typing in capital letters. We're "
+"all for the idea of not throwing the locks in the river, because we can then "
+"sell them for scrap metal. But, if you, the dear customer doesn't opt for "
+"it, we're not going to force it on you. So essentially, everyone else are "
+"dicks. But you're apparently not. So order below, and select the 'Don't "
+"throw it in the river' option, and feel good about yourself."
+msgstr ""
+"Heuuuu, ce n'est pas une question. Et arrêtez d'écrire en majuscules, ça "
+"pique les yeux. D'ailleurs, c'est notre volonté de ne PAS les jeter dans la "
+"Seine, on préfère les recycler vue le cours actuel du laiton..  Mais si "
+"vous, cher client, vous ne cochez pas l'option \"recyclage\", on ne peut "
+"vous y forcer. Vous voyez, c'est la faute des autres si nous les jetons à "
+"l'eau. Vous, en personne responsable, vous allez passer une commande en "
+"cochant l'option \"ne pas les jeter à la Seine\", et vous aurez accompli "
+"votre BA. Merci !"
+
+#: View/Orders/add.ctp:145
+msgid "Why haven't I made an order yet?"
+msgstr "Pourquoi je n'ai pas encore commandé ?"
+
+#: View/Orders/add.ctp:146
+msgid ""
+"Great question. We're glad you asked. We're confused as you are. Scroll "
+"down, fill out the form, and together, we'll fuck up love and save bridges."
+msgstr ""
+"Ah, excellente question. Merci de la poser, nous aussi on s'interroge à ce "
+"sujet. Descendez la page, remplissez le formulaire, et ensemble nous allons "
+"détruire l'Amour et sauver des ponts."
+
+#: View/Orders/add.ctp:157
 msgid "Buy Now"
 msgstr "Commandez maintenant"
 
-#: View/Orders/add.ctp:130
+#: View/Orders/add.ctp:158
 msgid ""
 "We're up to the all important part. You think it's a great idea. You want "
 "your own dedicated video. You secretly want to see us get arrested / punched "
@@ -504,7 +579,7 @@ msgstr ""
 "personnalisée. Vous désirez secrètement nous voir nous faire arrêtés / "
 "tabassés pendant le production des vidéos ."
 
-#: View/Orders/add.ctp:131
+#: View/Orders/add.ctp:159
 msgid ""
 "Only you can make it happen. Select a lock size, fill out the form, and make "
 "it so."
@@ -512,7 +587,7 @@ msgstr ""
 "Nous comptons sur VOUS pour ruiner l'amour ! Sélectionnez une taille de "
 "cadenas maintenant, remplissez les formulaires ."
 
-#: View/Orders/add.ctp:136
+#: View/Orders/add.ctp:164
 msgid ""
 "There was  problem processing your form - please double check the data "
 "below.."
@@ -520,118 +595,118 @@ msgstr ""
 "Il y a eu un problème  pendant le traitement du formulaire - vous êtes prié "
 "de bien vouloir controller vos données."
 
-#: View/Orders/add.ctp:147
+#: View/Orders/add.ctp:175
 msgid "so small? that hardly even qualifies as love.."
 msgstr "Si petit, ça ne peux à peine être qualifié d'amour."
 
-#: View/Orders/add.ctp:148
+#: View/Orders/add.ctp:176
 msgid "small"
 msgstr "petit"
 
-#: View/Orders/add.ctp:152
+#: View/Orders/add.ctp:180
 msgid "good choice. let's fuck up true love."
 msgstr "Excellent choix, allons ruiner cet amour !"
 
-#: View/Orders/add.ctp:153
+#: View/Orders/add.ctp:181
 msgid "huge"
 msgstr "Enorme"
 
-#: View/Orders/add.ctp:157
+#: View/Orders/add.ctp:185
 msgid "you deserve bigger. other people would cut yours off."
 msgstr "Vous méritez bien plus. d'autres vous couperaient le vôtre."
 
-#: View/Orders/add.ctp:158
+#: View/Orders/add.ctp:186
 msgid "regular"
 msgstr "Normal"
 
-#: View/Orders/add.ctp:167 View/Pages/home.ctp:156
+#: View/Orders/add.ctp:195 View/Pages/home.ctp:156
 msgid "you need to select a size..."
 msgstr "Vous devez choisir une taille"
 
-#: View/Orders/add.ctp:173
+#: View/Orders/add.ctp:201
 msgid "100% secure payment."
 msgstr "Paiement 100% sécurisé "
 
-#: View/Orders/add.ctp:177
+#: View/Orders/add.ctp:205
 msgid "Name :"
 msgstr "Prenom + Nom:"
 
-#: View/Orders/add.ctp:181
+#: View/Orders/add.ctp:209
 msgid "Email :"
 msgstr "Email:"
 
-#: View/Orders/add.ctp:185
+#: View/Orders/add.ctp:213
 msgid "Credit Card Number :"
 msgstr "Numéro de carte de crédit :"
 
-#: View/Orders/add.ctp:190
+#: View/Orders/add.ctp:218
 msgid "CVV :"
 msgstr "N. de securite:"
 
-#: View/Orders/add.ctp:193
+#: View/Orders/add.ctp:221
 msgid "Card Security Number"
 msgstr "Numéro de sécurité de la carte"
 
-#: View/Orders/add.ctp:202
+#: View/Orders/add.ctp:230
 msgid "Exp. Month"
 msgstr "Date d'expiration"
 
-#: View/Orders/add.ctp:208
+#: View/Orders/add.ctp:236
 msgid "Card Expiry Month"
 msgstr "Mois d'expiration de la carte"
 
-#: View/Orders/add.ctp:217
+#: View/Orders/add.ctp:245
 msgid "Exp. Year"
 msgstr "Année d'expiration"
 
-#: View/Orders/add.ctp:220
+#: View/Orders/add.ctp:248
 msgid "Card Expiry Year"
 msgstr "Année d'expiration de la carte"
 
-#: View/Orders/add.ctp:231
+#: View/Orders/add.ctp:259
 msgid "Message :"
 msgstr "Message:"
 
-#: View/Orders/add.ctp:236
+#: View/Orders/add.ctp:264
 msgid ""
 "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
 msgstr ""
 "<b>Soyez bio !</b> Nous irons lancer (ou jeter plus juste..) les cadenas une "
 "poubelle de recyclage plutôt que dans la Seine."
 
-#: View/Orders/add.ctp:240
+#: View/Orders/add.ctp:268
 msgid "Order Summary:"
 msgstr "Récapitulatif de votre commande:"
 
-#: View/Orders/add.ctp:242
+#: View/Orders/add.ctp:270
 msgid "3x Locks cut off"
 msgstr "3x Cadenas découpés"
 
-#: View/Orders/add.ctp:244
+#: View/Orders/add.ctp:272
 msgid "1x Video made of said stupidity"
 msgstr "1x Video de cette connerie"
 
-#: View/Orders/add.ctp:258
+#: View/Orders/add.ctp:286
 msgid "Buy now"
 msgstr "Achetez !"
 
-#: View/Orders/add.ctp:265
+#: View/Orders/add.ctp:293
 msgid "pending"
 msgstr "en attente"
 
-#: View/Orders/add.ctp:266
+#: View/Orders/add.ctp:294
 msgid "ordered"
 msgstr "commandé"
 
-#: View/Orders/add.ctp:267
+#: View/Orders/add.ctp:295
 msgid "completed"
 msgstr "terminé"
 
-#: View/Orders/add.ctp:268
+#: View/Orders/add.ctp:296
 msgid "delivered"
 msgstr "livré"
 
-#: View/Orders/add.ctp:269
+#: View/Orders/add.ctp:297
 msgid "declined"
 msgstr "refusé"
 

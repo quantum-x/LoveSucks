@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-14 22:04+0000\n"
+"POT-Creation-Date: 2015-01-15 19:28+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -338,131 +338,171 @@ msgid "More videos"
 msgstr ""
 
 #: View/Orders/add.ctp:129
-msgid "Buy Now"
+msgid "FAQ"
 msgstr ""
 
 #: View/Orders/add.ctp:130
-msgid "We're up to the all important part. You think it's a great idea. You want your own dedicated video. You secretly want to see us get arrested / punched for doing this."
+msgid "It blows our mind that we need an FAQ, but the bolt-cutters have given us RSI and typing the same thing over and over gets boring."
 msgstr ""
 
-#: View/Orders/add.ctp:131
-msgid "Only you can make it happen. Select a lock size, fill out the form, and make it so."
+#: View/Orders/add.ctp:133
+msgid "Is this for real?"
 msgstr ""
 
-#: View/Orders/add.ctp:136
-msgid "There was  problem processing your form - please double check the data below.."
+#: View/Orders/add.ctp:134
+msgid "Yes. It is for real. All the videos we have made, that you have watched, are actually real. We really are cutting locks off bridges."
 msgstr ""
 
-#: View/Orders/add.ctp:147
-msgid "so small? that hardly even qualifies as love.."
+#: View/Orders/add.ctp:137
+msgid "So if I fill out the form, you will cut me a lock?"
 msgstr ""
 
-#: View/Orders/add.ctp:148
-msgid "small"
+#: View/Orders/add.ctp:138
+msgid "Yes. Actually, we'll cut three. And we'll send you the video of it. Because that's what we promised.  We're assholes, not scammers."
 msgstr ""
 
-#: View/Orders/add.ctp:152
-msgid "good choice. let's fuck up true love."
+#: View/Orders/add.ctp:141
+msgid "STOP THROWING LOCKS IN THE RIVER"
 msgstr ""
 
-#: View/Orders/add.ctp:153
-msgid "huge"
+#: View/Orders/add.ctp:142
+msgid "That's not a question. Also, please stop typing in capital letters. We're all for the idea of not throwing the locks in the river, because we can then sell them for scrap metal. But, if you, the dear customer doesn't opt for it, we're not going to force it on you. So essentially, everyone else are dicks. But you're apparently not. So order below, and select the 'Don't throw it in the river' option, and feel good about yourself."
+msgstr ""
+
+#: View/Orders/add.ctp:145
+msgid "Why haven't I made an order yet?"
+msgstr ""
+
+#: View/Orders/add.ctp:146
+msgid "Great question. We're glad you asked. We're confused as you are. Scroll down, fill out the form, and together, we'll fuck up love and save bridges."
 msgstr ""
 
 #: View/Orders/add.ctp:157
-msgid "you deserve bigger. other people would cut yours off."
+msgid "Buy Now"
 msgstr ""
 
 #: View/Orders/add.ctp:158
+msgid "We're up to the all important part. You think it's a great idea. You want your own dedicated video. You secretly want to see us get arrested / punched for doing this."
+msgstr ""
+
+#: View/Orders/add.ctp:159
+msgid "Only you can make it happen. Select a lock size, fill out the form, and make it so."
+msgstr ""
+
+#: View/Orders/add.ctp:164
+msgid "There was  problem processing your form - please double check the data below.."
+msgstr ""
+
+#: View/Orders/add.ctp:175
+msgid "so small? that hardly even qualifies as love.."
+msgstr ""
+
+#: View/Orders/add.ctp:176
+msgid "small"
+msgstr ""
+
+#: View/Orders/add.ctp:180
+msgid "good choice. let's fuck up true love."
+msgstr ""
+
+#: View/Orders/add.ctp:181
+msgid "huge"
+msgstr ""
+
+#: View/Orders/add.ctp:185
+msgid "you deserve bigger. other people would cut yours off."
+msgstr ""
+
+#: View/Orders/add.ctp:186
 msgid "regular"
 msgstr ""
 
-#: View/Orders/add.ctp:167
+#: View/Orders/add.ctp:195
 #: View/Pages/home.ctp:156
 msgid "you need to select a size..."
 msgstr ""
 
-#: View/Orders/add.ctp:173
+#: View/Orders/add.ctp:201
 msgid "100% secure payment."
 msgstr ""
 
-#: View/Orders/add.ctp:177
+#: View/Orders/add.ctp:205
 msgid "Name :"
 msgstr ""
 
-#: View/Orders/add.ctp:181
+#: View/Orders/add.ctp:209
 msgid "Email :"
 msgstr ""
 
-#: View/Orders/add.ctp:185
+#: View/Orders/add.ctp:213
 msgid "Credit Card Number :"
 msgstr ""
 
-#: View/Orders/add.ctp:190
+#: View/Orders/add.ctp:218
 msgid "CVV :"
 msgstr ""
 
-#: View/Orders/add.ctp:193
+#: View/Orders/add.ctp:221
 msgid "Card Security Number"
 msgstr ""
 
-#: View/Orders/add.ctp:202
+#: View/Orders/add.ctp:230
 msgid "Exp. Month"
 msgstr ""
 
-#: View/Orders/add.ctp:208
+#: View/Orders/add.ctp:236
 msgid "Card Expiry Month"
 msgstr ""
 
-#: View/Orders/add.ctp:217
+#: View/Orders/add.ctp:245
 msgid "Exp. Year"
 msgstr ""
 
-#: View/Orders/add.ctp:220
+#: View/Orders/add.ctp:248
 msgid "Card Expiry Year"
 msgstr ""
 
-#: View/Orders/add.ctp:231
+#: View/Orders/add.ctp:259
 msgid "Message :"
 msgstr ""
 
-#: View/Orders/add.ctp:236
+#: View/Orders/add.ctp:264
 msgid "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
 msgstr ""
 
-#: View/Orders/add.ctp:240
+#: View/Orders/add.ctp:268
 msgid "Order Summary:"
 msgstr ""
 
-#: View/Orders/add.ctp:242
+#: View/Orders/add.ctp:270
 msgid "3x Locks cut off"
 msgstr ""
 
-#: View/Orders/add.ctp:244
+#: View/Orders/add.ctp:272
 msgid "1x Video made of said stupidity"
 msgstr ""
 
-#: View/Orders/add.ctp:258
+#: View/Orders/add.ctp:286
 msgid "Buy now"
 msgstr ""
 
-#: View/Orders/add.ctp:265
+#: View/Orders/add.ctp:293
 msgid "pending"
 msgstr ""
 
-#: View/Orders/add.ctp:266
+#: View/Orders/add.ctp:294
 msgid "ordered"
 msgstr ""
 
-#: View/Orders/add.ctp:267
+#: View/Orders/add.ctp:295
 msgid "completed"
 msgstr ""
 
-#: View/Orders/add.ctp:268
+#: View/Orders/add.ctp:296
 msgid "delivered"
 msgstr ""
 
-#: View/Orders/add.ctp:269
+#: View/Orders/add.ctp:297
 msgid "declined"
 msgstr ""
 
