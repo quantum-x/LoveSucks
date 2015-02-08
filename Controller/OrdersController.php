@@ -79,7 +79,7 @@ class OrdersController extends AppController {
                 $size = $this->Size->find('first',['conditions' => ['id' => $this->request->data['Order']['size_id']], 'recursive' => -1]);
 
                 //If we've got an extra, grab its price
-                if (isset($this->request->data['OrderExtras']['bio']) && $this->request->data['OrderExtras']['bio'] == 1) {
+                if (isset($this->request->data['OrderExtras']['toss']) && $this->request->data['OrderExtras']['toss'] == 1) {
                     $extras = $this->Extra->find('first', ['link' => 'ExtraPrice','conditions' => ['Extra.name' => array_keys($this->request->data['OrderExtras'])[0], 'ExtraPrice.currency_id' => $this->viewVars['currency']['id']]]);
                     $price = $price + $extras['ExtraPrice']['price'];
                     $hasExtra = true;

@@ -309,7 +309,7 @@
                         $("#lockSize").text($(this).find("div:last").text());
                         updateTotals();
                     });
-                    $('#OrderExtrasBio').change(function() {
+                    $('#OrderExtrasToss').change(function() {
                        if($(this).is(":checked")) {
                           $("#extraCost").text('<?php echo $extras['ExtraPrice']['price']?>');
                           $("#extraPricing").show();
