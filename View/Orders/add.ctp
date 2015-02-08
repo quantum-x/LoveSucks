@@ -260,8 +260,8 @@
 							    )); ?>
                             <?php if (isset($extras)) { ?>
                                 <div class="extras">
-                                    <?php echo $this->Form->checkbox('OrderExtras.bio'); ?>
-                                    <label for="OrderExtrasBio"><?php echo __('<b>Go Green?</b> We\'ll toss the locks into recycling instead of the river.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
+                                    <?php echo $this->Form->checkbox('OrderExtras.toss'); ?>
+                                    <label for="OrderExtrasToss"><?php echo __('<b>Eco-Terrorist?</b> You eat whale burgers and wear baby seal shoes. Naturally, you want us to toss the locks into the river. Sure. That will cost you.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
                                 </div>
                             <?php } ?>
 							<div class="extras">
@@ -273,7 +273,7 @@
 										<td class="price"><?php echo $currency['symbol']?><span id="lockCost">0</span></td>
 									</tr>
 									<tr id="extraPricing" style="display: none">
-										<td class="item">Option Eco-Friendly</td>
+										<td class="item"><?php echo __('Option Eco-Terrorist') ?></td>
 										<td class="price"><?php echo $currency['symbol']?><span id="extraCost">0</span></td>
 									</tr>
 									<tr>

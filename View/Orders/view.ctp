@@ -14,8 +14,8 @@
 						<li><b><?php echo __('Lock Size:') ?></b> <?php echo __($order['Size']['size']) ?></li>
 						<li><b><?php echo __('Message:') ?></b> <?php echo $order['Order']['message'] ?></li>
 						<li><b><?php echo __('Status:') ?></b> <?php echo __($order['Status']['status']) ?></li>
-						<?php if (!empty($order['OrderExtra']) && $order['OrderExtra'][0]['Extra']['name'] == "bio") { ?>
-						    <li><?php echo __('You apparently give a fuck about the environment, so we\'ll toss the locks in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people\'s happiness. That\'s fairly fucking twisted.')?></li>
+						<?php if (!empty($order['OrderExtra']) && $order['OrderExtra'][0]['Extra']['name'] == "toss") { ?>
+						    <li><?php echo __('You apparently don\'t give a fuck about the environment, so we\'ll toss the locks in the the river.')?></li>
 						<?php } ?>
 					</ul>
 					<?php if (isset($order['Video']['slug']) && !empty($order['Video']['slug'])) { ?>
