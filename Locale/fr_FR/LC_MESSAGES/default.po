@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-01-15 19:28+0000\n"
-"PO-Revision-Date: 2015-02-06 13:21+0100\n"
+"POT-Creation-Date: 2015-01-17 17:25+0000\n"
+"PO-Revision-Date: 2015-02-08 10:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -72,18 +72,13 @@ msgstr ""
 "sera éternel. Nous allons bien entendu mettre fin à ça pour vous et nous "
 "vous enverrons un Email dès que la vidéo sera en ligne."
 
-#: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:10
-#: View/Orders/view.ctp:18
+#: View/Emails/html/order_invoice.ctp:7
 msgid ""
-"You apparently give a fuck about the environment, so we'll toss the locks in "
-"the recycling.<br />In the meantime, ask yourself why you care for the "
-"environment more than other people's happiness. That's fairly fucking "
-"twisted."
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river"
 msgstr ""
-"Apparemment, vous aimez l'environnement, nous allons donc jetez les cadenas "
-"dans une poubelle de recyclage. En attendant, demandez-vous pourquoi vous "
-"vous souciez plus de l'environnement que du bonheur des autres. C'est un peu "
-"tordu, non?"
+"Il parait que vous vous en foutez de l'environnement, nous allons donc jetez "
+"les cadenas dans la Seine."
 
 #: View/Emails/html/order_invoice.ctp:7
 msgid ""
@@ -95,6 +90,14 @@ msgstr ""
 "\"text-decoration: underline;transition: all .2s;color: #41637e\" href=\"%s"
 "\">récapitulatif de votre commande</a> pour voir si votre vidéo a été mise "
 "en ligne"
+
+#: View/Emails/text/order_invoice.ctp:10
+msgid ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river."
+msgstr ""
+"Il parait que vous vous en foutez de l'environnement, nous allons donc jetez "
+"les cadenas dans la Seine."
 
 #: View/Emails/text/order_invoice.ctp:11
 msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
@@ -669,10 +672,13 @@ msgstr "Message:"
 
 #: View/Orders/add.ctp:264
 msgid ""
-"<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
+"<b>Eco-Terrorist?</b> You eat whale burgers and wear baby seal shoes. "
+"Naturally, you want us to toss the locks into the river. Sure. That will "
+"cost you."
 msgstr ""
-"<b>Soyez bio !</b> Nous irons lancer (ou jeter plus juste..) les cadenas une "
-"poubelle de recyclage plutôt que dans la Seine."
+"<b>Éco-Terrorist ?</b> Vous mangez des hamburgers baleines et de porter des "
+"chaussures de bébés phoques. Naturellement, vous voulez qu'on jete les "
+"cadenas dans la Seine. Bien sûr. Cela va vous coûter."
 
 #: View/Orders/add.ctp:268
 msgid "Order Summary:"
@@ -685,6 +691,10 @@ msgstr "3x Cadenas découpés"
 #: View/Orders/add.ctp:272
 msgid "1x Video made of said stupidity"
 msgstr "1x Video de cette connerie"
+
+#: View/Orders/add.ctp:276
+msgid "Option Eco-Terrorist"
+msgstr "Option Eco-Terrorist"
 
 #: View/Orders/add.ctp:286
 msgid "Buy now"
@@ -733,6 +743,14 @@ msgstr "Message:"
 #: View/Orders/view.ctp:16
 msgid "Status:"
 msgstr "Statut:"
+
+#: View/Orders/view.ctp:18
+msgid ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the the river."
+msgstr ""
+"Il parait que vous vous en foutez de l'environnement, nous allons donc jetez "
+"les cadenas dans la Seine."
 
 #: View/Orders/view.ctp:22
 msgid "Your video"
@@ -870,3 +888,20 @@ msgstr "Prière d'indiquer votre adresse email"
 #: Model/User.php:validation for field admin
 msgid "boolean"
 msgstr ""
+
+#~ msgid ""
+#~ "You apparently give a fuck about the environment, so we'll toss the locks "
+#~ "in the recycling.<br />In the meantime, ask yourself why you care for the "
+#~ "environment more than other people's happiness. That's fairly fucking "
+#~ "twisted."
+#~ msgstr ""
+#~ "Apparemment, vous aimez l'environnement, nous allons donc jetez les "
+#~ "cadenas dans une poubelle de recyclage. En attendant, demandez-vous "
+#~ "pourquoi vous vous souciez plus de l'environnement que du bonheur des "
+#~ "autres. C'est un peu tordu, non?"
+
+#~ msgid ""
+#~ "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
+#~ msgstr ""
+#~ "<b>Soyez bio !</b> Nous irons lancer (ou jeter plus juste..) les cadenas "
+#~ "une poubelle de recyclage plutôt que dans la Seine."

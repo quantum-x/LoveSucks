@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-15 19:28+0000\n"
-"PO-Revision-Date: 2015-02-06 18:36+0100\n"
+"POT-Creation-Date: 2015-01-17 17:25+0000\n"
+"PO-Revision-Date: 2015-02-08 10:29+0100\n"
 "Last-Translator: \n"
 "Language-Team:  <EMAIL@ADDRESS>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.6.10\n"
-"Language: en_GB\n"
 
 #: Controller/OrdersController.php:160
 msgid "FL: Your recent purchase "
@@ -67,17 +67,13 @@ msgid ""
 "some locks. As soon as the video is uploaded, we'll send you another email."
 msgstr ""
 
-#: View/Emails/html/order_invoice.ctp:7 View/Emails/text/order_invoice.ctp:10
-#: View/Orders/view.ctp:18
+#: View/Emails/html/order_invoice.ctp:7
 msgid ""
-"You apparently give a fuck about the environment, so we'll toss the locks in "
-"the recycling.<br />In the meantime, ask yourself why you care for the "
-"environment more than other people's happiness. That's fairly fucking "
-"twisted."
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river"
 msgstr ""
-"You apparently care about the environment, so we'll toss the locks in the "
-"recycling.<br />In the meantime, ask yourself why you care for the "
-"environment more than other people's happiness. That's fairly twisted."
+"You apparently don't give a damn about the environment, so we'll toss the "
+"locks in the river"
 
 #: View/Emails/html/order_invoice.ctp:7
 msgid ""
@@ -85,6 +81,14 @@ msgid ""
 "all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a "
 "FedEx delivery."
 msgstr ""
+
+#: View/Emails/text/order_invoice.ctp:10
+msgid ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river."
+msgstr ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river."
 
 #: View/Emails/text/order_invoice.ctp:11
 msgid "Or, you can refresh your order summary %s like it's a FedEx delivery."
@@ -570,7 +574,9 @@ msgstr ""
 
 #: View/Orders/add.ctp:264
 msgid ""
-"<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
+"<b>Eco-Terrorist?</b> You eat whale burgers and wear baby seal shoes. "
+"Naturally, you want us to toss the locks into the river. Sure. That will "
+"cost you."
 msgstr ""
 
 #: View/Orders/add.ctp:268
@@ -583,6 +589,10 @@ msgstr ""
 
 #: View/Orders/add.ctp:272
 msgid "1x Video made of said stupidity"
+msgstr ""
+
+#: View/Orders/add.ctp:276
+msgid "Option Eco-Terrorist"
 msgstr ""
 
 #: View/Orders/add.ctp:286
@@ -632,6 +642,14 @@ msgstr ""
 #: View/Orders/view.ctp:16
 msgid "Status:"
 msgstr ""
+
+#: View/Orders/view.ctp:18
+msgid ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the the river."
+msgstr ""
+"You apparently don't give a fuck about the environment, so we'll toss the "
+"locks in the river."
 
 #: View/Orders/view.ctp:22
 msgid "Your video"
@@ -756,3 +774,13 @@ msgstr ""
 #: Model/User.php:validation for field admin
 msgid "boolean"
 msgstr ""
+
+#~ msgid ""
+#~ "You apparently give a fuck about the environment, so we'll toss the locks "
+#~ "in the recycling.<br />In the meantime, ask yourself why you care for the "
+#~ "environment more than other people's happiness. That's fairly fucking "
+#~ "twisted."
+#~ msgstr ""
+#~ "You apparently care about the environment, so we'll toss the locks in the "
+#~ "recycling.<br />In the meantime, ask yourself why you care for the "
+#~ "environment more than other people's happiness. That's fairly twisted."

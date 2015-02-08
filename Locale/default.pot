@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2015-01-15 19:28+0000\n"
+"POT-Creation-Date: 2015-01-17 17:25+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -70,13 +70,15 @@ msgid "We're loading up the bolt-cutters, and heading to the the nearest bridge 
 msgstr ""
 
 #: View/Emails/html/order_invoice.ctp:7
-#: View/Emails/text/order_invoice.ctp:10
-#: View/Orders/view.ctp:18
-msgid "You apparently give a fuck about the environment, so we'll toss the locks in the recycling.<br />In the meantime, ask yourself why you care for the environment more than other people's happiness. That's fairly fucking twisted."
+msgid "You apparently don't give a fuck about the environment, so we'll toss the locks in the river"
 msgstr ""
 
 #: View/Emails/html/order_invoice.ctp:7
 msgid "Or, you can refresh <a style=\"text-decoration: underline;transition: all .2s;color: #41637e\" href=\"%s\">your order summary</a> like it's a FedEx delivery."
+msgstr ""
+
+#: View/Emails/text/order_invoice.ctp:10
+msgid "You apparently don't give a fuck about the environment, so we'll toss the locks in the river."
 msgstr ""
 
 #: View/Emails/text/order_invoice.ctp:11
@@ -467,7 +469,7 @@ msgid "Message :"
 msgstr ""
 
 #: View/Orders/add.ctp:264
-msgid "<b>Go Green?</b> We'll toss the locks into recycling instead of the river."
+msgid "<b>Eco-Terrorist?</b> You eat whale burgers and wear baby seal shoes. Naturally, you want us to toss the locks into the river. Sure. That will cost you."
 msgstr ""
 
 #: View/Orders/add.ctp:268
@@ -480,6 +482,10 @@ msgstr ""
 
 #: View/Orders/add.ctp:272
 msgid "1x Video made of said stupidity"
+msgstr ""
+
+#: View/Orders/add.ctp:276
+msgid "Option Eco-Terrorist"
 msgstr ""
 
 #: View/Orders/add.ctp:286
@@ -528,6 +534,10 @@ msgstr ""
 
 #: View/Orders/view.ctp:16
 msgid "Status:"
+msgstr ""
+
+#: View/Orders/view.ctp:18
+msgid "You apparently don't give a fuck about the environment, so we'll toss the locks in the the river."
 msgstr ""
 
 #: View/Orders/view.ctp:22
