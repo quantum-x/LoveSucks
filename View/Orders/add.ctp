@@ -258,12 +258,14 @@
 							<?php echo $this->Form->text('Order.message', array(
 							        'placeholder' => __('Message :'),
 							    )); ?>
+							<!--
                             <?php if (isset($extras)) { ?>
                                 <div class="extras">
                                     <?php echo $this->Form->checkbox('OrderExtras.toss'); ?>
                                     <label for="OrderExtrasToss"><?php echo __('<b>Eco-Terrorist?</b> You eat whale burgers and wear baby seal shoes. Naturally, you want us to toss the locks into the river. Sure. That will cost you.') ?> +<?php echo $currency['symbol']?><?php echo $extras['ExtraPrice']['price']?></label>
                                 </div>
                             <?php } ?>
+                            //-->
 							<div class="extras">
 								<?php echo __('Order Summary:') ?>
 								<table>
@@ -272,10 +274,11 @@
 										<td class="item"><?php echo __('1x Video made of said stupidity') ?></td>
 										<td class="price"><?php echo $currency['symbol']?><span id="lockCost">0</span></td>
 									</tr>
+									<!--
 									<tr id="extraPricing" style="display: none">
 										<td class="item"><?php echo __('Option Eco-Terrorist') ?></td>
 										<td class="price"><?php echo $currency['symbol']?><span id="extraCost">0</span></td>
-									</tr>
+									</tr>//-->
 									<tr>
 										<td>Total:</td>
 										<td class="price final"><?php echo $currency['symbol']?><span id="finalCost"></span></td>
